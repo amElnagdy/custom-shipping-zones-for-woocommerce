@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import CountrySelector from "./CountrySelector";
+import StateAdder from "./StateAdder";
+import AddedStates from "./AddedStates";
 
 const App = () => {
-	let today = new Date();
-	let date =
-		today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
-	let time =
-		today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-	let dateTime = date + " " + time;
-	return (
-		<div>
-			<h4>{dateTime}</h4>
-		</div>
-	);
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [addedStates, setAddedStates] = useState([]);
+
+  return (
+    <div className="csz">
+      <CountrySelector
+        setSelectedCountry={setSelectedCountry}
+        addedStates={addedStates}
+      />
+      {selectedCountry && (
+        <StateAdder
+          selectedCountry={selectedCountry}
+          setAddedStates={setAddedStates}
+        />
+      )}
+      {addedStates.length > 0 && (
+        <AddedStates
+          addedStates={addedStates}
+          selectedCountry={selectedCountry}
+        />
+      )}
+    </div>
+  );
 };
 
 export default App;

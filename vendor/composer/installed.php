@@ -3,7 +3,7 @@
         'name' => 'nagdy/custom-shipping-zones',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '614eff71a1c0d4fabad140825100b2c5b79139ac',
+        'reference' => 'fc449ed4bf021eba955d032dbafff535b373ca6b',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'nagdy/custom-shipping-zones' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '614eff71a1c0d4fabad140825100b2c5b79139ac',
+            'reference' => 'fc449ed4bf021eba955d032dbafff535b373ca6b',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

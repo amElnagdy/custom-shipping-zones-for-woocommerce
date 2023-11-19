@@ -3,6 +3,7 @@
 namespace CustomShippingZones;
 
 use Automattic\WooCommerce\Utilities\FeaturesUtil;
+use WP_REST_Server;
 
 class CustomShippingZones {
     
@@ -11,6 +12,7 @@ class CustomShippingZones {
         add_action( 'load-textdomain', array( $this, 'load_textdomain' ) );
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
         add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
+        add_action( 'rest_api_init', array( $this, 'register_api_routes' ) );
     }
     
     public function init(): void {
@@ -30,6 +32,9 @@ class CustomShippingZones {
             return;
         }
         wp_enqueue_script( 'custom-shipping-zone-admin', CUSTOM_SHIPPING_ZONES_URL . '/build/index.js', array( 'wp-element' ), CUSTOM_SHIPPING_ZONES_VERSION, true );
+        wp_localize_script('custom-shipping-zone-admin', 'cszData', array(
+            'states' => $this->get_zones()
+        ));
     }
     
     public function add_admin_menu(): void {
@@ -46,5 +51,25 @@ class CustomShippingZones {
     
     public function render_admin_page(): void {
         require_once CUSTOM_SHIPPING_ZONES_PATH . 'includes/admin/admin.php';
+    }
+    
+    public function register_api_routes(): void {
+        register_rest_route( 'custom-shipping-zones/v1', '/zones', array(
+            'methods'             => WP_REST_Server::CREATABLE,
+            'callback'            => array( $this, 'create_zone' ),
+            'permission_callback' => array( $this, 'zones_permissions_check' )
+        ) );
+    }
+    
+    public function get_zones() {
+        
+        $states = WC()->countries->get_countries();
+        
+        return new \WP_REST_Response($states, 200);
+    
+    }
+    
+    public function zones_permissions_check($request): bool {
+        return current_user_can( 'manage_woocommerce' );
     }
 }
