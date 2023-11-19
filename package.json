@@ -1,0 +1,28 @@
+{
+  "name": "custom-shipping-zones",
+  "version": "1.0.0",
+  "description": "Lightweight, yet powerful WooCommerce extension that allows you to add custom shipping zones to WooCommerce",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amElnagdy/custom-shipping-zones.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amElnagdy/custom-shipping-zones/issues"
+  },
+  "homepage": "https://github.com/amElnagdy/custom-shipping-zones#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.17.0"
+  },
+  "dependencies": {
+    "@wordpress/element": "^5.23.0",
+    "react": "^18.2.0"
+  }
+}
