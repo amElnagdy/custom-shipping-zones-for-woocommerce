@@ -3,7 +3,6 @@
 namespace CustomShippingZones;
 
 use Automattic\WooCommerce\Utilities\FeaturesUtil;
-use WP_REST_Server;
 
 class CustomShippingZones
 {
@@ -39,7 +38,8 @@ class CustomShippingZones
         wp_enqueue_script('custom-shipping-zone-admin', CUSTOM_SHIPPING_ZONES_URL . '/build/index.js', array('wp-element'), CUSTOM_SHIPPING_ZONES_VERSION, true);
 
         wp_localize_script('custom-shipping-zone-admin', 'cszData', array(
-            'states' => $this->get_zones()
+            'countries' => $this->get_countries(),
+            'current_custom_zones' => $this->get_custom_shipping_zones()
         ));
 
         wp_localize_script('custom-shipping-zone-admin', 'cszAjax', array(
@@ -66,12 +66,12 @@ class CustomShippingZones
         require_once CUSTOM_SHIPPING_ZONES_PATH . 'includes/admin/admin.php';
     }
 
-    public function get_zones()
+    public function get_countries()
     {
 
-        $states = WC()->countries->get_countries();
+        $countries = WC()->countries->get_countries();
 
-        return new \WP_REST_Response($states, 200);
+        return new \WP_REST_Response($countries, 200);
     }
 
     public function save_states()
@@ -97,7 +97,32 @@ class CustomShippingZones
             $statesFormatted[$countryCode][$stateCode] = __($stateName, 'woocommerce');
         }
 
-        update_option('custom_shipping_zones', $statesFormatted);
+        // We need to make sure that the option_name does not exist
+
+        if (get_option(strtolower($countryCode) . '_custom_shipping_zones')) {
+            // We'll need to merge the new states with the old ones
+            $existingStates = get_option(strtolower($countryCode) . '_custom_shipping_zones');
+            $updatedStates = array_merge_recursive($existingStates, array($countryCode => $statesFormatted));
+            update_option(strtolower($countryCode) . '_custom_shipping_zones', $updatedStates);
+        } else {
+            update_option(strtolower($countryCode) . '_custom_shipping_zones', $statesFormatted);
+        }
+
         wp_send_json_success();
+    }
+
+    public function get_custom_shipping_zones()
+    {
+        $countries = WC()->countries->get_countries();
+        $customShippingZones = array();
+
+        foreach ($countries as $countryCode => $countryName) {
+            $optionName = strtolower($countryCode) . '_custom_shipping_zones';
+            if (get_option($optionName)) {
+                $customShippingZones[$countryCode] = get_option($optionName);
+            }
+        }
+
+        return $customShippingZones;
     }
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "antd";
 import CountrySelector from "./CountrySelector";
 import StateAdder from "./StateAdder";
 import AddedStates from "./AddedStates";
@@ -35,13 +36,15 @@ const App = () => {
         />
       )}
       {addedStates.length > 0 && (
-        <AddedStates
-          addedStates={addedStates}
-          selectedCountry={selectedCountry}
-          setAddedStates={setAddedStates}
-        />
+        <>
+          <AddedStates
+            addedStates={addedStates}
+            selectedCountry={selectedCountry}
+            setAddedStates={setAddedStates}
+          />
+          <Button onClick={handleSaveStates}>Save States</Button>
+        </>
       )}
-      <button onClick={handleSaveStates}>Save States</button>
     </div>
   );
 };

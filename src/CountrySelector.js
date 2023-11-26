@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Select } from "antd";
 
 export default function CountrySelector({ setSelectedCountry, addedStates }) {
-  const countries = cszData.states.data;
+  const countries = cszData.countries.data;
   const [country, setCountry] = useState("");
 
   const handleChange = (value) => {

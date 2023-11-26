@@ -42,9 +42,9 @@ export default function StateAdder({ selectedCountry, setAddedStates }) {
       <Form.Item
         name="stateCode"
         rules={[{ required: true, message: "Please enter a state code" }]}
-        help="Automatically generated but can be edited"
+        help="Automatically generated."
       >
-        <Input placeholder="State Code" />
+        <Input placeholder="State Code" disabled/>
       </Form.Item>
       <Form.Item>
         <Button type="primary" htmlType="submit">
