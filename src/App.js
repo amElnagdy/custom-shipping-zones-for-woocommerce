@@ -23,6 +23,7 @@ const App = () => {
         <AddedStates
           addedStates={addedStates}
           selectedCountry={selectedCountry}
+          setAddedStates={setAddedStates}
         />
       )}
     </div>

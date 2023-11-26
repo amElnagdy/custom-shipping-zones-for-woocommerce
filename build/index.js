@@ -23504,18 +23504,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/divider/index.js");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/list/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
 
 
 
 function AddedStates({
   addedStates,
-  selectedCountry
+  selectedCountry,
+  setAddedStates
 }) {
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"], null, "These states will be added to ' ", selectedCountry), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  const handleDelete = stateCode => {
+    setAddedStates(addedStates.filter(state => state.code !== stateCode));
+  };
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"], null, "These states will be added to '", selectedCountry, "'"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: "small",
     bordered: true,
     dataSource: addedStates,
-    renderItem: state => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"].Item, null, state)
+    renderItem: state => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
+      actions: [(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        type: "link",
+        onClick: () => handleDelete(state.code)
+      }, "Delete")]
+    }, state.name, " (", state.code, ")")
   }));
 }
 
@@ -23555,7 +23565,8 @@ const App = () => {
     setAddedStates: setAddedStates
   }), addedStates.length > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_AddedStates__WEBPACK_IMPORTED_MODULE_3__["default"], {
     addedStates: addedStates,
-    selectedCountry: selectedCountry
+    selectedCountry: selectedCountry,
+    setAddedStates: setAddedStates
   }));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
@@ -23632,23 +23643,48 @@ function StateAdder({
   setAddedStates
 }) {
   const [form] = antd__WEBPACK_IMPORTED_MODULE_1__["default"].useForm();
+  const generateStateCode = stateName => {
+    const initials = stateName.match(/\b\w/g) || [];
+    const code = ((initials.shift() || "") + (initials.pop() || "")).toUpperCase();
+    return selectedCountry + "-" + code + "-" + Math.floor(100 + Math.random() * 900);
+  };
   const onFinish = values => {
-    setAddedStates(prevStates => [...prevStates, values.stateName]);
+    const state = {
+      name: values.stateName,
+      code: values.stateCode || generateStateCode(values.stateName)
+    };
+    setAddedStates(prevStates => [...prevStates, state]);
     form.resetFields();
+  };
+  const onStateNameChange = e => {
+    form.setFieldsValue({
+      stateCode: generateStateCode(e.target.value)
+    });
   };
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
     form: form,
-    layout: "inline",
+    layout: "vertical",
     onFinish: onFinish,
     autoComplete: "off"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"].Item, {
     name: "stateName",
     rules: [{
       required: true,
-      message: "Please input a state name!"
+      message: "Please enter a state name"
     }]
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    placeholder: "State Name"
+    placeholder: "State Name",
+    onChange: onStateNameChange,
+    autoFocus: true
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"].Item, {
+    name: "stateCode",
+    rules: [{
+      required: true,
+      message: "Please enter a state code"
+    }],
+    help: "Automatically generated but can be edited"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    placeholder: "State Code"
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"].Item, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
     type: "primary",
     htmlType: "submit"

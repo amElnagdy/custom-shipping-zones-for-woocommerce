@@ -1,15 +1,33 @@
 import React from "react";
-import { Divider, List } from "antd";
+import { Divider, List, Button } from "antd";
 
-export default function AddedStates({ addedStates, selectedCountry }) {
+export default function AddedStates({
+  addedStates,
+  selectedCountry,
+  setAddedStates,
+}) {
+  const handleDelete = (stateCode) => {
+    setAddedStates(addedStates.filter((state) => state.code !== stateCode));
+  };
+
   return (
     <div>
-      <Divider>These states will be added to ' {selectedCountry}</Divider>
+      <Divider>These states will be added to '{selectedCountry}'</Divider>
       <List
         size="small"
         bordered
         dataSource={addedStates}
-        renderItem={(state) => <List.Item>{state}</List.Item>}
+        renderItem={(state) => (
+          <List.Item
+            actions={[
+              <Button type="link" onClick={() => handleDelete(state.code)}>
+                Delete
+              </Button>,
+            ]}
+          >
+            {state.name} ({state.code})
+          </List.Item>
+        )}
       />
     </div>
   );
