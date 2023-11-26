@@ -7,6 +7,21 @@ const App = () => {
   const [selectedCountry, setSelectedCountry] = useState("");
   const [addedStates, setAddedStates] = useState([]);
 
+  const handleSaveStates = () => {
+    const formData = new URLSearchParams();
+    formData.append("action", "csz_save_states");
+    formData.append("nonce", cszAjax.nonce);
+    formData.append("countryCode", selectedCountry);
+    formData.append("states", JSON.stringify(addedStates));
+    fetch(cszAjax.ajax_url, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  };
+
   return (
     <div className="csz">
       <CountrySelector
@@ -26,6 +41,7 @@ const App = () => {
           setAddedStates={setAddedStates}
         />
       )}
+      <button onClick={handleSaveStates}>Save States</button>
     </div>
   );
 };

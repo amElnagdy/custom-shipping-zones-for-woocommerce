@@ -23555,6 +23555,20 @@ __webpack_require__.r(__webpack_exports__);
 const App = () => {
   const [selectedCountry, setSelectedCountry] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
   const [addedStates, setAddedStates] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]);
+  const handleSaveStates = () => {
+    const formData = new URLSearchParams();
+    formData.append("action", "csz_save_states");
+    formData.append("nonce", cszAjax.nonce);
+    formData.append("countryCode", selectedCountry);
+    formData.append("states", JSON.stringify(addedStates));
+    fetch(cszAjax.ajax_url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: formData
+    }).then(response => response.json()).then(data => console.log(data));
+  };
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "csz"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_CountrySelector__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -23567,7 +23581,9 @@ const App = () => {
     addedStates: addedStates,
     selectedCountry: selectedCountry,
     setAddedStates: setAddedStates
-  }));
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    onClick: handleSaveStates
+  }, "Save States"));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
