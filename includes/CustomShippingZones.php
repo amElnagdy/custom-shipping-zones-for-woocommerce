@@ -76,7 +76,6 @@ class CustomShippingZones
 
     public function save_states()
     {
-
         if (current_user_can('manage_woocommerce') === false) {
             wp_send_json_error('Not allowed!');
         }
@@ -94,22 +93,23 @@ class CustomShippingZones
         foreach ($states as $state) {
             $stateCode = $state['code'];
             $stateName = $state['name'];
-            $statesFormatted[$countryCode][$stateCode] = __($stateName, 'woocommerce');
+            $statesFormatted[$stateCode] = __($stateName, 'woocommerce');
         }
 
-        // We need to make sure that the option_name does not exist
+        $optionName = strtolower($countryCode) . '_custom_shipping_zones';
+        $existingStates = get_option($optionName) ?: array();
 
-        if (get_option(strtolower($countryCode) . '_custom_shipping_zones')) {
-            // We'll need to merge the new states with the old ones
-            $existingStates = get_option(strtolower($countryCode) . '_custom_shipping_zones');
-            $updatedStates = array_merge_recursive($existingStates, array($countryCode => $statesFormatted));
-            update_option(strtolower($countryCode) . '_custom_shipping_zones', $updatedStates);
-        } else {
-            update_option(strtolower($countryCode) . '_custom_shipping_zones', $statesFormatted);
-        }
+        // Update the existing states with new states
+        $updatedStates = array_merge($existingStates, $statesFormatted);
+
+        // Update the option
+        update_option($optionName, $updatedStates);
 
         wp_send_json_success();
     }
+
+
+
 
     public function get_custom_shipping_zones()
     {

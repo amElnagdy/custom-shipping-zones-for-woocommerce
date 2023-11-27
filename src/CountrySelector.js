@@ -13,7 +13,7 @@ export default function CountrySelector({ setSelectedCountry, addedStates }) {
   return (
     <Select
       showSearch
-      style={{ width: 200 }}
+      style={{ width: 300 }}
       placeholder="Select a country"
       optionFilterProp="children"
       onChange={handleChange}

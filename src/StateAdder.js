@@ -37,6 +37,10 @@ export default function StateAdder({ selectedCountry, setAddedStates }) {
           placeholder="State Name"
           onChange={onStateNameChange}
           autoFocus
+          style={{
+            width: "30%",
+            marginTop: "20px",
+          }}
         />
       </Form.Item>
       <Form.Item
@@ -44,7 +48,13 @@ export default function StateAdder({ selectedCountry, setAddedStates }) {
         rules={[{ required: true, message: "Please enter a state code" }]}
         help="Automatically generated."
       >
-        <Input placeholder="State Code" disabled/>
+        <Input
+          placeholder="State Code"
+          disabled
+          style={{
+            width: "30%",
+          }}
+        />
       </Form.Item>
       <Form.Item>
         <Button type="primary" htmlType="submit">
