@@ -6,6 +6,7 @@ import AddedStates from "./AddedStates";
 import CurrentStates from "./CurrentStates";
 
 const App = () => {
+  const strings = cszStrings;
   const [selectedCountry, setSelectedCountry] = useState("");
   const [addedStates, setAddedStates] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -35,15 +36,15 @@ const App = () => {
     return (
       <Result
         status="success"
-        title="States Saved Successfully!"
-        subTitle="Your changes have been saved. The page will reload shortly."
+        title={strings.states_saved_successfully}
+        subTitle={strings.your_changes_have_been_saved}
         extra={[
           <Button
             type="primary"
             key="console"
             onClick={() => window.location.reload()}
           >
-            Reload Page
+            {strings.reload_page}
           </Button>,
         ]}
       />
@@ -65,11 +66,13 @@ const App = () => {
         <CountrySelector
           setSelectedCountry={setSelectedCountry}
           addedStates={addedStates}
+          strings={strings}
         />
         {selectedCountry && (
           <StateAdder
             selectedCountry={selectedCountry}
             setAddedStates={setAddedStates}
+            strings={strings}
           />
         )}
         {addedStates.length > 0 && (
@@ -78,13 +81,14 @@ const App = () => {
               addedStates={addedStates}
               selectedCountry={selectedCountry}
               setAddedStates={setAddedStates}
+              strings={strings}
             />
             <Button
               style={{ marginTop: "20px" }}
               onClick={handleSaveStates}
               type="primary"
             >
-              Save States
+              {strings.save_states}
             </Button>
           </>
         )}
@@ -94,7 +98,7 @@ const App = () => {
             marginTop: "30px",
           }}
         >
-          <CurrentStates />
+          <CurrentStates strings={strings} />
         </div>
       </div>
     </Spin>

@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { Select, Typography } from "antd";
 
-export default function CountrySelector({ setSelectedCountry, addedStates }) {
+export default function CountrySelector({
+  setSelectedCountry,
+  addedStates,
+  strings,
+}) {
   const { Title } = Typography;
   const countries = cszData.countries.data;
   const [country, setCountry] = useState("");
@@ -13,11 +17,11 @@ export default function CountrySelector({ setSelectedCountry, addedStates }) {
 
   return (
     <>
-      <Title level={4}>Select a Country</Title>
+      <Title level={4}>{strings.select_country}</Title>
       <Select
         showSearch
         style={{ width: 300 }}
-        placeholder="Select a country"
+        placeholder={strings.select_country}
         optionFilterProp="children"
         onChange={handleChange}
         filterOption={(input, option) =>

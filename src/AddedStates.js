@@ -5,6 +5,7 @@ export default function AddedStates({
   addedStates,
   selectedCountry,
   setAddedStates,
+  strings,
 }) {
   const handleDelete = (stateCode) => {
     setAddedStates(addedStates.filter((state) => state.code !== stateCode));
@@ -12,7 +13,7 @@ export default function AddedStates({
 
   return (
     <div>
-      <Divider>These states will be added to '{selectedCountry}'</Divider>
+      <Divider>{`${strings.these_states_will_be_added} '${selectedCountry}`}</Divider>
       <List
         size="small"
         bordered
@@ -21,7 +22,7 @@ export default function AddedStates({
           <List.Item
             actions={[
               <Button type="link" onClick={() => handleDelete(state.code)}>
-                Delete
+                {strings.delete}
               </Button>,
             ]}
           >

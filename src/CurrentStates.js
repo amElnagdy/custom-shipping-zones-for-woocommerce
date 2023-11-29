@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Divider, Table, Space, Button, message, Result } from "antd";
+import { Divider, Table, Space, Button, message } from "antd";
 
-export default function CurrentStates() {
+export default function CurrentStates({ strings }) {
   const current_states = cszData.current_custom_zones;
   const [data, setData] = useState(current_states);
 
@@ -36,7 +36,7 @@ export default function CurrentStates() {
           delete data[countryCode][stateCode];
           setData({ ...data });
           message.success({
-            content: "State deleted successfully",
+            content: strings.state_deleted,
             duration: 1,
             style: {
               marginTop: "2vh",
@@ -44,7 +44,7 @@ export default function CurrentStates() {
           });
         } else {
           message.error({
-            content: "Failed to delete state",
+            content: strings.failed_to_delete_state,
             style: {
               marginTop: "2vh",
             },
@@ -53,33 +53,33 @@ export default function CurrentStates() {
       })
       .catch((error) => {
         console.error("Error deleting state:", error);
-        message("An error occurred while deleting the state");
+        message(strings.an_error_occurred);
       });
   };
 
   const columns = [
     {
-      title: "Country",
+      title: strings.country,
       dataIndex: "country",
       key: "country",
     },
     {
-      title: "State",
+      title: strings.state,
       dataIndex: "state",
       key: "state",
     },
     {
-      title: "Code",
+      title: strings.code,
       dataIndex: "code",
       key: "code",
     },
     {
-      title: "Action",
+      title: strings.action,
       key: "action",
       render: (_, record) => (
         <Space size="middle">
           <Button onClick={() => handleDelete(record.code, record.country)}>
-            Delete
+            {strings.delete}
           </Button>
         </Space>
       ),
@@ -88,7 +88,7 @@ export default function CurrentStates() {
 
   return (
     <div>
-      <Divider>Current custom shipping zones</Divider>
+      <Divider>{strings.current_custom_shipping_zones}</Divider>
       <Table columns={columns} dataSource={formattedData} />
     </div>
   );

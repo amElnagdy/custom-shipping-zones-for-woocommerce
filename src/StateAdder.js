@@ -1,8 +1,11 @@
 import React from "react";
 import { Button, Form, Input } from "antd";
 
-export default function StateAdder({ selectedCountry, setAddedStates }) {
-  const strings = cszStrings;
+export default function StateAdder({
+  selectedCountry,
+  setAddedStates,
+  strings,
+}) {
   const [form] = Form.useForm();
 
   const generateStateCode = (stateName) => {
