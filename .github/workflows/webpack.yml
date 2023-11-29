@@ -23,22 +23,27 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Checkout Release Branch
+      - name: Prepare Release Directory
         run: |
-          git checkout release || git checkout -b release
-          git reset --hard origin/master
+          mkdir dist
+          cp -R ./build/* ./dist/
+          cp -R ./vendor/* ./dist/
+          cp -R ./includes/* ./dist/
+          cp ./custom-shipping-zones.php ./dist/
 
-      - name: Copy Build to Release Branch
+      - name: Checkout Release Branch
+        run: git checkout release || git checkout -b release
+
+      - name: Replace Release Branch Contents
         run: |
-          cp -R ./build/* ./
-          cp -R ./vendor/* ./
-          cp -R ./includes/* ./
-          cp ./custom-shipping-zones.php ./
-          git config --global user.email a.elnagdy87@gmail.com
-          git config --global user.name amElnagdy
-          
+          git rm -r *
+          cp -R ./dist/* ./
+          rm -rf dist
+
       - name: Commit and Push to Release Branch
         run: |
+          git config --global user.email "a.elnagdy87@gmail.com"
+          git config --global user.name "amElnagdy"
           git add .
           git commit -m "Deploying build to release branch"
           git push origin release
