@@ -31,8 +31,8 @@ jobs:
       - name: Copy Build to Release Branch
         run: |
           cp -R ./build/* ./
-          cp -R ./vendor ./
-          cp -R ./includes ./
+          cp -R ./vendor/* ./
+          cp -R ./includes/* ./
           cp ./custom-shipping-zones.php ./
           git config --global user.email a.elnagdy87@gmail.com
           git config --global user.name amElnagdy
