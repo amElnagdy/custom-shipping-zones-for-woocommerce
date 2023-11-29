@@ -2,7 +2,7 @@ name: Build and Deploy to Release Branch
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
 
 jobs:
   build-and-deploy:
@@ -30,6 +30,8 @@ jobs:
           cp -R ./vendor/* ./dist/
           cp -R ./includes/* ./dist/
           cp ./custom-shipping-zones.php ./dist/
+          echo "Listing dist contents"
+          ls -al dist
 
       - name: Checkout or Create Release Branch
         run: |
@@ -38,8 +40,8 @@ jobs:
 
       - name: Replace Release Branch Contents
         run: |
-          rm -rf * .[^.]*
-          cp -R ./dist/* ./
+          git rm -r * || true
+          cp -R ${{ github.workspace }}/dist/* ./
           rm -rf dist
 
       - name: Commit and Push to Release Branch
