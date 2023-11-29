@@ -2675,6 +2675,24 @@ var CloseOutlined = { "icon": { "tag": "svg", "attrs": { "fill-rule": "evenodd",
 
 /***/ }),
 
+/***/ "./node_modules/@ant-design/icons-svg/es/asn/CopyOutlined.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@ant-design/icons-svg/es/asn/CopyOutlined.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// This icon file is generated automatically.
+var CopyOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z" } }] }, "name": "copy", "theme": "outlined" };
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CopyOutlined);
+
+
+/***/ }),
+
 /***/ "./node_modules/@ant-design/icons-svg/es/asn/DoubleLeftOutlined.js":
 /*!*************************************************************************!*\
   !*** ./node_modules/@ant-design/icons-svg/es/asn/DoubleLeftOutlined.js ***!
@@ -2729,6 +2747,24 @@ var DownOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 89
 
 /***/ }),
 
+/***/ "./node_modules/@ant-design/icons-svg/es/asn/EditOutlined.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@ant-design/icons-svg/es/asn/EditOutlined.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// This icon file is generated automatically.
+var EditOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M257.7 752c2 0 4-.2 6-.5L431.9 722c2-.4 3.9-1.3 5.3-2.8l423.9-423.9a9.96 9.96 0 000-14.1L694.9 114.9c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1-7.1 2.9L256.8 538.8c-1.5 1.5-2.4 3.3-2.8 5.3l-29.5 168.2a33.5 33.5 0 009.4 29.8c6.6 6.4 14.9 9.9 23.8 9.9zm67.4-174.4L687.8 215l73.3 73.3-362.7 362.6-88.9 15.7 15.6-89zM880 836H144c-17.7 0-32 14.3-32 32v36c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-36c0-17.7-14.3-32-32-32z" } }] }, "name": "edit", "theme": "outlined" };
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EditOutlined);
+
+
+/***/ }),
+
 /***/ "./node_modules/@ant-design/icons-svg/es/asn/EllipsisOutlined.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@ant-design/icons-svg/es/asn/EllipsisOutlined.js ***!
@@ -2743,6 +2779,24 @@ __webpack_require__.r(__webpack_exports__);
 // This icon file is generated automatically.
 var EllipsisOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z" } }] }, "name": "ellipsis", "theme": "outlined" };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EllipsisOutlined);
+
+
+/***/ }),
+
+/***/ "./node_modules/@ant-design/icons-svg/es/asn/EnterOutlined.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@ant-design/icons-svg/es/asn/EnterOutlined.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// This icon file is generated automatically.
+var EnterOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M864 170h-60c-4.4 0-8 3.6-8 8v518H310v-73c0-6.7-7.8-10.5-13-6.3l-141.9 112a8 8 0 000 12.6l141.9 112c5.3 4.2 13 .4 13-6.3v-75h498c35.3 0 64-28.7 64-64V178c0-4.4-3.6-8-8-8z" } }] }, "name": "enter", "theme": "outlined" };
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EnterOutlined);
 
 
 /***/ }),
@@ -2887,6 +2941,24 @@ __webpack_require__.r(__webpack_exports__);
 // This icon file is generated automatically.
 var HolderOutlined = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M300 276.5a56 56 0 1056-97 56 56 0 00-56 97zm0 284a56 56 0 1056-97 56 56 0 00-56 97zM640 228a56 56 0 10112 0 56 56 0 00-112 0zm0 284a56 56 0 10112 0 56 56 0 00-112 0zM300 844.5a56 56 0 1056-97 56 56 0 00-56 97zM640 796a56 56 0 10112 0 56 56 0 00-112 0z" } }] }, "name": "holder", "theme": "outlined" };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HolderOutlined);
+
+
+/***/ }),
+
+/***/ "./node_modules/@ant-design/icons-svg/es/asn/InfoCircleFilled.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@ant-design/icons-svg/es/asn/InfoCircleFilled.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// This icon file is generated automatically.
+var InfoCircleFilled = { "icon": { "tag": "svg", "attrs": { "viewBox": "64 64 896 896", "focusable": "false" }, "children": [{ "tag": "path", "attrs": { "d": "M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 010-96 48.01 48.01 0 010 96z" } }] }, "name": "info-circle", "theme": "filled" };
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (InfoCircleFilled);
 
 
 /***/ }),
@@ -3556,6 +3628,42 @@ if (true) {
 
 /***/ }),
 
+/***/ "./node_modules/@ant-design/icons/es/icons/CopyOutlined.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@ant-design/icons/es/icons/CopyOutlined.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ant_design_icons_svg_es_asn_CopyOutlined__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons-svg/es/asn/CopyOutlined */ "./node_modules/@ant-design/icons-svg/es/asn/CopyOutlined.js");
+/* harmony import */ var _components_AntdIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AntdIcon */ "./node_modules/@ant-design/icons/es/components/AntdIcon.js");
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+
+var CopyOutlined = function CopyOutlined(props, ref) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_components_AntdIcon__WEBPACK_IMPORTED_MODULE_2__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    ref: ref,
+    icon: _ant_design_icons_svg_es_asn_CopyOutlined__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }));
+};
+if (true) {
+  CopyOutlined.displayName = 'CopyOutlined';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef(CopyOutlined));
+
+/***/ }),
+
 /***/ "./node_modules/@ant-design/icons/es/icons/DoubleLeftOutlined.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@ant-design/icons/es/icons/DoubleLeftOutlined.js ***!
@@ -3664,6 +3772,42 @@ if (true) {
 
 /***/ }),
 
+/***/ "./node_modules/@ant-design/icons/es/icons/EditOutlined.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@ant-design/icons/es/icons/EditOutlined.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ant_design_icons_svg_es_asn_EditOutlined__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons-svg/es/asn/EditOutlined */ "./node_modules/@ant-design/icons-svg/es/asn/EditOutlined.js");
+/* harmony import */ var _components_AntdIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AntdIcon */ "./node_modules/@ant-design/icons/es/components/AntdIcon.js");
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+
+var EditOutlined = function EditOutlined(props, ref) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_components_AntdIcon__WEBPACK_IMPORTED_MODULE_2__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    ref: ref,
+    icon: _ant_design_icons_svg_es_asn_EditOutlined__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }));
+};
+if (true) {
+  EditOutlined.displayName = 'EditOutlined';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef(EditOutlined));
+
+/***/ }),
+
 /***/ "./node_modules/@ant-design/icons/es/icons/EllipsisOutlined.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/@ant-design/icons/es/icons/EllipsisOutlined.js ***!
@@ -3697,6 +3841,42 @@ if (true) {
   EllipsisOutlined.displayName = 'EllipsisOutlined';
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef(EllipsisOutlined));
+
+/***/ }),
+
+/***/ "./node_modules/@ant-design/icons/es/icons/EnterOutlined.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@ant-design/icons/es/icons/EnterOutlined.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ant_design_icons_svg_es_asn_EnterOutlined__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons-svg/es/asn/EnterOutlined */ "./node_modules/@ant-design/icons-svg/es/asn/EnterOutlined.js");
+/* harmony import */ var _components_AntdIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AntdIcon */ "./node_modules/@ant-design/icons/es/components/AntdIcon.js");
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+
+var EnterOutlined = function EnterOutlined(props, ref) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_components_AntdIcon__WEBPACK_IMPORTED_MODULE_2__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    ref: ref,
+    icon: _ant_design_icons_svg_es_asn_EnterOutlined__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }));
+};
+if (true) {
+  EnterOutlined.displayName = 'EnterOutlined';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef(EnterOutlined));
 
 /***/ }),
 
@@ -3985,6 +4165,42 @@ if (true) {
   HolderOutlined.displayName = 'HolderOutlined';
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef(HolderOutlined));
+
+/***/ }),
+
+/***/ "./node_modules/@ant-design/icons/es/icons/InfoCircleFilled.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@ant-design/icons/es/icons/InfoCircleFilled.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ant_design_icons_svg_es_asn_InfoCircleFilled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons-svg/es/asn/InfoCircleFilled */ "./node_modules/@ant-design/icons-svg/es/asn/InfoCircleFilled.js");
+/* harmony import */ var _components_AntdIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AntdIcon */ "./node_modules/@ant-design/icons/es/components/AntdIcon.js");
+
+// GENERATE BY ./scripts/generate.ts
+// DON NOT EDIT IT MANUALLY
+
+
+
+
+var InfoCircleFilled = function InfoCircleFilled(props, ref) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_components_AntdIcon__WEBPACK_IMPORTED_MODULE_2__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    ref: ref,
+    icon: _ant_design_icons_svg_es_asn_InfoCircleFilled__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }));
+};
+if (true) {
+  InfoCircleFilled.displayName = 'InfoCircleFilled';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef(InfoCircleFilled));
 
 /***/ }),
 
@@ -9135,6 +9351,92 @@ function getStatusClassNames(prefixCls, status, hasFeedback) {
   });
 }
 const getMergedStatus = (contextStatus, customStatus) => customStatus || contextStatus;
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/_util/transButton.js":
+/*!***************************************************!*\
+  !*** ./node_modules/antd/es/_util/transButton.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rc-util/es/KeyCode */ "./node_modules/rc-util/es/KeyCode.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+"use client";
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+/**
+ * Wrap of sub component which need use as Button capacity (like Icon component).
+ *
+ * This helps accessibility reader to tread as a interactive button to operation.
+ */
+
+
+const inlineStyle = {
+  border: 0,
+  background: 'transparent',
+  padding: 0,
+  lineHeight: 'inherit',
+  display: 'inline-block'
+};
+const TransButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef((props, ref) => {
+  const onKeyDown = event => {
+    const {
+      keyCode
+    } = event;
+    if (keyCode === rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_0__["default"].ENTER) {
+      event.preventDefault();
+    }
+  };
+  const onKeyUp = event => {
+    const {
+      keyCode
+    } = event;
+    const {
+      onClick
+    } = props;
+    if (keyCode === rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_0__["default"].ENTER && onClick) {
+      onClick();
+    }
+  };
+  const {
+      style,
+      noStyle,
+      disabled
+    } = props,
+    restProps = __rest(props, ["style", "noStyle", "disabled"]);
+  let mergedStyle = {};
+  if (!noStyle) {
+    mergedStyle = Object.assign({}, inlineStyle);
+  }
+  if (disabled) {
+    mergedStyle.pointerEvents = 'none';
+  }
+  mergedStyle = Object.assign(Object.assign({}, mergedStyle), style);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", Object.assign({
+    role: "button",
+    tabIndex: 0,
+    ref: ref
+  }, restProps, {
+    onKeyDown: onKeyDown,
+    onKeyUp: onKeyUp,
+    style: mergedStyle
+  }));
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TransButton);
 
 /***/ }),
 
@@ -20963,6 +21265,814 @@ const getVerticalStyle = token => {
   }];
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getVerticalStyle);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/message/PurePanel.js":
+/*!***************************************************!*\
+  !*** ./node_modules/antd/es/message/PurePanel.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PureContent: () => (/* binding */ PureContent),
+/* harmony export */   TypeIcon: () => (/* binding */ TypeIcon),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ant_design_icons_es_icons_CheckCircleFilled__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ant-design/icons/es/icons/CheckCircleFilled */ "./node_modules/@ant-design/icons/es/icons/CheckCircleFilled.js");
+/* harmony import */ var _ant_design_icons_es_icons_CloseCircleFilled__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ant-design/icons/es/icons/CloseCircleFilled */ "./node_modules/@ant-design/icons/es/icons/CloseCircleFilled.js");
+/* harmony import */ var _ant_design_icons_es_icons_ExclamationCircleFilled__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ant-design/icons/es/icons/ExclamationCircleFilled */ "./node_modules/@ant-design/icons/es/icons/ExclamationCircleFilled.js");
+/* harmony import */ var _ant_design_icons_es_icons_InfoCircleFilled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons/es/icons/InfoCircleFilled */ "./node_modules/@ant-design/icons/es/icons/InfoCircleFilled.js");
+/* harmony import */ var _ant_design_icons_es_icons_LoadingOutlined__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ant-design/icons/es/icons/LoadingOutlined */ "./node_modules/@ant-design/icons/es/icons/LoadingOutlined.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rc_notification__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rc-notification */ "./node_modules/rc-notification/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../config-provider */ "./node_modules/antd/es/config-provider/context.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./style */ "./node_modules/antd/es/message/style/index.js");
+"use client";
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+
+
+
+
+const TypeIcon = {
+  info: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_ant_design_icons_es_icons_InfoCircleFilled__WEBPACK_IMPORTED_MODULE_3__["default"], null),
+  success: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_ant_design_icons_es_icons_CheckCircleFilled__WEBPACK_IMPORTED_MODULE_4__["default"], null),
+  error: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_ant_design_icons_es_icons_CloseCircleFilled__WEBPACK_IMPORTED_MODULE_5__["default"], null),
+  warning: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_ant_design_icons_es_icons_ExclamationCircleFilled__WEBPACK_IMPORTED_MODULE_6__["default"], null),
+  loading: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_ant_design_icons_es_icons_LoadingOutlined__WEBPACK_IMPORTED_MODULE_7__["default"], null)
+};
+const PureContent = _ref => {
+  let {
+    prefixCls,
+    type,
+    icon,
+    children
+  } = _ref;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(`${prefixCls}-custom-content`, `${prefixCls}-${type}`)
+  }, icon || TypeIcon[type], /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("span", null, children));
+};
+/** @private Internal Component. Do not use in your production. */
+const PurePanel = props => {
+  const {
+      prefixCls: staticPrefixCls,
+      className,
+      type,
+      icon,
+      content
+    } = props,
+    restProps = __rest(props, ["prefixCls", "className", "type", "icon", "content"]);
+  const {
+    getPrefixCls
+  } = react__WEBPACK_IMPORTED_MODULE_2__.useContext(_config_provider__WEBPACK_IMPORTED_MODULE_8__.ConfigContext);
+  const prefixCls = staticPrefixCls || getPrefixCls('message');
+  const [, hashId] = (0,_style__WEBPACK_IMPORTED_MODULE_9__["default"])(prefixCls);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(rc_notification__WEBPACK_IMPORTED_MODULE_1__.Notice, Object.assign({}, restProps, {
+    prefixCls: prefixCls,
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(className, hashId, `${prefixCls}-notice-pure-panel`),
+    eventKey: "pure",
+    duration: null,
+    content: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(PureContent, {
+      prefixCls: prefixCls,
+      type: type,
+      icon: icon
+    }, content)
+  }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PurePanel);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/message/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/antd/es/message/index.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   actDestroy: () => (/* binding */ actDestroy),
+/* harmony export */   actWrapper: () => (/* binding */ actWrapper),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var rc_util_es_React_render__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rc-util/es/React/render */ "./node_modules/rc-util/es/React/render.js");
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config-provider */ "./node_modules/antd/es/config-provider/index.js");
+/* harmony import */ var _PurePanel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./PurePanel */ "./node_modules/antd/es/message/PurePanel.js");
+/* harmony import */ var _useMessage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./useMessage */ "./node_modules/antd/es/message/useMessage.js");
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./util */ "./node_modules/antd/es/message/util.js");
+"use client";
+
+
+
+
+
+
+
+
+let message = null;
+let act = callback => callback();
+let taskQueue = [];
+let defaultGlobalConfig = {};
+function getGlobalContext() {
+  const {
+    prefixCls: globalPrefixCls,
+    getContainer: globalGetContainer,
+    duration,
+    rtl,
+    maxCount,
+    top
+  } = defaultGlobalConfig;
+  const mergedPrefixCls = globalPrefixCls !== null && globalPrefixCls !== void 0 ? globalPrefixCls : (0,_config_provider__WEBPACK_IMPORTED_MODULE_3__.globalConfig)().getPrefixCls('message');
+  const mergedContainer = (globalGetContainer === null || globalGetContainer === void 0 ? void 0 : globalGetContainer()) || document.body;
+  return {
+    prefixCls: mergedPrefixCls,
+    getContainer: () => mergedContainer,
+    duration,
+    rtl,
+    maxCount,
+    top
+  };
+}
+const GlobalHolder = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.forwardRef((_, ref) => {
+  const [messageConfig, setMessageConfig] = react__WEBPACK_IMPORTED_MODULE_1__.useState(getGlobalContext);
+  const [api, holder] = (0,_useMessage__WEBPACK_IMPORTED_MODULE_4__.useInternalMessage)(messageConfig);
+  const global = (0,_config_provider__WEBPACK_IMPORTED_MODULE_3__.globalConfig)();
+  const rootPrefixCls = global.getRootPrefixCls();
+  const rootIconPrefixCls = global.getIconPrefixCls();
+  const theme = global.getTheme();
+  const sync = () => {
+    setMessageConfig(getGlobalContext);
+  };
+  react__WEBPACK_IMPORTED_MODULE_1__.useEffect(sync, []);
+  react__WEBPACK_IMPORTED_MODULE_1__.useImperativeHandle(ref, () => {
+    const instance = Object.assign({}, api);
+    Object.keys(instance).forEach(method => {
+      instance[method] = function () {
+        sync();
+        return api[method].apply(api, arguments);
+      };
+    });
+    return {
+      instance,
+      sync
+    };
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_config_provider__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    prefixCls: rootPrefixCls,
+    iconPrefixCls: rootIconPrefixCls,
+    theme: theme
+  }, holder);
+});
+function flushNotice() {
+  if (!message) {
+    const holderFragment = document.createDocumentFragment();
+    const newMessage = {
+      fragment: holderFragment
+    };
+    message = newMessage;
+    // Delay render to avoid sync issue
+    act(() => {
+      (0,rc_util_es_React_render__WEBPACK_IMPORTED_MODULE_2__.render)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(GlobalHolder, {
+        ref: node => {
+          const {
+            instance,
+            sync
+          } = node || {};
+          // React 18 test env will throw if call immediately in ref
+          Promise.resolve().then(() => {
+            if (!newMessage.instance && instance) {
+              newMessage.instance = instance;
+              newMessage.sync = sync;
+              flushNotice();
+            }
+          });
+        }
+      }), holderFragment);
+    });
+    return;
+  }
+  // Notification not ready
+  if (!message.instance) {
+    return;
+  }
+  // >>> Execute task
+  taskQueue.forEach(task => {
+    const {
+      type,
+      skipped
+    } = task;
+    // Only `skipped` when user call notice but cancel it immediately
+    // and instance not ready
+    if (!skipped) {
+      switch (type) {
+        case 'open':
+          {
+            act(() => {
+              const closeFn = message.instance.open(Object.assign(Object.assign({}, defaultGlobalConfig), task.config));
+              closeFn === null || closeFn === void 0 ? void 0 : closeFn.then(task.resolve);
+              task.setCloseFn(closeFn);
+            });
+            break;
+          }
+        case 'destroy':
+          act(() => {
+            message === null || message === void 0 ? void 0 : message.instance.destroy(task.key);
+          });
+          break;
+        // Other type open
+        default:
+          {
+            act(() => {
+              var _message$instance;
+              const closeFn = (_message$instance = message.instance)[type].apply(_message$instance, (0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(task.args));
+              closeFn === null || closeFn === void 0 ? void 0 : closeFn.then(task.resolve);
+              task.setCloseFn(closeFn);
+            });
+          }
+      }
+    }
+  });
+  // Clean up
+  taskQueue = [];
+}
+// ==============================================================================
+// ==                                  Export                                  ==
+// ==============================================================================
+function setMessageGlobalConfig(config) {
+  defaultGlobalConfig = Object.assign(Object.assign({}, defaultGlobalConfig), config);
+  // Trigger sync for it
+  act(() => {
+    var _a;
+    (_a = message === null || message === void 0 ? void 0 : message.sync) === null || _a === void 0 ? void 0 : _a.call(message);
+  });
+}
+function open(config) {
+  const result = (0,_util__WEBPACK_IMPORTED_MODULE_5__.wrapPromiseFn)(resolve => {
+    let closeFn;
+    const task = {
+      type: 'open',
+      config,
+      resolve,
+      setCloseFn: fn => {
+        closeFn = fn;
+      }
+    };
+    taskQueue.push(task);
+    return () => {
+      if (closeFn) {
+        act(() => {
+          closeFn();
+        });
+      } else {
+        task.skipped = true;
+      }
+    };
+  });
+  flushNotice();
+  return result;
+}
+function typeOpen(type, args) {
+  // Warning if exist theme
+  if (true) {
+    (0,_config_provider__WEBPACK_IMPORTED_MODULE_3__.warnContext)('message');
+  }
+  const result = (0,_util__WEBPACK_IMPORTED_MODULE_5__.wrapPromiseFn)(resolve => {
+    let closeFn;
+    const task = {
+      type,
+      args,
+      resolve,
+      setCloseFn: fn => {
+        closeFn = fn;
+      }
+    };
+    taskQueue.push(task);
+    return () => {
+      if (closeFn) {
+        act(() => {
+          closeFn();
+        });
+      } else {
+        task.skipped = true;
+      }
+    };
+  });
+  flushNotice();
+  return result;
+}
+function destroy(key) {
+  taskQueue.push({
+    type: 'destroy',
+    key
+  });
+  flushNotice();
+}
+const methods = ['success', 'info', 'warning', 'error', 'loading'];
+const baseStaticMethods = {
+  open,
+  destroy,
+  config: setMessageGlobalConfig,
+  useMessage: _useMessage__WEBPACK_IMPORTED_MODULE_4__["default"],
+  _InternalPanelDoNotUseOrYouWillBeFired: _PurePanel__WEBPACK_IMPORTED_MODULE_6__["default"]
+};
+const staticMethods = baseStaticMethods;
+methods.forEach(type => {
+  staticMethods[type] = function () {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+    return typeOpen(type, args);
+  };
+});
+// ==============================================================================
+// ==                                   Test                                   ==
+// ==============================================================================
+const noop = () => {};
+/** @internal Only Work in test env */
+// eslint-disable-next-line import/no-mutable-exports
+let actWrapper = noop;
+if (false) {}
+/** @internal Only Work in test env */
+// eslint-disable-next-line import/no-mutable-exports
+let actDestroy = noop;
+if (false) {}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (staticMethods);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/message/style/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/antd/es/message/style/index.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ant_design_cssinjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ant-design/cssinjs */ "./node_modules/@ant-design/cssinjs/es/index.js");
+/* harmony import */ var _util_hooks_useZIndex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../_util/hooks/useZIndex */ "./node_modules/antd/es/_util/hooks/useZIndex.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../style */ "./node_modules/antd/es/style/index.js");
+/* harmony import */ var _theme_internal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../theme/internal */ "./node_modules/antd/es/theme/util/genComponentStyleHook.js");
+/* harmony import */ var _theme_internal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../theme/internal */ "./node_modules/antd/es/theme/util/statistic.js");
+"use client";
+
+
+
+
+
+const genMessageStyle = token => {
+  const {
+    componentCls,
+    iconCls,
+    boxShadow,
+    colorText,
+    colorSuccess,
+    colorError,
+    colorWarning,
+    colorInfo,
+    fontSizeLG,
+    motionEaseInOutCirc,
+    motionDurationSlow,
+    marginXS,
+    paddingXS,
+    borderRadiusLG,
+    zIndexPopup,
+    // Custom token
+    contentPadding,
+    contentBg
+  } = token;
+  const noticeCls = `${componentCls}-notice`;
+  const messageMoveIn = new _ant_design_cssinjs__WEBPACK_IMPORTED_MODULE_0__.Keyframes('MessageMoveIn', {
+    '0%': {
+      padding: 0,
+      transform: 'translateY(-100%)',
+      opacity: 0
+    },
+    '100%': {
+      padding: paddingXS,
+      transform: 'translateY(0)',
+      opacity: 1
+    }
+  });
+  const messageMoveOut = new _ant_design_cssinjs__WEBPACK_IMPORTED_MODULE_0__.Keyframes('MessageMoveOut', {
+    '0%': {
+      maxHeight: token.height,
+      padding: paddingXS,
+      opacity: 1
+    },
+    '100%': {
+      maxHeight: 0,
+      padding: 0,
+      opacity: 0
+    }
+  });
+  const noticeStyle = {
+    padding: paddingXS,
+    textAlign: 'center',
+    [`${componentCls}-custom-content > ${iconCls}`]: {
+      verticalAlign: 'text-bottom',
+      marginInlineEnd: marginXS,
+      fontSize: fontSizeLG
+    },
+    [`${noticeCls}-content`]: {
+      display: 'inline-block',
+      padding: contentPadding,
+      background: contentBg,
+      borderRadius: borderRadiusLG,
+      boxShadow,
+      pointerEvents: 'all'
+    },
+    [`${componentCls}-success > ${iconCls}`]: {
+      color: colorSuccess
+    },
+    [`${componentCls}-error > ${iconCls}`]: {
+      color: colorError
+    },
+    [`${componentCls}-warning > ${iconCls}`]: {
+      color: colorWarning
+    },
+    [`${componentCls}-info > ${iconCls},
+      ${componentCls}-loading > ${iconCls}`]: {
+      color: colorInfo
+    }
+  };
+  return [
+  // ============================ Holder ============================
+  {
+    [componentCls]: Object.assign(Object.assign({}, (0,_style__WEBPACK_IMPORTED_MODULE_1__.resetComponent)(token)), {
+      color: colorText,
+      position: 'fixed',
+      top: marginXS,
+      width: '100%',
+      pointerEvents: 'none',
+      zIndex: zIndexPopup,
+      [`${componentCls}-move-up`]: {
+        animationFillMode: 'forwards'
+      },
+      [`
+        ${componentCls}-move-up-appear,
+        ${componentCls}-move-up-enter
+      `]: {
+        animationName: messageMoveIn,
+        animationDuration: motionDurationSlow,
+        animationPlayState: 'paused',
+        animationTimingFunction: motionEaseInOutCirc
+      },
+      [`
+        ${componentCls}-move-up-appear${componentCls}-move-up-appear-active,
+        ${componentCls}-move-up-enter${componentCls}-move-up-enter-active
+      `]: {
+        animationPlayState: 'running'
+      },
+      [`${componentCls}-move-up-leave`]: {
+        animationName: messageMoveOut,
+        animationDuration: motionDurationSlow,
+        animationPlayState: 'paused',
+        animationTimingFunction: motionEaseInOutCirc
+      },
+      [`${componentCls}-move-up-leave${componentCls}-move-up-leave-active`]: {
+        animationPlayState: 'running'
+      },
+      '&-rtl': {
+        direction: 'rtl',
+        span: {
+          direction: 'rtl'
+        }
+      }
+    })
+  },
+  // ============================ Notice ============================
+  {
+    [componentCls]: {
+      [`${noticeCls}-wrapper`]: Object.assign({}, noticeStyle)
+    }
+  },
+  // ============================= Pure =============================
+  {
+    [`${componentCls}-notice-pure-panel`]: Object.assign(Object.assign({}, noticeStyle), {
+      padding: 0,
+      textAlign: 'start'
+    })
+  }];
+};
+// ============================== Export ==============================
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_theme_internal__WEBPACK_IMPORTED_MODULE_2__["default"])('Message', token => {
+  // Gen-style functions here
+  const combinedToken = (0,_theme_internal__WEBPACK_IMPORTED_MODULE_3__.merge)(token, {
+    height: 150
+  });
+  return [genMessageStyle(combinedToken)];
+}, token => ({
+  zIndexPopup: token.zIndexPopupBase + _util_hooks_useZIndex__WEBPACK_IMPORTED_MODULE_4__.CONTAINER_MAX_OFFSET + 10,
+  contentBg: token.colorBgElevated,
+  contentPadding: `${(token.controlHeightLG - token.fontSize * token.lineHeight) / 2}px ${token.paddingSM}px`
+})));
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/message/useMessage.js":
+/*!****************************************************!*\
+  !*** ./node_modules/antd/es/message/useMessage.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ useMessage),
+/* harmony export */   useInternalMessage: () => (/* binding */ useInternalMessage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ant_design_icons_es_icons_CloseOutlined__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ant-design/icons/es/icons/CloseOutlined */ "./node_modules/@ant-design/icons/es/icons/CloseOutlined.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var rc_notification__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rc-notification */ "./node_modules/rc-notification/es/index.js");
+/* harmony import */ var _util_warning__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../_util/warning */ "./node_modules/antd/es/_util/warning.js");
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config-provider */ "./node_modules/antd/es/config-provider/context.js");
+/* harmony import */ var _PurePanel__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./PurePanel */ "./node_modules/antd/es/message/PurePanel.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style */ "./node_modules/antd/es/message/style/index.js");
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./util */ "./node_modules/antd/es/message/util.js");
+"use client";
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+
+
+
+const DEFAULT_OFFSET = 8;
+const DEFAULT_DURATION = 3;
+const Wrapper = _ref => {
+  let {
+    children,
+    prefixCls
+  } = _ref;
+  const [, hashId] = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])(prefixCls);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(rc_notification__WEBPACK_IMPORTED_MODULE_2__.NotificationProvider, {
+    classNames: {
+      list: hashId,
+      notice: hashId
+    }
+  }, children);
+};
+const renderNotifications = (node, _ref2) => {
+  let {
+    prefixCls,
+    key
+  } = _ref2;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Wrapper, {
+    prefixCls: prefixCls,
+    key: key
+  }, node);
+};
+const Holder = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((props, ref) => {
+  const {
+    top,
+    prefixCls: staticPrefixCls,
+    getContainer: staticGetContainer,
+    maxCount,
+    duration = DEFAULT_DURATION,
+    rtl,
+    transitionName,
+    onAllRemoved
+  } = props;
+  const {
+    getPrefixCls,
+    getPopupContainer,
+    message
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_config_provider__WEBPACK_IMPORTED_MODULE_4__.ConfigContext);
+  const prefixCls = staticPrefixCls || getPrefixCls('message');
+  // =============================== Style ===============================
+  const getStyle = () => ({
+    left: '50%',
+    transform: 'translateX(-50%)',
+    top: top !== null && top !== void 0 ? top : DEFAULT_OFFSET
+  });
+  const getClassName = () => classnames__WEBPACK_IMPORTED_MODULE_1___default()({
+    [`${prefixCls}-rtl`]: rtl
+  });
+  // ============================== Motion ===============================
+  const getNotificationMotion = () => (0,_util__WEBPACK_IMPORTED_MODULE_5__.getMotion)(prefixCls, transitionName);
+  // ============================ Close Icon =============================
+  const mergedCloseIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: `${prefixCls}-close-x`
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ant_design_icons_es_icons_CloseOutlined__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: `${prefixCls}-close-icon`
+  }));
+  // ============================== Origin ===============================
+  const [api, holder] = (0,rc_notification__WEBPACK_IMPORTED_MODULE_2__.useNotification)({
+    prefixCls,
+    style: getStyle,
+    className: getClassName,
+    motion: getNotificationMotion,
+    closable: false,
+    closeIcon: mergedCloseIcon,
+    duration,
+    getContainer: () => (staticGetContainer === null || staticGetContainer === void 0 ? void 0 : staticGetContainer()) || (getPopupContainer === null || getPopupContainer === void 0 ? void 0 : getPopupContainer()) || document.body,
+    maxCount,
+    onAllRemoved,
+    renderNotifications
+  });
+  // ================================ Ref ================================
+  react__WEBPACK_IMPORTED_MODULE_0__.useImperativeHandle(ref, () => Object.assign(Object.assign({}, api), {
+    prefixCls,
+    message
+  }));
+  return holder;
+});
+// ==============================================================================
+// ==                                   Hook                                   ==
+// ==============================================================================
+let keyIndex = 0;
+function useInternalMessage(messageConfig) {
+  const holderRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+  const warning = (0,_util_warning__WEBPACK_IMPORTED_MODULE_7__.devUseWarning)('Message');
+  // ================================ API ================================
+  const wrapAPI = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    // Wrap with notification content
+    // >>> close
+    const close = key => {
+      var _a;
+      (_a = holderRef.current) === null || _a === void 0 ? void 0 : _a.close(key);
+    };
+    // >>> Open
+    const open = config => {
+      if (!holderRef.current) {
+         true ? warning(false, 'usage', 'You are calling notice in render which will break in React 18 concurrent mode. Please trigger in effect instead.') : 0;
+        const fakeResult = () => {};
+        fakeResult.then = () => {};
+        return fakeResult;
+      }
+      const {
+        open: originOpen,
+        prefixCls,
+        message
+      } = holderRef.current;
+      const noticePrefixCls = `${prefixCls}-notice`;
+      const {
+          content,
+          icon,
+          type,
+          key,
+          className,
+          style,
+          onClose
+        } = config,
+        restConfig = __rest(config, ["content", "icon", "type", "key", "className", "style", "onClose"]);
+      let mergedKey = key;
+      if (mergedKey === undefined || mergedKey === null) {
+        keyIndex += 1;
+        mergedKey = `antd-message-${keyIndex}`;
+      }
+      return (0,_util__WEBPACK_IMPORTED_MODULE_5__.wrapPromiseFn)(resolve => {
+        originOpen(Object.assign(Object.assign({}, restConfig), {
+          key: mergedKey,
+          content: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_PurePanel__WEBPACK_IMPORTED_MODULE_8__.PureContent, {
+            prefixCls: prefixCls,
+            type: type,
+            icon: icon
+          }, content),
+          placement: 'top',
+          className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(type && `${noticePrefixCls}-${type}`, className, message === null || message === void 0 ? void 0 : message.className),
+          style: Object.assign(Object.assign({}, message === null || message === void 0 ? void 0 : message.style), style),
+          onClose: () => {
+            onClose === null || onClose === void 0 ? void 0 : onClose();
+            resolve();
+          }
+        }));
+        // Return close function
+        return () => {
+          close(mergedKey);
+        };
+      });
+    };
+    // >>> destroy
+    const destroy = key => {
+      var _a;
+      if (key !== undefined) {
+        close(key);
+      } else {
+        (_a = holderRef.current) === null || _a === void 0 ? void 0 : _a.destroy();
+      }
+    };
+    const clone = {
+      open,
+      destroy
+    };
+    const keys = ['info', 'success', 'warning', 'error', 'loading'];
+    keys.forEach(type => {
+      const typeOpen = (jointContent, duration, onClose) => {
+        let config;
+        if (jointContent && typeof jointContent === 'object' && 'content' in jointContent) {
+          config = jointContent;
+        } else {
+          config = {
+            content: jointContent
+          };
+        }
+        // Params
+        let mergedDuration;
+        let mergedOnClose;
+        if (typeof duration === 'function') {
+          mergedOnClose = duration;
+        } else {
+          mergedDuration = duration;
+          mergedOnClose = onClose;
+        }
+        const mergedConfig = Object.assign(Object.assign({
+          onClose: mergedOnClose,
+          duration: mergedDuration
+        }, config), {
+          type
+        });
+        return open(mergedConfig);
+      };
+      clone[type] = typeOpen;
+    });
+    return clone;
+  }, []);
+  // ============================== Return ===============================
+  return [wrapAPI, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Holder, Object.assign({
+    key: "message-holder"
+  }, messageConfig, {
+    ref: holderRef
+  }))];
+}
+function useMessage(messageConfig) {
+  return useInternalMessage(messageConfig);
+}
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/message/util.js":
+/*!**********************************************!*\
+  !*** ./node_modules/antd/es/message/util.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getMotion: () => (/* binding */ getMotion),
+/* harmony export */   wrapPromiseFn: () => (/* binding */ wrapPromiseFn)
+/* harmony export */ });
+function getMotion(prefixCls, transitionName) {
+  return {
+    motionName: transitionName !== null && transitionName !== void 0 ? transitionName : `${prefixCls}-move-up`
+  };
+}
+/** Wrap message open with promise like function */
+function wrapPromiseFn(openFn) {
+  let closeFn;
+  const closePromise = new Promise(resolve => {
+    closeFn = openFn(() => {
+      resolve(true);
+    });
+  });
+  const result = () => {
+    closeFn === null || closeFn === void 0 ? void 0 : closeFn();
+  };
+  result.then = (filled, rejected) => closePromise.then(filled, rejected);
+  result.promise = closePromise;
+  return result;
+}
 
 /***/ }),
 
@@ -33938,6 +35048,1540 @@ const SwitcherIconCom = props => {
 
 /***/ }),
 
+/***/ "./node_modules/antd/es/typography/Base/Ellipsis.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/antd/es/typography/Base/Ellipsis.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rc-util/es/Children/toArray */ "./node_modules/rc-util/es/Children/toArray.js");
+/* harmony import */ var rc_util_es_hooks_useLayoutEffect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rc-util/es/hooks/useLayoutEffect */ "./node_modules/rc-util/es/hooks/useLayoutEffect.js");
+"use client";
+
+
+
+
+function cuttable(node) {
+  const type = typeof node;
+  return type === 'string' || type === 'number';
+}
+function getNodesLen(nodeList) {
+  let totalLen = 0;
+  nodeList.forEach(node => {
+    if (cuttable(node)) {
+      totalLen += String(node).length;
+    } else {
+      totalLen += 1;
+    }
+  });
+  return totalLen;
+}
+function sliceNodes(nodeList, len) {
+  let currLen = 0;
+  const currentNodeList = [];
+  for (let i = 0; i < nodeList.length; i += 1) {
+    // Match to return
+    if (currLen === len) {
+      return currentNodeList;
+    }
+    const node = nodeList[i];
+    const canCut = cuttable(node);
+    const nodeLen = canCut ? String(node).length : 1;
+    const nextLen = currLen + nodeLen;
+    // Exceed but current not which means we need cut this
+    // This will not happen on validate ReactElement
+    if (nextLen > len) {
+      const restLen = len - currLen;
+      currentNodeList.push(String(node).slice(0, restLen));
+      return currentNodeList;
+    }
+    currentNodeList.push(node);
+    currLen = nextLen;
+  }
+  return nodeList;
+}
+const NONE = 0;
+const PREPARE = 1;
+const WALKING = 2;
+const DONE_WITH_ELLIPSIS = 3;
+const DONE_WITHOUT_ELLIPSIS = 4;
+const Ellipsis = _ref => {
+  let {
+    enabledMeasure,
+    children,
+    text,
+    width,
+    fontSize,
+    rows,
+    onEllipsis
+  } = _ref;
+  const [[startLen, midLen, endLen], setCutLength] = react__WEBPACK_IMPORTED_MODULE_0__.useState([0, 0, 0]);
+  // record last done with ellipsis width
+  const [lastLen, setLastLen] = react__WEBPACK_IMPORTED_MODULE_0__.useState(0);
+  const [walkingState, setWalkingState] = react__WEBPACK_IMPORTED_MODULE_0__.useState(NONE);
+  const [singleRowHeight, setSingleRowHeight] = react__WEBPACK_IMPORTED_MODULE_0__.useState(0);
+  const singleRowRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+  const midRowRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+  const nodeList = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => (0,rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_1__["default"])(text), [text]);
+  const totalLen = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => getNodesLen(nodeList), [nodeList]);
+  const mergedChildren = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    if (!enabledMeasure || walkingState !== DONE_WITH_ELLIPSIS) {
+      // if has lastLen, use it as temporary width to avoid lots of text to squeeze space.
+      if (lastLen && walkingState !== DONE_WITHOUT_ELLIPSIS && enabledMeasure) return children(sliceNodes(nodeList, lastLen), lastLen < totalLen);
+      return children(nodeList, false);
+    }
+    return children(sliceNodes(nodeList, midLen), midLen < totalLen);
+  }, [enabledMeasure, walkingState, children, nodeList, midLen, totalLen]);
+  // ======================== Walk ========================
+  (0,rc_util_es_hooks_useLayoutEffect__WEBPACK_IMPORTED_MODULE_2__["default"])(() => {
+    if (enabledMeasure && width && fontSize && totalLen) {
+      setWalkingState(PREPARE);
+      setCutLength([0, Math.ceil(totalLen / 2), totalLen]);
+    }
+  }, [enabledMeasure, width, fontSize, text, totalLen, rows]);
+  (0,rc_util_es_hooks_useLayoutEffect__WEBPACK_IMPORTED_MODULE_2__["default"])(() => {
+    var _a;
+    if (walkingState === PREPARE) {
+      setSingleRowHeight(((_a = singleRowRef.current) === null || _a === void 0 ? void 0 : _a.offsetHeight) || 0);
+    }
+  }, [walkingState]);
+  (0,rc_util_es_hooks_useLayoutEffect__WEBPACK_IMPORTED_MODULE_2__["default"])(() => {
+    var _a, _b;
+    if (singleRowHeight) {
+      if (walkingState === PREPARE) {
+        // Ignore if position is enough
+        const midHeight = ((_a = midRowRef.current) === null || _a === void 0 ? void 0 : _a.offsetHeight) || 0;
+        const maxHeight = rows * singleRowHeight;
+        if (midHeight <= maxHeight) {
+          setWalkingState(DONE_WITHOUT_ELLIPSIS);
+          onEllipsis(false);
+        } else {
+          setWalkingState(WALKING);
+        }
+      } else if (walkingState === WALKING) {
+        if (startLen !== endLen) {
+          const midHeight = ((_b = midRowRef.current) === null || _b === void 0 ? void 0 : _b.offsetHeight) || 0;
+          const maxHeight = rows * singleRowHeight;
+          let nextStartLen = startLen;
+          let nextEndLen = endLen;
+          // We reach the last round
+          if (startLen === endLen - 1) {
+            nextEndLen = startLen;
+          } else if (midHeight <= maxHeight) {
+            nextStartLen = midLen;
+          } else {
+            nextEndLen = midLen;
+          }
+          const nextMidLen = Math.ceil((nextStartLen + nextEndLen) / 2);
+          setCutLength([nextStartLen, nextMidLen, nextEndLen]);
+        } else {
+          setWalkingState(DONE_WITH_ELLIPSIS);
+          setLastLen(midLen);
+          onEllipsis(true);
+        }
+      }
+    }
+  }, [walkingState, startLen, endLen, rows, singleRowHeight]);
+  // ======================= Render =======================
+  const measureStyle = {
+    width,
+    whiteSpace: 'normal',
+    margin: 0,
+    padding: 0
+  };
+  const renderMeasure = (content, ref, style) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    "aria-hidden": true,
+    ref: ref,
+    style: Object.assign({
+      position: 'fixed',
+      display: 'block',
+      left: 0,
+      top: 0,
+      zIndex: -9999,
+      visibility: 'hidden',
+      pointerEvents: 'none',
+      fontSize: Math.ceil(fontSize / 2) * 2
+    }, style)
+  }, content);
+  const renderMeasureSlice = (len, ref) => {
+    const sliceNodeList = sliceNodes(nodeList, len);
+    return renderMeasure(children(sliceNodeList, true), ref, measureStyle);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, mergedChildren, enabledMeasure && walkingState !== DONE_WITH_ELLIPSIS && walkingState !== DONE_WITHOUT_ELLIPSIS && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, renderMeasure('lg', singleRowRef, {
+    wordBreak: 'keep-all',
+    whiteSpace: 'nowrap'
+  }), walkingState === PREPARE ? renderMeasure(children(nodeList, false), midRowRef, measureStyle) : renderMeasureSlice(midLen, midRowRef)));
+};
+if (true) {
+  Ellipsis.displayName = 'Ellipsis';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Ellipsis);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/Base/EllipsisTooltip.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/antd/es/typography/Base/EllipsisTooltip.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _tooltip__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../tooltip */ "./node_modules/antd/es/tooltip/index.js");
+"use client";
+
+
+
+const EllipsisTooltip = _ref => {
+  let {
+    enabledEllipsis,
+    isEllipsis,
+    children,
+    tooltipProps
+  } = _ref;
+  if (!(tooltipProps === null || tooltipProps === void 0 ? void 0 : tooltipProps.title) || !enabledEllipsis) {
+    return children;
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_tooltip__WEBPACK_IMPORTED_MODULE_1__["default"], Object.assign({
+    open: isEllipsis ? undefined : false
+  }, tooltipProps), children);
+};
+if (true) {
+  EllipsisTooltip.displayName = 'EllipsisTooltip';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EllipsisTooltip);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/Base/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/antd/es/typography/Base/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ant_design_icons_es_icons_CheckOutlined__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @ant-design/icons/es/icons/CheckOutlined */ "./node_modules/@ant-design/icons/es/icons/CheckOutlined.js");
+/* harmony import */ var _ant_design_icons_es_icons_CopyOutlined__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @ant-design/icons/es/icons/CopyOutlined */ "./node_modules/@ant-design/icons/es/icons/CopyOutlined.js");
+/* harmony import */ var _ant_design_icons_es_icons_EditOutlined__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @ant-design/icons/es/icons/EditOutlined */ "./node_modules/@ant-design/icons/es/icons/EditOutlined.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var copy_to_clipboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! copy-to-clipboard */ "./node_modules/copy-to-clipboard/index.js");
+/* harmony import */ var copy_to_clipboard__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(copy_to_clipboard__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var rc_resize_observer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rc-resize-observer */ "./node_modules/rc-resize-observer/es/index.js");
+/* harmony import */ var rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rc-util/es/Children/toArray */ "./node_modules/rc-util/es/Children/toArray.js");
+/* harmony import */ var rc_util_es_hooks_useLayoutEffect__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rc-util/es/hooks/useLayoutEffect */ "./node_modules/rc-util/es/hooks/useLayoutEffect.js");
+/* harmony import */ var rc_util_es_hooks_useMergedState__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rc-util/es/hooks/useMergedState */ "./node_modules/rc-util/es/hooks/useMergedState.js");
+/* harmony import */ var rc_util_es_omit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rc-util/es/omit */ "./node_modules/rc-util/es/omit.js");
+/* harmony import */ var rc_util_es_ref__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rc-util/es/ref */ "./node_modules/rc-util/es/ref.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _util_styleChecker__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../_util/styleChecker */ "./node_modules/rc-util/es/Dom/styleChecker.js");
+/* harmony import */ var _util_transButton__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../_util/transButton */ "./node_modules/antd/es/_util/transButton.js");
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../config-provider */ "./node_modules/antd/es/config-provider/context.js");
+/* harmony import */ var _locale_useLocale__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../locale/useLocale */ "./node_modules/antd/es/locale/useLocale.js");
+/* harmony import */ var _tooltip__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../tooltip */ "./node_modules/antd/es/tooltip/index.js");
+/* harmony import */ var _Editable__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../Editable */ "./node_modules/antd/es/typography/Editable.js");
+/* harmony import */ var _Typography__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../Typography */ "./node_modules/antd/es/typography/Typography.js");
+/* harmony import */ var _hooks_useMergedConfig__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../hooks/useMergedConfig */ "./node_modules/antd/es/typography/hooks/useMergedConfig.js");
+/* harmony import */ var _hooks_useUpdatedEffect__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../hooks/useUpdatedEffect */ "./node_modules/antd/es/typography/hooks/useUpdatedEffect.js");
+/* harmony import */ var _Ellipsis__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./Ellipsis */ "./node_modules/antd/es/typography/Base/Ellipsis.js");
+/* harmony import */ var _EllipsisTooltip__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./EllipsisTooltip */ "./node_modules/antd/es/typography/Base/EllipsisTooltip.js");
+"use client";
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function wrapperDecorations(_ref, content) {
+  let {
+    mark,
+    code,
+    underline,
+    delete: del,
+    strong,
+    keyboard,
+    italic
+  } = _ref;
+  let currentContent = content;
+  function wrap(tag, needed) {
+    if (!needed) {
+      return;
+    }
+    currentContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(tag, {}, currentContent);
+  }
+  wrap('strong', strong);
+  wrap('u', underline);
+  wrap('del', del);
+  wrap('code', code);
+  wrap('mark', mark);
+  wrap('kbd', keyboard);
+  wrap('i', italic);
+  return currentContent;
+}
+function getNode(dom, defaultNode, needDom) {
+  if (dom === true || dom === undefined) {
+    return defaultNode;
+  }
+  return dom || needDom && defaultNode;
+}
+function toList(val) {
+  if (val === false) {
+    return [false, false];
+  }
+  return Array.isArray(val) ? val : [val];
+}
+const ELLIPSIS_STR = '...';
+const Base = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.forwardRef((props, ref) => {
+  var _a, _b, _c;
+  const {
+      prefixCls: customizePrefixCls,
+      className,
+      style,
+      type,
+      disabled,
+      children,
+      ellipsis,
+      editable,
+      copyable,
+      component,
+      title
+    } = props,
+    restProps = __rest(props, ["prefixCls", "className", "style", "type", "disabled", "children", "ellipsis", "editable", "copyable", "component", "title"]);
+  const {
+    getPrefixCls,
+    direction
+  } = react__WEBPACK_IMPORTED_MODULE_8__.useContext(_config_provider__WEBPACK_IMPORTED_MODULE_9__.ConfigContext);
+  const [textLocale] = (0,_locale_useLocale__WEBPACK_IMPORTED_MODULE_10__["default"])('Text');
+  const typographyRef = react__WEBPACK_IMPORTED_MODULE_8__.useRef(null);
+  const editIconRef = react__WEBPACK_IMPORTED_MODULE_8__.useRef(null);
+  // ============================ MISC ============================
+  const prefixCls = getPrefixCls('typography', customizePrefixCls);
+  const textProps = (0,rc_util_es_omit__WEBPACK_IMPORTED_MODULE_6__["default"])(restProps, ['mark', 'code', 'delete', 'underline', 'strong', 'keyboard', 'italic']);
+  // ========================== Editable ==========================
+  const [enableEdit, editConfig] = (0,_hooks_useMergedConfig__WEBPACK_IMPORTED_MODULE_11__["default"])(editable);
+  const [editing, setEditing] = (0,rc_util_es_hooks_useMergedState__WEBPACK_IMPORTED_MODULE_5__["default"])(false, {
+    value: editConfig.editing
+  });
+  const {
+    triggerType = ['icon']
+  } = editConfig;
+  const triggerEdit = edit => {
+    var _a;
+    if (edit) {
+      (_a = editConfig.onStart) === null || _a === void 0 ? void 0 : _a.call(editConfig);
+    }
+    setEditing(edit);
+  };
+  // Focus edit icon when back
+  (0,_hooks_useUpdatedEffect__WEBPACK_IMPORTED_MODULE_12__["default"])(() => {
+    var _a;
+    if (!editing) {
+      (_a = editIconRef.current) === null || _a === void 0 ? void 0 : _a.focus();
+    }
+  }, [editing]);
+  const onEditClick = e => {
+    e === null || e === void 0 ? void 0 : e.preventDefault();
+    triggerEdit(true);
+  };
+  const onEditChange = value => {
+    var _a;
+    (_a = editConfig.onChange) === null || _a === void 0 ? void 0 : _a.call(editConfig, value);
+    triggerEdit(false);
+  };
+  const onEditCancel = () => {
+    var _a;
+    (_a = editConfig.onCancel) === null || _a === void 0 ? void 0 : _a.call(editConfig);
+    triggerEdit(false);
+  };
+  // ========================== Copyable ==========================
+  const [enableCopy, copyConfig] = (0,_hooks_useMergedConfig__WEBPACK_IMPORTED_MODULE_11__["default"])(copyable);
+  const [copied, setCopied] = react__WEBPACK_IMPORTED_MODULE_8__.useState(false);
+  const copyIdRef = react__WEBPACK_IMPORTED_MODULE_8__.useRef(null);
+  const copyOptions = {};
+  if (copyConfig.format) {
+    copyOptions.format = copyConfig.format;
+  }
+  const cleanCopyId = () => {
+    if (copyIdRef.current) {
+      clearTimeout(copyIdRef.current);
+    }
+  };
+  const onCopyClick = e => {
+    var _a;
+    e === null || e === void 0 ? void 0 : e.preventDefault();
+    e === null || e === void 0 ? void 0 : e.stopPropagation();
+    copy_to_clipboard__WEBPACK_IMPORTED_MODULE_1___default()(copyConfig.text || String(children) || '', copyOptions);
+    setCopied(true);
+    // Trigger tips update
+    cleanCopyId();
+    copyIdRef.current = setTimeout(() => {
+      setCopied(false);
+    }, 3000);
+    (_a = copyConfig.onCopy) === null || _a === void 0 ? void 0 : _a.call(copyConfig, e);
+  };
+  react__WEBPACK_IMPORTED_MODULE_8__.useEffect(() => cleanCopyId, []);
+  // ========================== Ellipsis ==========================
+  const [isLineClampSupport, setIsLineClampSupport] = react__WEBPACK_IMPORTED_MODULE_8__.useState(false);
+  const [isTextOverflowSupport, setIsTextOverflowSupport] = react__WEBPACK_IMPORTED_MODULE_8__.useState(false);
+  const [expanded, setExpanded] = react__WEBPACK_IMPORTED_MODULE_8__.useState(false);
+  const [isJsEllipsis, setIsJsEllipsis] = react__WEBPACK_IMPORTED_MODULE_8__.useState(false);
+  const [isNativeEllipsis, setIsNativeEllipsis] = react__WEBPACK_IMPORTED_MODULE_8__.useState(false);
+  const [isNativeVisible, setIsNativeVisible] = react__WEBPACK_IMPORTED_MODULE_8__.useState(true);
+  const [enableEllipsis, ellipsisConfig] = (0,_hooks_useMergedConfig__WEBPACK_IMPORTED_MODULE_11__["default"])(ellipsis, {
+    expandable: false
+  });
+  const mergedEnableEllipsis = enableEllipsis && !expanded;
+  // Shared prop to reduce bundle size
+  const {
+    rows = 1
+  } = ellipsisConfig;
+  const needMeasureEllipsis = react__WEBPACK_IMPORTED_MODULE_8__.useMemo(() =>
+  // Disable ellipsis
+  !mergedEnableEllipsis ||
+  // Provide suffix
+  ellipsisConfig.suffix !== undefined || ellipsisConfig.onEllipsis ||
+  // Can't use css ellipsis since we need to provide the place for button
+  ellipsisConfig.expandable || enableEdit || enableCopy, [mergedEnableEllipsis, ellipsisConfig, enableEdit, enableCopy]);
+  (0,rc_util_es_hooks_useLayoutEffect__WEBPACK_IMPORTED_MODULE_4__["default"])(() => {
+    if (enableEllipsis && !needMeasureEllipsis) {
+      setIsLineClampSupport((0,_util_styleChecker__WEBPACK_IMPORTED_MODULE_13__.isStyleSupport)('webkitLineClamp'));
+      setIsTextOverflowSupport((0,_util_styleChecker__WEBPACK_IMPORTED_MODULE_13__.isStyleSupport)('textOverflow'));
+    }
+  }, [needMeasureEllipsis, enableEllipsis]);
+  const cssEllipsis = react__WEBPACK_IMPORTED_MODULE_8__.useMemo(() => {
+    if (needMeasureEllipsis) {
+      return false;
+    }
+    if (rows === 1) {
+      return isTextOverflowSupport;
+    }
+    return isLineClampSupport;
+  }, [needMeasureEllipsis, isTextOverflowSupport, isLineClampSupport]);
+  const isMergedEllipsis = mergedEnableEllipsis && (cssEllipsis ? isNativeEllipsis : isJsEllipsis);
+  const cssTextOverflow = mergedEnableEllipsis && rows === 1 && cssEllipsis;
+  const cssLineClamp = mergedEnableEllipsis && rows > 1 && cssEllipsis;
+  // >>>>> Expand
+  const onExpandClick = e => {
+    var _a;
+    setExpanded(true);
+    (_a = ellipsisConfig.onExpand) === null || _a === void 0 ? void 0 : _a.call(ellipsisConfig, e);
+  };
+  const [ellipsisWidth, setEllipsisWidth] = react__WEBPACK_IMPORTED_MODULE_8__.useState(0);
+  const [ellipsisFontSize, setEllipsisFontSize] = react__WEBPACK_IMPORTED_MODULE_8__.useState(0);
+  const onResize = (_ref2, element) => {
+    let {
+      offsetWidth
+    } = _ref2;
+    var _a;
+    setEllipsisWidth(offsetWidth);
+    setEllipsisFontSize(parseInt((_a = window.getComputedStyle) === null || _a === void 0 ? void 0 : _a.call(window, element).fontSize, 10) || 0);
+  };
+  // >>>>> JS Ellipsis
+  const onJsEllipsis = jsEllipsis => {
+    var _a;
+    setIsJsEllipsis(jsEllipsis);
+    // Trigger if changed
+    if (isJsEllipsis !== jsEllipsis) {
+      (_a = ellipsisConfig.onEllipsis) === null || _a === void 0 ? void 0 : _a.call(ellipsisConfig, jsEllipsis);
+    }
+  };
+  // >>>>> Native ellipsis
+  react__WEBPACK_IMPORTED_MODULE_8__.useEffect(() => {
+    const textEle = typographyRef.current;
+    if (enableEllipsis && cssEllipsis && textEle) {
+      const currentEllipsis = cssLineClamp ? textEle.offsetHeight < textEle.scrollHeight : textEle.offsetWidth < textEle.scrollWidth;
+      if (isNativeEllipsis !== currentEllipsis) {
+        setIsNativeEllipsis(currentEllipsis);
+      }
+    }
+  }, [enableEllipsis, cssEllipsis, children, cssLineClamp, isNativeVisible]);
+  // https://github.com/ant-design/ant-design/issues/36786
+  // Use IntersectionObserver to check if element is invisible
+  react__WEBPACK_IMPORTED_MODULE_8__.useEffect(() => {
+    const textEle = typographyRef.current;
+    if (typeof IntersectionObserver === 'undefined' || !textEle || !cssEllipsis || !mergedEnableEllipsis) {
+      return;
+    }
+    /* eslint-disable-next-line compat/compat */
+    const observer = new IntersectionObserver(() => {
+      setIsNativeVisible(!!textEle.offsetParent);
+    });
+    observer.observe(textEle);
+    return () => {
+      observer.disconnect();
+    };
+  }, [cssEllipsis, mergedEnableEllipsis]);
+  // ========================== Tooltip ===========================
+  let tooltipProps = {};
+  if (ellipsisConfig.tooltip === true) {
+    tooltipProps = {
+      title: (_a = editConfig.text) !== null && _a !== void 0 ? _a : children
+    };
+  } else if ( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.isValidElement(ellipsisConfig.tooltip)) {
+    tooltipProps = {
+      title: ellipsisConfig.tooltip
+    };
+  } else if (typeof ellipsisConfig.tooltip === 'object') {
+    tooltipProps = Object.assign({
+      title: (_b = editConfig.text) !== null && _b !== void 0 ? _b : children
+    }, ellipsisConfig.tooltip);
+  } else {
+    tooltipProps = {
+      title: ellipsisConfig.tooltip
+    };
+  }
+  const topAriaLabel = react__WEBPACK_IMPORTED_MODULE_8__.useMemo(() => {
+    const isValid = val => ['string', 'number'].includes(typeof val);
+    if (!enableEllipsis || cssEllipsis) {
+      return undefined;
+    }
+    if (isValid(editConfig.text)) {
+      return editConfig.text;
+    }
+    if (isValid(children)) {
+      return children;
+    }
+    if (isValid(title)) {
+      return title;
+    }
+    if (isValid(tooltipProps.title)) {
+      return tooltipProps.title;
+    }
+    return undefined;
+  }, [enableEllipsis, cssEllipsis, title, tooltipProps.title, isMergedEllipsis]);
+  // =========================== Render ===========================
+  // >>>>>>>>>>> Editing input
+  if (editing) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_Editable__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      value: (_c = editConfig.text) !== null && _c !== void 0 ? _c : typeof children === 'string' ? children : '',
+      onSave: onEditChange,
+      onCancel: onEditCancel,
+      onEnd: editConfig.onEnd,
+      prefixCls: prefixCls,
+      className: className,
+      style: style,
+      direction: direction,
+      component: component,
+      maxLength: editConfig.maxLength,
+      autoSize: editConfig.autoSize,
+      enterIcon: editConfig.enterIcon
+    });
+  }
+  // >>>>>>>>>>> Typography
+  // Expand
+  const renderExpand = () => {
+    const {
+      expandable,
+      symbol
+    } = ellipsisConfig;
+    if (!expandable) return null;
+    let expandContent;
+    if (symbol) {
+      expandContent = symbol;
+    } else {
+      expandContent = textLocale === null || textLocale === void 0 ? void 0 : textLocale.expand;
+    }
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement("a", {
+      key: "expand",
+      className: `${prefixCls}-expand`,
+      onClick: onExpandClick,
+      "aria-label": textLocale === null || textLocale === void 0 ? void 0 : textLocale.expand
+    }, expandContent);
+  };
+  // Edit
+  const renderEdit = () => {
+    if (!enableEdit) return;
+    const {
+      icon,
+      tooltip
+    } = editConfig;
+    const editTitle = (0,rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_3__["default"])(tooltip)[0] || (textLocale === null || textLocale === void 0 ? void 0 : textLocale.edit);
+    const ariaLabel = typeof editTitle === 'string' ? editTitle : '';
+    return triggerType.includes('icon') ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_tooltip__WEBPACK_IMPORTED_MODULE_15__["default"], {
+      key: "edit",
+      title: tooltip === false ? '' : editTitle
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_util_transButton__WEBPACK_IMPORTED_MODULE_16__["default"], {
+      ref: editIconRef,
+      className: `${prefixCls}-edit`,
+      onClick: onEditClick,
+      "aria-label": ariaLabel
+    }, icon || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_ant_design_icons_es_icons_EditOutlined__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      role: "button"
+    }))) : null;
+  };
+  // Copy
+  const renderCopy = () => {
+    if (!enableCopy) return;
+    const {
+      tooltips,
+      icon
+    } = copyConfig;
+    const tooltipNodes = toList(tooltips);
+    const iconNodes = toList(icon);
+    const copyTitle = copied ? getNode(tooltipNodes[1], textLocale === null || textLocale === void 0 ? void 0 : textLocale.copied) : getNode(tooltipNodes[0], textLocale === null || textLocale === void 0 ? void 0 : textLocale.copy);
+    const systemStr = copied ? textLocale === null || textLocale === void 0 ? void 0 : textLocale.copied : textLocale === null || textLocale === void 0 ? void 0 : textLocale.copy;
+    const ariaLabel = typeof copyTitle === 'string' ? copyTitle : systemStr;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_tooltip__WEBPACK_IMPORTED_MODULE_15__["default"], {
+      key: "copy",
+      title: copyTitle
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_util_transButton__WEBPACK_IMPORTED_MODULE_16__["default"], {
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(`${prefixCls}-copy`, copied && `${prefixCls}-copy-success`),
+      onClick: onCopyClick,
+      "aria-label": ariaLabel
+    }, copied ? getNode(iconNodes[1], /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_ant_design_icons_es_icons_CheckOutlined__WEBPACK_IMPORTED_MODULE_18__["default"], null), true) : getNode(iconNodes[0], /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_ant_design_icons_es_icons_CopyOutlined__WEBPACK_IMPORTED_MODULE_19__["default"], null), true)));
+  };
+  const renderOperations = renderExpanded => [renderExpanded && renderExpand(), renderEdit(), renderCopy()];
+  const renderEllipsis = needEllipsis => [needEllipsis && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement("span", {
+    "aria-hidden": true,
+    key: "ellipsis"
+  }, ELLIPSIS_STR), ellipsisConfig.suffix, renderOperations(needEllipsis)];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(rc_resize_observer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    onResize: onResize,
+    disabled: !mergedEnableEllipsis || cssEllipsis
+  }, resizeRef => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_EllipsisTooltip__WEBPACK_IMPORTED_MODULE_20__["default"], {
+    tooltipProps: tooltipProps,
+    enabledEllipsis: mergedEnableEllipsis,
+    isEllipsis: isMergedEllipsis
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_Typography__WEBPACK_IMPORTED_MODULE_21__["default"], Object.assign({
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
+      [`${prefixCls}-${type}`]: type,
+      [`${prefixCls}-disabled`]: disabled,
+      [`${prefixCls}-ellipsis`]: enableEllipsis,
+      [`${prefixCls}-single-line`]: mergedEnableEllipsis && rows === 1,
+      [`${prefixCls}-ellipsis-single-line`]: cssTextOverflow,
+      [`${prefixCls}-ellipsis-multiple-line`]: cssLineClamp
+    }, className),
+    prefixCls: customizePrefixCls,
+    style: Object.assign(Object.assign({}, style), {
+      WebkitLineClamp: cssLineClamp ? rows : undefined
+    }),
+    component: component,
+    ref: (0,rc_util_es_ref__WEBPACK_IMPORTED_MODULE_7__.composeRef)(resizeRef, typographyRef, ref),
+    direction: direction,
+    onClick: triggerType.includes('text') ? onEditClick : undefined,
+    "aria-label": topAriaLabel === null || topAriaLabel === void 0 ? void 0 : topAriaLabel.toString(),
+    title: title
+  }, textProps), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(_Ellipsis__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    enabledMeasure: mergedEnableEllipsis && !cssEllipsis,
+    text: children,
+    rows: rows,
+    width: ellipsisWidth,
+    fontSize: ellipsisFontSize,
+    onEllipsis: onJsEllipsis
+  }, (node, needEllipsis) => {
+    let renderNode = node;
+    if (node.length && needEllipsis && topAriaLabel) {
+      renderNode = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement("span", {
+        key: "show-content",
+        "aria-hidden": true
+      }, renderNode);
+    }
+    const wrappedContext = wrapperDecorations(props, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_8__.createElement(react__WEBPACK_IMPORTED_MODULE_8__.Fragment, null, renderNode, renderEllipsis(needEllipsis)));
+    return wrappedContext;
+  }))));
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Base);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/Editable.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/antd/es/typography/Editable.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ant_design_icons_es_icons_EnterOutlined__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons/es/icons/EnterOutlined */ "./node_modules/@ant-design/icons/es/icons/EnterOutlined.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rc-util/es/KeyCode */ "./node_modules/rc-util/es/KeyCode.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _util_reactNode__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../_util/reactNode */ "./node_modules/antd/es/_util/reactNode.js");
+/* harmony import */ var _input_TextArea__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../input/TextArea */ "./node_modules/antd/es/input/TextArea.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style */ "./node_modules/antd/es/typography/style/index.js");
+"use client";
+
+
+
+
+
+
+
+
+const Editable = props => {
+  const {
+    prefixCls,
+    'aria-label': ariaLabel,
+    className,
+    style,
+    direction,
+    maxLength,
+    autoSize = true,
+    value,
+    onSave,
+    onCancel,
+    onEnd,
+    component,
+    enterIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_ant_design_icons_es_icons_EnterOutlined__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+  } = props;
+  const ref = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
+  const inComposition = react__WEBPACK_IMPORTED_MODULE_2__.useRef(false);
+  const lastKeyCode = react__WEBPACK_IMPORTED_MODULE_2__.useRef();
+  const [current, setCurrent] = react__WEBPACK_IMPORTED_MODULE_2__.useState(value);
+  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
+    setCurrent(value);
+  }, [value]);
+  react__WEBPACK_IMPORTED_MODULE_2__.useEffect(() => {
+    if (ref.current && ref.current.resizableTextArea) {
+      const {
+        textArea
+      } = ref.current.resizableTextArea;
+      textArea.focus();
+      const {
+        length
+      } = textArea.value;
+      textArea.setSelectionRange(length, length);
+    }
+  }, []);
+  const onChange = _ref => {
+    let {
+      target
+    } = _ref;
+    setCurrent(target.value.replace(/[\n\r]/g, ''));
+  };
+  const onCompositionStart = () => {
+    inComposition.current = true;
+  };
+  const onCompositionEnd = () => {
+    inComposition.current = false;
+  };
+  const onKeyDown = _ref2 => {
+    let {
+      keyCode
+    } = _ref2;
+    // We don't record keyCode when IME is using
+    if (inComposition.current) return;
+    lastKeyCode.current = keyCode;
+  };
+  const confirmChange = () => {
+    onSave(current.trim());
+  };
+  const onKeyUp = _ref3 => {
+    let {
+      keyCode,
+      ctrlKey,
+      altKey,
+      metaKey,
+      shiftKey
+    } = _ref3;
+    // Check if it's a real key
+    if (lastKeyCode.current === keyCode && !inComposition.current && !ctrlKey && !altKey && !metaKey && !shiftKey) {
+      if (keyCode === rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_1__["default"].ENTER) {
+        confirmChange();
+        onEnd === null || onEnd === void 0 ? void 0 : onEnd();
+      } else if (keyCode === rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_1__["default"].ESC) {
+        onCancel();
+      }
+    }
+  };
+  const onBlur = () => {
+    confirmChange();
+  };
+  const textClassName = component ? `${prefixCls}-${component}` : '';
+  const [wrapSSR, hashId] = (0,_style__WEBPACK_IMPORTED_MODULE_4__["default"])(prefixCls);
+  const textAreaClassName = classnames__WEBPACK_IMPORTED_MODULE_0___default()(prefixCls, `${prefixCls}-edit-content`, {
+    [`${prefixCls}-rtl`]: direction === 'rtl'
+  }, className, textClassName, hashId);
+  return wrapSSR( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
+    className: textAreaClassName,
+    style: style
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_input_TextArea__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    ref: ref,
+    maxLength: maxLength,
+    value: current,
+    onChange: onChange,
+    onKeyDown: onKeyDown,
+    onKeyUp: onKeyUp,
+    onCompositionStart: onCompositionStart,
+    onCompositionEnd: onCompositionEnd,
+    onBlur: onBlur,
+    "aria-label": ariaLabel,
+    rows: 1,
+    autoSize: autoSize
+  }), enterIcon !== null ? (0,_util_reactNode__WEBPACK_IMPORTED_MODULE_6__.cloneElement)(enterIcon, {
+    className: `${prefixCls}-edit-content-confirm`
+  }) : null));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Editable);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/Link.js":
+/*!*************************************************!*\
+  !*** ./node_modules/antd/es/typography/Link.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _util_warning__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_util/warning */ "./node_modules/antd/es/_util/warning.js");
+/* harmony import */ var _Base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Base */ "./node_modules/antd/es/typography/Base/index.js");
+"use client";
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+const Link = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((_a, ref) => {
+  var {
+      ellipsis,
+      rel
+    } = _a,
+    restProps = __rest(_a, ["ellipsis", "rel"]);
+  if (true) {
+    const warning = (0,_util_warning__WEBPACK_IMPORTED_MODULE_1__.devUseWarning)('Typography.Link');
+     true ? warning(typeof ellipsis !== 'object', 'usage', '`ellipsis` only supports boolean value.') : 0;
+  }
+  const mergedProps = Object.assign(Object.assign({}, restProps), {
+    rel: rel === undefined && restProps.target === '_blank' ? 'noopener noreferrer' : rel
+  });
+  // @ts-expect-error: https://github.com/ant-design/ant-design/issues/26622
+  delete mergedProps.navigate;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Base__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({}, mergedProps, {
+    ref: ref,
+    ellipsis: !!ellipsis,
+    component: "a"
+  }));
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Link);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/Paragraph.js":
+/*!******************************************************!*\
+  !*** ./node_modules/antd/es/typography/Paragraph.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Base__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Base */ "./node_modules/antd/es/typography/Base/index.js");
+"use client";
+
+
+
+const Paragraph = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((props, ref) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Base__WEBPACK_IMPORTED_MODULE_1__["default"], Object.assign({
+  ref: ref
+}, props, {
+  component: "div"
+})));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Paragraph);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/Text.js":
+/*!*************************************************!*\
+  !*** ./node_modules/antd/es/typography/Text.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var rc_util_es_omit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rc-util/es/omit */ "./node_modules/rc-util/es/omit.js");
+/* harmony import */ var _util_warning__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../_util/warning */ "./node_modules/antd/es/_util/warning.js");
+/* harmony import */ var _Base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Base */ "./node_modules/antd/es/typography/Base/index.js");
+"use client";
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+const Text = (_a, ref) => {
+  var {
+      ellipsis
+    } = _a,
+    restProps = __rest(_a, ["ellipsis"]);
+  const mergedEllipsis = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    if (ellipsis && typeof ellipsis === 'object') {
+      return (0,rc_util_es_omit__WEBPACK_IMPORTED_MODULE_1__["default"])(ellipsis, ['expandable', 'rows']);
+    }
+    return ellipsis;
+  }, [ellipsis]);
+  if (true) {
+    const warning = (0,_util_warning__WEBPACK_IMPORTED_MODULE_2__.devUseWarning)('Typography.Text');
+     true ? warning(typeof ellipsis !== 'object' || !ellipsis || !('expandable' in ellipsis) && !('rows' in ellipsis), 'usage', '`ellipsis` do not support `expandable` or `rows` props.') : 0;
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Base__WEBPACK_IMPORTED_MODULE_3__["default"], Object.assign({
+    ref: ref
+  }, restProps, {
+    ellipsis: mergedEllipsis,
+    component: "span"
+  }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(Text));
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/Title.js":
+/*!**************************************************!*\
+  !*** ./node_modules/antd/es/typography/Title.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _util_warning__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../_util/warning */ "./node_modules/antd/es/_util/warning.js");
+/* harmony import */ var _Base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Base */ "./node_modules/antd/es/typography/Base/index.js");
+"use client";
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+const TITLE_ELE_LIST = [1, 2, 3, 4, 5];
+const Title = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((props, ref) => {
+  const {
+      level = 1
+    } = props,
+    restProps = __rest(props, ["level"]);
+  let component;
+  if (true) {
+    const warning = (0,_util_warning__WEBPACK_IMPORTED_MODULE_1__.devUseWarning)('Typography.Title');
+     true ? warning(TITLE_ELE_LIST.includes(level), 'usage', 'Title only accept `1 | 2 | 3 | 4 | 5` as `level` value. And `5` need 4.6.0+ version.') : 0;
+  }
+  if (TITLE_ELE_LIST.includes(level)) {
+    component = `h${level}`;
+  } else {
+    component = 'h1';
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Base__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({
+    ref: ref
+  }, restProps, {
+    component: component
+  }));
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Title);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/Typography.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/antd/es/typography/Typography.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var rc_util_es_ref__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rc-util/es/ref */ "./node_modules/rc-util/es/ref.js");
+/* harmony import */ var _util_warning__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../_util/warning */ "./node_modules/antd/es/_util/warning.js");
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config-provider */ "./node_modules/antd/es/config-provider/context.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style */ "./node_modules/antd/es/typography/style/index.js");
+"use client";
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+
+
+const Typography = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((props, ref) => {
+  const {
+      prefixCls: customizePrefixCls,
+      component: Component = 'article',
+      className,
+      rootClassName,
+      setContentRef,
+      children,
+      direction: typographyDirection,
+      style
+    } = props,
+    restProps = __rest(props, ["prefixCls", "component", "className", "rootClassName", "setContentRef", "children", "direction", "style"]);
+  const {
+    getPrefixCls,
+    direction: contextDirection,
+    typography
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_config_provider__WEBPACK_IMPORTED_MODULE_3__.ConfigContext);
+  const direction = typographyDirection !== null && typographyDirection !== void 0 ? typographyDirection : contextDirection;
+  let mergedRef = ref;
+  if (setContentRef) {
+    mergedRef = (0,rc_util_es_ref__WEBPACK_IMPORTED_MODULE_2__.composeRef)(ref, setContentRef);
+  }
+  if (true) {
+    const warning = (0,_util_warning__WEBPACK_IMPORTED_MODULE_4__.devUseWarning)('Typography');
+    warning.deprecated(!setContentRef, 'setContentRef', 'ref');
+  }
+  const prefixCls = getPrefixCls('typography', customizePrefixCls);
+  // Style
+  const [wrapSSR, hashId] = (0,_style__WEBPACK_IMPORTED_MODULE_5__["default"])(prefixCls);
+  const componentClassName = classnames__WEBPACK_IMPORTED_MODULE_1___default()(prefixCls, typography === null || typography === void 0 ? void 0 : typography.className, {
+    [`${prefixCls}-rtl`]: direction === 'rtl'
+  }, className, rootClassName, hashId);
+  const mergedStyle = Object.assign(Object.assign({}, typography === null || typography === void 0 ? void 0 : typography.style), style);
+  return wrapSSR(
+  /*#__PURE__*/
+  // @ts-expect-error: Expression produces a union type that is too complex to represent.
+  react__WEBPACK_IMPORTED_MODULE_0__.createElement(Component, Object.assign({
+    className: componentClassName,
+    style: mergedStyle,
+    ref: mergedRef
+  }, restProps), children));
+});
+if (true) {
+  Typography.displayName = 'Typography';
+}
+// es default export should use const instead of let
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Typography);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/hooks/useMergedConfig.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/antd/es/typography/hooks/useMergedConfig.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ useMergedConfig)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function useMergedConfig(propConfig, templateConfig) {
+  return react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    const support = !!propConfig;
+    return [support, Object.assign(Object.assign({}, templateConfig), support && typeof propConfig === 'object' ? propConfig : null)];
+  }, [propConfig]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/hooks/useUpdatedEffect.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/antd/es/typography/hooks/useUpdatedEffect.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/** Similar with `useEffect` but only trigger after mounted */
+const useUpdatedEffect = (callback, conditions) => {
+  const mountRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (mountRef.current) {
+      callback();
+    } else {
+      mountRef.current = true;
+    }
+  }, conditions);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useUpdatedEffect);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/antd/es/typography/index.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Link */ "./node_modules/antd/es/typography/Link.js");
+/* harmony import */ var _Paragraph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Paragraph */ "./node_modules/antd/es/typography/Paragraph.js");
+/* harmony import */ var _Text__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Text */ "./node_modules/antd/es/typography/Text.js");
+/* harmony import */ var _Title__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Title */ "./node_modules/antd/es/typography/Title.js");
+/* harmony import */ var _Typography__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Typography */ "./node_modules/antd/es/typography/Typography.js");
+"use client";
+
+
+
+
+
+
+const Typography = _Typography__WEBPACK_IMPORTED_MODULE_0__["default"];
+Typography.Text = _Text__WEBPACK_IMPORTED_MODULE_1__["default"];
+Typography.Link = _Link__WEBPACK_IMPORTED_MODULE_2__["default"];
+Typography.Title = _Title__WEBPACK_IMPORTED_MODULE_3__["default"];
+Typography.Paragraph = _Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Typography);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/style/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/antd/es/typography/style/index.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../style */ "./node_modules/antd/es/style/operationUnit.js");
+/* harmony import */ var _theme_internal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../theme/internal */ "./node_modules/antd/es/theme/util/genComponentStyleHook.js");
+/* harmony import */ var _mixins__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mixins */ "./node_modules/antd/es/typography/style/mixins.js");
+
+
+
+const genTypographyStyle = token => {
+  const {
+    componentCls,
+    titleMarginTop
+  } = token;
+  return {
+    [componentCls]: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({
+      color: token.colorText,
+      wordBreak: 'break-word',
+      lineHeight: token.lineHeight,
+      [`&${componentCls}-secondary`]: {
+        color: token.colorTextDescription
+      },
+      [`&${componentCls}-success`]: {
+        color: token.colorSuccess
+      },
+      [`&${componentCls}-warning`]: {
+        color: token.colorWarning
+      },
+      [`&${componentCls}-danger`]: {
+        color: token.colorError,
+        'a&:active, a&:focus': {
+          color: token.colorErrorActive
+        },
+        'a&:hover': {
+          color: token.colorErrorHover
+        }
+      },
+      [`&${componentCls}-disabled`]: {
+        color: token.colorTextDisabled,
+        cursor: 'not-allowed',
+        userSelect: 'none'
+      },
+      [`
+        div&,
+        p
+      `]: {
+        marginBottom: '1em'
+      }
+    }, (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.getTitleStyles)(token)), {
+      [`
+      & + h1${componentCls},
+      & + h2${componentCls},
+      & + h3${componentCls},
+      & + h4${componentCls},
+      & + h5${componentCls}
+      `]: {
+        marginTop: titleMarginTop
+      },
+      [`
+      div,
+      ul,
+      li,
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5`]: {
+        [`
+        + h1,
+        + h2,
+        + h3,
+        + h4,
+        + h5
+        `]: {
+          marginTop: titleMarginTop
+        }
+      }
+    }), (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.getResetStyles)(token)), (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.getLinkStyles)(token)), {
+      // Operation
+      [`
+        ${componentCls}-expand,
+        ${componentCls}-edit,
+        ${componentCls}-copy
+      `]: Object.assign(Object.assign({}, (0,_style__WEBPACK_IMPORTED_MODULE_1__.operationUnit)(token)), {
+        marginInlineStart: token.marginXXS
+      })
+    }), (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.getEditableStyles)(token)), (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.getCopyableStyles)(token)), (0,_mixins__WEBPACK_IMPORTED_MODULE_0__.getEllipsisStyles)()), {
+      '&-rtl': {
+        direction: 'rtl'
+      }
+    })
+  };
+};
+// ============================== Export ==============================
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_theme_internal__WEBPACK_IMPORTED_MODULE_2__["default"])('Typography', token => [genTypographyStyle(token)], () => ({
+  titleMarginTop: '1.2em',
+  titleMarginBottom: '0.5em'
+})));
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/typography/style/mixins.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/antd/es/typography/style/mixins.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getCopyableStyles: () => (/* binding */ getCopyableStyles),
+/* harmony export */   getEditableStyles: () => (/* binding */ getEditableStyles),
+/* harmony export */   getEllipsisStyles: () => (/* binding */ getEllipsisStyles),
+/* harmony export */   getLinkStyles: () => (/* binding */ getLinkStyles),
+/* harmony export */   getResetStyles: () => (/* binding */ getResetStyles),
+/* harmony export */   getTitleStyles: () => (/* binding */ getTitleStyles)
+/* harmony export */ });
+/* harmony import */ var _ant_design_colors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ant-design/colors */ "./node_modules/@ant-design/colors/es/index.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../style */ "./node_modules/antd/es/style/operationUnit.js");
+/*
+.typography-title(@fontSize; @fontWeight; @lineHeight; @headingColor; @headingMarginBottom;) {
+  margin-bottom: @headingMarginBottom;
+  color: @headingColor;
+  font-weight: @fontWeight;
+  fontSize: @fontSize;
+  line-height: @lineHeight;
+}
+*/
+
+
+// eslint-disable-next-line import/prefer-default-export
+const getTitleStyle = (fontSize, lineHeight, color, token) => {
+  const {
+    titleMarginBottom,
+    fontWeightStrong
+  } = token;
+  return {
+    marginBottom: titleMarginBottom,
+    color,
+    fontWeight: fontWeightStrong,
+    fontSize,
+    lineHeight
+  };
+};
+// eslint-disable-next-line import/prefer-default-export
+const getTitleStyles = token => {
+  const headings = [1, 2, 3, 4, 5];
+  const styles = {};
+  headings.forEach(headingLevel => {
+    styles[`
+      h${headingLevel}&,
+      div&-h${headingLevel},
+      div&-h${headingLevel} > textarea,
+      h${headingLevel}
+    `] = getTitleStyle(token[`fontSizeHeading${headingLevel}`], token[`lineHeightHeading${headingLevel}`], token.colorTextHeading, token);
+  });
+  return styles;
+};
+const getLinkStyles = token => {
+  const {
+    componentCls
+  } = token;
+  return {
+    'a&, a': Object.assign(Object.assign({}, (0,_style__WEBPACK_IMPORTED_MODULE_1__.operationUnit)(token)), {
+      textDecoration: token.linkDecoration,
+      '&:active, &:hover': {
+        textDecoration: token.linkHoverDecoration
+      },
+      [`&[disabled], &${componentCls}-disabled`]: {
+        color: token.colorTextDisabled,
+        cursor: 'not-allowed',
+        '&:active, &:hover': {
+          color: token.colorTextDisabled
+        },
+        '&:active': {
+          pointerEvents: 'none'
+        }
+      }
+    })
+  };
+};
+const getResetStyles = token => ({
+  code: {
+    margin: '0 0.2em',
+    paddingInline: '0.4em',
+    paddingBlock: '0.2em 0.1em',
+    fontSize: '85%',
+    fontFamily: token.fontFamilyCode,
+    background: 'rgba(150, 150, 150, 0.1)',
+    border: '1px solid rgba(100, 100, 100, 0.2)',
+    borderRadius: 3
+  },
+  kbd: {
+    margin: '0 0.2em',
+    paddingInline: '0.4em',
+    paddingBlock: '0.15em 0.1em',
+    fontSize: '90%',
+    fontFamily: token.fontFamilyCode,
+    background: 'rgba(150, 150, 150, 0.06)',
+    border: '1px solid rgba(100, 100, 100, 0.2)',
+    borderBottomWidth: 2,
+    borderRadius: 3
+  },
+  mark: {
+    padding: 0,
+    // FIXME hardcode in v4
+    backgroundColor: _ant_design_colors__WEBPACK_IMPORTED_MODULE_0__.gold[2]
+  },
+  'u, ins': {
+    textDecoration: 'underline',
+    textDecorationSkipInk: 'auto'
+  },
+  's, del': {
+    textDecoration: 'line-through'
+  },
+  strong: {
+    fontWeight: 600
+  },
+  // list
+  'ul, ol': {
+    marginInline: 0,
+    marginBlock: '0 1em',
+    padding: 0,
+    li: {
+      marginInline: '20px 0',
+      marginBlock: 0,
+      paddingInline: '4px 0',
+      paddingBlock: 0
+    }
+  },
+  ul: {
+    listStyleType: 'circle',
+    ul: {
+      listStyleType: 'disc'
+    }
+  },
+  ol: {
+    listStyleType: 'decimal'
+  },
+  // pre & block
+  'pre, blockquote': {
+    margin: '1em 0'
+  },
+  pre: {
+    padding: '0.4em 0.6em',
+    whiteSpace: 'pre-wrap',
+    wordWrap: 'break-word',
+    background: 'rgba(150, 150, 150, 0.1)',
+    border: '1px solid rgba(100, 100, 100, 0.2)',
+    borderRadius: 3,
+    fontFamily: token.fontFamilyCode,
+    // Compatible for marked
+    code: {
+      display: 'inline',
+      margin: 0,
+      padding: 0,
+      fontSize: 'inherit',
+      fontFamily: 'inherit',
+      background: 'transparent',
+      border: 0
+    }
+  },
+  blockquote: {
+    paddingInline: '0.6em 0',
+    paddingBlock: 0,
+    borderInlineStart: '4px solid rgba(100, 100, 100, 0.2)',
+    opacity: 0.85
+  }
+});
+const getEditableStyles = token => {
+  const {
+    componentCls,
+    paddingSM
+  } = token;
+  const inputShift = paddingSM;
+  return {
+    '&-edit-content': {
+      position: 'relative',
+      'div&': {
+        insetInlineStart: -token.paddingSM,
+        marginTop: -inputShift,
+        marginBottom: `calc(1em - ${inputShift}px)`
+      },
+      [`${componentCls}-edit-content-confirm`]: {
+        position: 'absolute',
+        insetInlineEnd: token.marginXS + 2,
+        insetBlockEnd: token.marginXS,
+        color: token.colorTextDescription,
+        // default style
+        fontWeight: 'normal',
+        fontSize: token.fontSize,
+        fontStyle: 'normal',
+        pointerEvents: 'none'
+      },
+      textarea: {
+        margin: '0!important',
+        // Fix Editable Textarea flash in Firefox
+        MozTransition: 'none',
+        height: '1em'
+      }
+    }
+  };
+};
+const getCopyableStyles = token => ({
+  '&-copy-success': {
+    [`
+    &,
+    &:hover,
+    &:focus`]: {
+      color: token.colorSuccess
+    }
+  }
+});
+const getEllipsisStyles = () => ({
+  [`
+  a&-ellipsis,
+  span&-ellipsis
+  `]: {
+    display: 'inline-block',
+    maxWidth: '100%'
+  },
+  '&-single-line': {
+    whiteSpace: 'nowrap'
+  },
+  '&-ellipsis-single-line': {
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    // https://blog.csdn.net/iefreer/article/details/50421025
+    'a&, span&': {
+      verticalAlign: 'bottom'
+    },
+    '> code': {
+      paddingBlock: 0,
+      maxWidth: 'calc(100% - 1.2em)',
+      display: 'inline-block',
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      verticalAlign: 'bottom'
+    }
+  },
+  '&-ellipsis-multiple-line': {
+    display: '-webkit-box',
+    overflow: 'hidden',
+    WebkitLineClamp: 3,
+    WebkitBoxOrient: 'vertical'
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/antd/es/version/index.js":
 /*!***********************************************!*\
   !*** ./node_modules/antd/es/version/index.js ***!
@@ -35474,7 +38118,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/select/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/typography/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/select/index.js");
 
 
 
@@ -35482,13 +38127,18 @@ function CountrySelector({
   setSelectedCountry,
   addedStates
 }) {
+  const {
+    Title
+  } = antd__WEBPACK_IMPORTED_MODULE_1__["default"];
   const countries = cszData.countries.data;
   const [country, setCountry] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
   const handleChange = value => {
     setCountry(value);
     setSelectedCountry(value);
   };
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(Title, {
+    level: 4
+  }, "Select a Country"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
     showSearch: true,
     style: {
       width: 300
@@ -35499,10 +38149,10 @@ function CountrySelector({
     filterOption: (input, option) => option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0,
     value: country,
     disabled: addedStates.length > 0
-  }, Object.entries(countries).map(([countryCode, countryName]) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"].Option, {
+  }, Object.entries(countries).map(([countryCode, countryName]) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"].Option, {
     key: countryCode,
     value: countryCode
-  }, countryName)));
+  }, countryName))));
 }
 
 /***/ }),
@@ -35520,15 +38170,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/space/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/divider/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/table/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/message/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/space/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/divider/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/table/index.js");
 
 
 
 function CurrentStates() {
   const current_states = cszData.current_custom_zones;
+  const [data, setData] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(current_states);
   const formattedData = [];
   Object.entries(current_states).forEach(([countryCode, states]) => {
     Object.entries(states).forEach(([stateCode, stateName]) => {
@@ -35540,6 +38192,44 @@ function CurrentStates() {
       });
     });
   });
+  const handleDelete = (stateCode, countryCode) => {
+    const formData = new URLSearchParams();
+    formData.append("action", "csz_delete_state");
+    formData.append("nonce", cszAjax.nonce);
+    formData.append("countryCode", countryCode);
+    formData.append("stateCode", stateCode);
+    fetch(cszAjax.ajax_url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: formData
+    }).then(response => response.json()).then(result => {
+      if (result.success) {
+        delete data[countryCode][stateCode];
+        setData({
+          ...data
+        });
+        antd__WEBPACK_IMPORTED_MODULE_1__["default"].success({
+          content: "State deleted successfully",
+          duration: 1,
+          style: {
+            marginTop: "2vh"
+          }
+        });
+      } else {
+        antd__WEBPACK_IMPORTED_MODULE_1__["default"].error({
+          content: "Failed to delete state",
+          style: {
+            marginTop: "2vh"
+          }
+        });
+      }
+    }).catch(error => {
+      console.error("Error deleting state:", error);
+      (0,antd__WEBPACK_IMPORTED_MODULE_1__["default"])("An error occurred while deleting the state");
+    });
+  };
   const columns = [{
     title: "Country",
     dataIndex: "country",
@@ -35555,17 +38245,13 @@ function CurrentStates() {
   }, {
     title: "Action",
     key: "action",
-    render: (_, record) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    render: (_, record) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
       size: "middle"
-    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      onClick: () => handleDelete(record.key)
+    }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      onClick: () => handleDelete(record.code, record.country)
     }, "Delete"))
   }];
-  const handleDelete = code => {
-    // Implement delete functionality here
-    console.log("Delete state with code:", code);
-  };
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_3__["default"], null, "Current custom shipping zones"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_4__["default"], null, "Current custom shipping zones"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
     columns: columns,
     dataSource: formattedData
   }));
@@ -35596,6 +38282,7 @@ function StateAdder({
   selectedCountry,
   setAddedStates
 }) {
+  const strings = cszStrings;
   const [form] = antd__WEBPACK_IMPORTED_MODULE_1__["default"].useForm();
   const generateStateCode = stateName => {
     const initials = stateName.match(/\b\w/g) || [];
@@ -35617,40 +38304,44 @@ function StateAdder({
   };
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
     form: form,
-    layout: "vertical",
+    layout: "horizontal",
     onFinish: onFinish,
     autoComplete: "off"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"].Item, {
     name: "stateName",
     rules: [{
       required: true,
-      message: "Please enter a state name"
-    }]
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    placeholder: "State Name",
-    onChange: onStateNameChange,
-    autoFocus: true,
+      message: strings.please_enter_state_name
+    }],
     style: {
-      width: "30%",
-      marginTop: "20px"
+      display: "inline-block",
+      width: "calc(30% - 12px)",
+      marginTop: "20px",
+      marginRight: "20px"
     }
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    placeholder: strings.state_name,
+    onChange: onStateNameChange,
+    autoFocus: true
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"].Item, {
     name: "stateCode",
     rules: [{
       required: true,
-      message: "Please enter a state code"
+      message: strings.please_enter_state_code
     }],
-    help: "Automatically generated."
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    placeholder: "State Code",
-    disabled: true,
+    help: strings.state_codes_are_auto_generated,
     style: {
-      width: "30%"
+      display: "inline-block",
+      width: "calc(30% - 12px)",
+      marginTop: "20px"
     }
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    placeholder: strings.state_code,
+    disabled: true
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"].Item, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
     type: "primary",
     htmlType: "submit"
-  }, "Add State")));
+  }, strings.add_state)));
 }
 
 /***/ }),
@@ -35720,6 +38411,132 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	} else {}
 }());
+
+
+/***/ }),
+
+/***/ "./node_modules/copy-to-clipboard/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/copy-to-clipboard/index.js ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var deselectCurrent = __webpack_require__(/*! toggle-selection */ "./node_modules/toggle-selection/index.js");
+
+var clipboardToIE11Formatting = {
+  "text/plain": "Text",
+  "text/html": "Url",
+  "default": "Text"
+}
+
+var defaultMessage = "Copy to clipboard: #{key}, Enter";
+
+function format(message) {
+  var copyKey = (/mac os x/i.test(navigator.userAgent) ? "⌘" : "Ctrl") + "+C";
+  return message.replace(/#{\s*key\s*}/g, copyKey);
+}
+
+function copy(text, options) {
+  var debug,
+    message,
+    reselectPrevious,
+    range,
+    selection,
+    mark,
+    success = false;
+  if (!options) {
+    options = {};
+  }
+  debug = options.debug || false;
+  try {
+    reselectPrevious = deselectCurrent();
+
+    range = document.createRange();
+    selection = document.getSelection();
+
+    mark = document.createElement("span");
+    mark.textContent = text;
+    // avoid screen readers from reading out loud the text
+    mark.ariaHidden = "true"
+    // reset user styles for span element
+    mark.style.all = "unset";
+    // prevents scrolling to the end of the page
+    mark.style.position = "fixed";
+    mark.style.top = 0;
+    mark.style.clip = "rect(0, 0, 0, 0)";
+    // used to preserve spaces and line breaks
+    mark.style.whiteSpace = "pre";
+    // do not inherit user-select (it may be `none`)
+    mark.style.webkitUserSelect = "text";
+    mark.style.MozUserSelect = "text";
+    mark.style.msUserSelect = "text";
+    mark.style.userSelect = "text";
+    mark.addEventListener("copy", function(e) {
+      e.stopPropagation();
+      if (options.format) {
+        e.preventDefault();
+        if (typeof e.clipboardData === "undefined") { // IE 11
+          debug && console.warn("unable to use e.clipboardData");
+          debug && console.warn("trying IE specific stuff");
+          window.clipboardData.clearData();
+          var format = clipboardToIE11Formatting[options.format] || clipboardToIE11Formatting["default"]
+          window.clipboardData.setData(format, text);
+        } else { // all other browsers
+          e.clipboardData.clearData();
+          e.clipboardData.setData(options.format, text);
+        }
+      }
+      if (options.onCopy) {
+        e.preventDefault();
+        options.onCopy(e.clipboardData);
+      }
+    });
+
+    document.body.appendChild(mark);
+
+    range.selectNodeContents(mark);
+    selection.addRange(range);
+
+    var successful = document.execCommand("copy");
+    if (!successful) {
+      throw new Error("copy command was unsuccessful");
+    }
+    success = true;
+  } catch (err) {
+    debug && console.error("unable to copy using execCommand: ", err);
+    debug && console.warn("trying IE specific stuff");
+    try {
+      window.clipboardData.setData(options.format || "text", text);
+      options.onCopy && options.onCopy(window.clipboardData);
+      success = true;
+    } catch (err) {
+      debug && console.error("unable to copy using clipboardData: ", err);
+      debug && console.error("falling back to prompt");
+      message = format("message" in options ? options.message : defaultMessage);
+      window.prompt(message, text);
+    }
+  } finally {
+    if (selection) {
+      if (typeof selection.removeRange == "function") {
+        selection.removeRange(range);
+      } else {
+        selection.removeAllRanges();
+      }
+    }
+
+    if (mark) {
+      document.body.removeChild(mark);
+    }
+    reselectPrevious();
+  }
+
+  return success;
+}
+
+module.exports = copy;
 
 
 /***/ }),
@@ -43364,6 +46181,717 @@ function getTransitionName(transitionName, transitionType) {
   }
   return "".concat(transitionName, "-").concat(transitionType);
 }
+
+/***/ }),
+
+/***/ "./node_modules/rc-notification/es/Notice.js":
+/*!***************************************************!*\
+  !*** ./node_modules/rc-notification/es/Notice.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rc-util/es/KeyCode */ "./node_modules/rc-util/es/KeyCode.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+var Notify = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__.forwardRef(function (props, ref) {
+  var prefixCls = props.prefixCls,
+    style = props.style,
+    className = props.className,
+    _props$duration = props.duration,
+    duration = _props$duration === void 0 ? 4.5 : _props$duration,
+    eventKey = props.eventKey,
+    content = props.content,
+    closable = props.closable,
+    _props$closeIcon = props.closeIcon,
+    closeIcon = _props$closeIcon === void 0 ? 'x' : _props$closeIcon,
+    divProps = props.props,
+    onClick = props.onClick,
+    onNoticeClose = props.onNoticeClose,
+    times = props.times,
+    forcedHovering = props.hovering;
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_5__.useState(false),
+    _React$useState2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_React$useState, 2),
+    hovering = _React$useState2[0],
+    setHovering = _React$useState2[1];
+  var mergedHovering = forcedHovering || hovering;
+
+  // ======================== Close =========================
+  var onInternalClose = function onInternalClose() {
+    onNoticeClose(eventKey);
+  };
+  var onCloseKeyDown = function onCloseKeyDown(e) {
+    if (e.key === 'Enter' || e.code === 'Enter' || e.keyCode === rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_4__["default"].ENTER) {
+      onInternalClose();
+    }
+  };
+
+  // ======================== Effect ========================
+  react__WEBPACK_IMPORTED_MODULE_5__.useEffect(function () {
+    if (!mergedHovering && duration > 0) {
+      var timeout = setTimeout(function () {
+        onInternalClose();
+      }, duration * 1000);
+      return function () {
+        clearTimeout(timeout);
+      };
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [duration, mergedHovering, times]);
+
+  // ======================== Render ========================
+  var noticePrefixCls = "".concat(prefixCls, "-notice");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__.createElement("div", (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, divProps, {
+    ref: ref,
+    className: classnames__WEBPACK_IMPORTED_MODULE_3___default()(noticePrefixCls, className, (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({}, "".concat(noticePrefixCls, "-closable"), closable)),
+    style: style,
+    onMouseEnter: function onMouseEnter(e) {
+      var _divProps$onMouseEnte;
+      setHovering(true);
+      divProps === null || divProps === void 0 || (_divProps$onMouseEnte = divProps.onMouseEnter) === null || _divProps$onMouseEnte === void 0 || _divProps$onMouseEnte.call(divProps, e);
+    },
+    onMouseLeave: function onMouseLeave(e) {
+      var _divProps$onMouseLeav;
+      setHovering(false);
+      divProps === null || divProps === void 0 || (_divProps$onMouseLeav = divProps.onMouseLeave) === null || _divProps$onMouseLeav === void 0 || _divProps$onMouseLeav.call(divProps, e);
+    },
+    onClick: onClick
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__.createElement("div", {
+    className: "".concat(noticePrefixCls, "-content")
+  }, content), closable && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5__.createElement("a", {
+    tabIndex: 0,
+    className: "".concat(noticePrefixCls, "-close"),
+    onKeyDown: onCloseKeyDown,
+    onClick: function onClick(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      onInternalClose();
+    }
+  }, closeIcon));
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Notify);
+
+/***/ }),
+
+/***/ "./node_modules/rc-notification/es/NoticeList.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/rc-notification/es/NoticeList.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectSpread2 */ "./node_modules/@babel/runtime/helpers/esm/objectSpread2.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var rc_motion__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rc-motion */ "./node_modules/rc-motion/es/index.js");
+/* harmony import */ var _Notice__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Notice */ "./node_modules/rc-notification/es/Notice.js");
+/* harmony import */ var _NotificationProvider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./NotificationProvider */ "./node_modules/rc-notification/es/NotificationProvider.js");
+/* harmony import */ var _hooks_useStack__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./hooks/useStack */ "./node_modules/rc-notification/es/hooks/useStack.js");
+
+
+
+
+
+
+var _excluded = ["className", "style", "classNames", "styles"];
+
+
+
+
+
+
+var NoticeList = function NoticeList(props) {
+  var _clsx;
+  var configList = props.configList,
+    placement = props.placement,
+    prefixCls = props.prefixCls,
+    className = props.className,
+    style = props.style,
+    motion = props.motion,
+    onAllNoticeRemoved = props.onAllNoticeRemoved,
+    onNoticeClose = props.onNoticeClose,
+    stackConfig = props.stack;
+  var _useContext = (0,react__WEBPACK_IMPORTED_MODULE_6__.useContext)(_NotificationProvider__WEBPACK_IMPORTED_MODULE_10__.NotificationContext),
+    ctxCls = _useContext.classNames;
+  var dictRef = (0,react__WEBPACK_IMPORTED_MODULE_6__.useRef)({});
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_6__.useState)(null),
+    _useState2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_useState, 2),
+    latestNotice = _useState2[0],
+    setLatestNotice = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_6__.useState)([]),
+    _useState4 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_useState3, 2),
+    hoverKeys = _useState4[0],
+    setHoverKeys = _useState4[1];
+  var keys = configList.map(function (config) {
+    return {
+      config: config,
+      key: String(config.key)
+    };
+  });
+  var _useStack = (0,_hooks_useStack__WEBPACK_IMPORTED_MODULE_11__["default"])(stackConfig),
+    _useStack2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_5__["default"])(_useStack, 2),
+    stack = _useStack2[0],
+    _useStack2$ = _useStack2[1],
+    offset = _useStack2$.offset,
+    threshold = _useStack2$.threshold,
+    gap = _useStack2$.gap;
+  var expanded = stack && (hoverKeys.length > 0 || keys.length <= threshold);
+  var placementMotion = typeof motion === 'function' ? motion(placement) : motion;
+
+  // Clean hover key
+  (0,react__WEBPACK_IMPORTED_MODULE_6__.useEffect)(function () {
+    if (stack && hoverKeys.length > 1) {
+      setHoverKeys(function (prev) {
+        return prev.filter(function (key) {
+          return keys.some(function (_ref) {
+            var dataKey = _ref.key;
+            return key === dataKey;
+          });
+        });
+      });
+    }
+  }, [hoverKeys, keys, stack]);
+
+  // Force update latest notice
+  (0,react__WEBPACK_IMPORTED_MODULE_6__.useEffect)(function () {
+    var _keys;
+    if (stack && dictRef.current[(_keys = keys[keys.length - 1]) === null || _keys === void 0 ? void 0 : _keys.key]) {
+      var _keys2;
+      setLatestNotice(dictRef.current[(_keys2 = keys[keys.length - 1]) === null || _keys2 === void 0 ? void 0 : _keys2.key]);
+    }
+  }, [keys, stack]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(rc_motion__WEBPACK_IMPORTED_MODULE_8__.CSSMotionList, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    key: placement,
+    className: classnames__WEBPACK_IMPORTED_MODULE_7___default()(prefixCls, "".concat(prefixCls, "-").concat(placement), ctxCls === null || ctxCls === void 0 ? void 0 : ctxCls.list, className, (_clsx = {}, (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__["default"])(_clsx, "".concat(prefixCls, "-stack"), !!stack), (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_4__["default"])(_clsx, "".concat(prefixCls, "-stack-expanded"), expanded), _clsx)),
+    style: style,
+    keys: keys,
+    motionAppear: true
+  }, placementMotion, {
+    onAllRemoved: function onAllRemoved() {
+      onAllNoticeRemoved(placement);
+    }
+  }), function (_ref2, nodeRef) {
+    var config = _ref2.config,
+      motionClassName = _ref2.className,
+      motionStyle = _ref2.style,
+      motionIndex = _ref2.index;
+    var _ref3 = config,
+      key = _ref3.key,
+      times = _ref3.times;
+    var strKey = String(key);
+    var _ref4 = config,
+      configClassName = _ref4.className,
+      configStyle = _ref4.style,
+      configClassNames = _ref4.classNames,
+      configStyles = _ref4.styles,
+      restConfig = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__["default"])(_ref4, _excluded);
+    var dataIndex = keys.findIndex(function (item) {
+      return item.key === strKey;
+    });
+
+    // If dataIndex is -1, that means this notice has been removed in data, but still in dom
+    // Should minus (motionIndex - 1) to get the correct index because keys.length is not the same as dom length
+    var stackStyle = {};
+    if (stack) {
+      var index = keys.length - 1 - (dataIndex > -1 ? dataIndex : motionIndex - 1);
+      var transformX = placement === 'top' || placement === 'bottom' ? '-50%' : '0';
+      if (index > 0) {
+        var _dictRef$current$strK, _dictRef$current$strK2, _dictRef$current$strK3;
+        stackStyle.height = expanded ? (_dictRef$current$strK = dictRef.current[strKey]) === null || _dictRef$current$strK === void 0 ? void 0 : _dictRef$current$strK.offsetHeight : latestNotice === null || latestNotice === void 0 ? void 0 : latestNotice.offsetHeight;
+
+        // Transform
+        var verticalOffset = 0;
+        for (var i = 0; i < index; i++) {
+          var _dictRef$current$keys;
+          verticalOffset += ((_dictRef$current$keys = dictRef.current[keys[keys.length - 1 - i].key]) === null || _dictRef$current$keys === void 0 ? void 0 : _dictRef$current$keys.offsetHeight) + gap;
+        }
+        var transformY = (expanded ? verticalOffset : index * offset) * (placement.startsWith('top') ? 1 : -1);
+        var scaleX = !expanded && latestNotice !== null && latestNotice !== void 0 && latestNotice.offsetWidth && (_dictRef$current$strK2 = dictRef.current[strKey]) !== null && _dictRef$current$strK2 !== void 0 && _dictRef$current$strK2.offsetWidth ? ((latestNotice === null || latestNotice === void 0 ? void 0 : latestNotice.offsetWidth) - offset * 2 * (index < 3 ? index : 3)) / ((_dictRef$current$strK3 = dictRef.current[strKey]) === null || _dictRef$current$strK3 === void 0 ? void 0 : _dictRef$current$strK3.offsetWidth) : 1;
+        stackStyle.transform = "translate3d(".concat(transformX, ", ").concat(transformY, "px, 0) scaleX(").concat(scaleX, ")");
+      } else {
+        stackStyle.transform = "translate3d(".concat(transformX, ", 0, 0)");
+      }
+    }
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement("div", {
+      ref: nodeRef,
+      className: classnames__WEBPACK_IMPORTED_MODULE_7___default()("".concat(prefixCls, "-notice-wrapper"), motionClassName, configClassNames === null || configClassNames === void 0 ? void 0 : configClassNames.wrapper),
+      style: (0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_2__["default"])((0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_2__["default"])((0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_2__["default"])({}, motionStyle), stackStyle), configStyles === null || configStyles === void 0 ? void 0 : configStyles.wrapper),
+      onMouseEnter: function onMouseEnter() {
+        return setHoverKeys(function (prev) {
+          return prev.includes(strKey) ? prev : [].concat((0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(prev), [strKey]);
+        });
+      },
+      onMouseLeave: function onMouseLeave() {
+        return setHoverKeys(function (prev) {
+          return prev.filter(function (k) {
+            return k !== strKey;
+          });
+        });
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_6___default().createElement(_Notice__WEBPACK_IMPORTED_MODULE_9__["default"], (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, restConfig, {
+      ref: function ref(node) {
+        if (dataIndex > -1) {
+          dictRef.current[strKey] = node;
+        } else {
+          delete dictRef.current[strKey];
+        }
+      },
+      prefixCls: prefixCls,
+      classNames: configClassNames,
+      styles: configStyles,
+      className: classnames__WEBPACK_IMPORTED_MODULE_7___default()(configClassName, ctxCls === null || ctxCls === void 0 ? void 0 : ctxCls.notice),
+      style: configStyle,
+      times: times,
+      key: key,
+      eventKey: key,
+      onNoticeClose: onNoticeClose,
+      hovering: stack && hoverKeys.length > 0
+    })));
+  });
+};
+if (true) {
+  NoticeList.displayName = 'NoticeList';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NoticeList);
+
+/***/ }),
+
+/***/ "./node_modules/rc-notification/es/NotificationProvider.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/rc-notification/es/NotificationProvider.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   NotificationContext: () => (/* binding */ NotificationContext),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var NotificationContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createContext({});
+var NotificationProvider = function NotificationProvider(_ref) {
+  var children = _ref.children,
+    classNames = _ref.classNames;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(NotificationContext.Provider, {
+    value: {
+      classNames: classNames
+    }
+  }, children);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NotificationProvider);
+
+/***/ }),
+
+/***/ "./node_modules/rc-notification/es/Notifications.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/rc-notification/es/Notifications.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectSpread2 */ "./node_modules/@babel/runtime/helpers/esm/objectSpread2.js");
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "react-dom");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _NoticeList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./NoticeList */ "./node_modules/rc-notification/es/NoticeList.js");
+
+
+
+
+
+
+// ant-notification ant-notification-topRight
+var Notifications = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(function (props, ref) {
+  var _props$prefixCls = props.prefixCls,
+    prefixCls = _props$prefixCls === void 0 ? 'rc-notification' : _props$prefixCls,
+    container = props.container,
+    motion = props.motion,
+    maxCount = props.maxCount,
+    className = props.className,
+    style = props.style,
+    onAllRemoved = props.onAllRemoved,
+    stack = props.stack,
+    renderNotifications = props.renderNotifications;
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3__.useState([]),
+    _React$useState2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_React$useState, 2),
+    configList = _React$useState2[0],
+    setConfigList = _React$useState2[1];
+
+  // ======================== Close =========================
+  var onNoticeClose = function onNoticeClose(key) {
+    var _config$onClose;
+    // Trigger close event
+    var config = configList.find(function (item) {
+      return item.key === key;
+    });
+    config === null || config === void 0 || (_config$onClose = config.onClose) === null || _config$onClose === void 0 || _config$onClose.call(config);
+    setConfigList(function (list) {
+      return list.filter(function (item) {
+        return item.key !== key;
+      });
+    });
+  };
+
+  // ========================= Refs =========================
+  react__WEBPACK_IMPORTED_MODULE_3__.useImperativeHandle(ref, function () {
+    return {
+      open: function open(config) {
+        setConfigList(function (list) {
+          var clone = (0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(list);
+
+          // Replace if exist
+          var index = clone.findIndex(function (item) {
+            return item.key === config.key;
+          });
+          var innerConfig = (0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_0__["default"])({}, config);
+          if (index >= 0) {
+            var _list$index;
+            innerConfig.times = (((_list$index = list[index]) === null || _list$index === void 0 ? void 0 : _list$index.times) || 0) + 1;
+            clone[index] = innerConfig;
+          } else {
+            innerConfig.times = 0;
+            clone.push(innerConfig);
+          }
+          if (maxCount > 0 && clone.length > maxCount) {
+            clone = clone.slice(-maxCount);
+          }
+          return clone;
+        });
+      },
+      close: function close(key) {
+        onNoticeClose(key);
+      },
+      destroy: function destroy() {
+        setConfigList([]);
+      }
+    };
+  });
+
+  // ====================== Placements ======================
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_3__.useState({}),
+    _React$useState4 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_React$useState3, 2),
+    placements = _React$useState4[0],
+    setPlacements = _React$useState4[1];
+  react__WEBPACK_IMPORTED_MODULE_3__.useEffect(function () {
+    var nextPlacements = {};
+    configList.forEach(function (config) {
+      var _config$placement = config.placement,
+        placement = _config$placement === void 0 ? 'topRight' : _config$placement;
+      if (placement) {
+        nextPlacements[placement] = nextPlacements[placement] || [];
+        nextPlacements[placement].push(config);
+      }
+    });
+
+    // Fill exist placements to avoid empty list causing remove without motion
+    Object.keys(placements).forEach(function (placement) {
+      nextPlacements[placement] = nextPlacements[placement] || [];
+    });
+    setPlacements(nextPlacements);
+  }, [configList]);
+
+  // Clean up container if all notices fade out
+  var onAllNoticeRemoved = function onAllNoticeRemoved(placement) {
+    setPlacements(function (originPlacements) {
+      var clone = (0,_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_0__["default"])({}, originPlacements);
+      var list = clone[placement] || [];
+      if (!list.length) {
+        delete clone[placement];
+      }
+      return clone;
+    });
+  };
+
+  // Effect tell that placements is empty now
+  var emptyRef = react__WEBPACK_IMPORTED_MODULE_3__.useRef(false);
+  react__WEBPACK_IMPORTED_MODULE_3__.useEffect(function () {
+    if (Object.keys(placements).length > 0) {
+      emptyRef.current = true;
+    } else if (emptyRef.current) {
+      // Trigger only when from exist to empty
+      onAllRemoved === null || onAllRemoved === void 0 || onAllRemoved();
+      emptyRef.current = false;
+    }
+  }, [placements]);
+  // ======================== Render ========================
+  if (!container) {
+    return null;
+  }
+  var placementList = Object.keys(placements);
+  return /*#__PURE__*/(0,react_dom__WEBPACK_IMPORTED_MODULE_4__.createPortal)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(react__WEBPACK_IMPORTED_MODULE_3__.Fragment, null, placementList.map(function (placement) {
+    var placementConfigList = placements[placement];
+    var list = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(_NoticeList__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      key: placement,
+      configList: placementConfigList,
+      placement: placement,
+      prefixCls: prefixCls,
+      className: className === null || className === void 0 ? void 0 : className(placement),
+      style: style === null || style === void 0 ? void 0 : style(placement),
+      motion: motion,
+      onNoticeClose: onNoticeClose,
+      onAllNoticeRemoved: onAllNoticeRemoved,
+      stack: stack
+    });
+    return renderNotifications ? renderNotifications(list, {
+      prefixCls: prefixCls,
+      key: placement
+    }) : list;
+  })), container);
+});
+if (true) {
+  Notifications.displayName = 'Notifications';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Notifications);
+
+/***/ }),
+
+/***/ "./node_modules/rc-notification/es/hooks/useNotification.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/rc-notification/es/hooks/useNotification.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ useNotification)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Notifications__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Notifications */ "./node_modules/rc-notification/es/Notifications.js");
+
+
+
+var _excluded = ["getContainer", "motion", "prefixCls", "maxCount", "className", "style", "onAllRemoved", "stack", "renderNotifications"];
+
+
+var defaultGetContainer = function defaultGetContainer() {
+  return document.body;
+};
+var uniqueKey = 0;
+function mergeConfig() {
+  var clone = {};
+  for (var _len = arguments.length, objList = new Array(_len), _key = 0; _key < _len; _key++) {
+    objList[_key] = arguments[_key];
+  }
+  objList.forEach(function (obj) {
+    if (obj) {
+      Object.keys(obj).forEach(function (key) {
+        var val = obj[key];
+        if (val !== undefined) {
+          clone[key] = val;
+        }
+      });
+    }
+  });
+  return clone;
+}
+function useNotification() {
+  var rootConfig = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var _rootConfig$getContai = rootConfig.getContainer,
+    getContainer = _rootConfig$getContai === void 0 ? defaultGetContainer : _rootConfig$getContai,
+    motion = rootConfig.motion,
+    prefixCls = rootConfig.prefixCls,
+    maxCount = rootConfig.maxCount,
+    className = rootConfig.className,
+    style = rootConfig.style,
+    onAllRemoved = rootConfig.onAllRemoved,
+    stack = rootConfig.stack,
+    renderNotifications = rootConfig.renderNotifications,
+    shareConfig = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(rootConfig, _excluded);
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3__.useState(),
+    _React$useState2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState, 2),
+    container = _React$useState2[0],
+    setContainer = _React$useState2[1];
+  var notificationsRef = react__WEBPACK_IMPORTED_MODULE_3__.useRef();
+  var contextHolder = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(_Notifications__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    container: container,
+    ref: notificationsRef,
+    prefixCls: prefixCls,
+    motion: motion,
+    maxCount: maxCount,
+    className: className,
+    style: style,
+    onAllRemoved: onAllRemoved,
+    stack: stack,
+    renderNotifications: renderNotifications
+  });
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_3__.useState([]),
+    _React$useState4 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState3, 2),
+    taskQueue = _React$useState4[0],
+    setTaskQueue = _React$useState4[1];
+
+  // ========================= Refs =========================
+  var api = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(function () {
+    return {
+      open: function open(config) {
+        var mergedConfig = mergeConfig(shareConfig, config);
+        if (mergedConfig.key === null || mergedConfig.key === undefined) {
+          mergedConfig.key = "rc-notification-".concat(uniqueKey);
+          uniqueKey += 1;
+        }
+        setTaskQueue(function (queue) {
+          return [].concat((0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(queue), [{
+            type: 'open',
+            config: mergedConfig
+          }]);
+        });
+      },
+      close: function close(key) {
+        setTaskQueue(function (queue) {
+          return [].concat((0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(queue), [{
+            type: 'close',
+            key: key
+          }]);
+        });
+      },
+      destroy: function destroy() {
+        setTaskQueue(function (queue) {
+          return [].concat((0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(queue), [{
+            type: 'destroy'
+          }]);
+        });
+      }
+    };
+  }, []);
+
+  // ======================= Container ======================
+  // React 18 should all in effect that we will check container in each render
+  // Which means getContainer should be stable.
+  react__WEBPACK_IMPORTED_MODULE_3__.useEffect(function () {
+    setContainer(getContainer());
+  });
+
+  // ======================== Effect ========================
+  react__WEBPACK_IMPORTED_MODULE_3__.useEffect(function () {
+    // Flush task when node ready
+    if (notificationsRef.current && taskQueue.length) {
+      taskQueue.forEach(function (task) {
+        switch (task.type) {
+          case 'open':
+            notificationsRef.current.open(task.config);
+            break;
+          case 'close':
+            notificationsRef.current.close(task.key);
+            break;
+          case 'destroy':
+            notificationsRef.current.destroy();
+            break;
+        }
+      });
+
+      // React 17 will mix order of effect & setState in async
+      // - open: setState[0]
+      // - effect[0]
+      // - open: setState[1]
+      // - effect setState([]) * here will clean up [0, 1] in React 17
+      setTaskQueue(function (oriQueue) {
+        return oriQueue.filter(function (task) {
+          return !taskQueue.includes(task);
+        });
+      });
+    }
+  }, [taskQueue]);
+
+  // ======================== Return ========================
+  return [api, contextHolder];
+}
+
+/***/ }),
+
+/***/ "./node_modules/rc-notification/es/hooks/useStack.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/rc-notification/es/hooks/useStack.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+
+var DEFAULT_OFFSET = 8;
+var DEFAULT_THRESHOLD = 3;
+var DEFAULT_GAP = 16;
+var useStack = function useStack(config) {
+  var result = {
+    offset: DEFAULT_OFFSET,
+    threshold: DEFAULT_THRESHOLD,
+    gap: DEFAULT_GAP
+  };
+  if (config && (0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(config) === 'object') {
+    var _config$offset, _config$threshold, _config$gap;
+    result.offset = (_config$offset = config.offset) !== null && _config$offset !== void 0 ? _config$offset : DEFAULT_OFFSET;
+    result.threshold = (_config$threshold = config.threshold) !== null && _config$threshold !== void 0 ? _config$threshold : DEFAULT_THRESHOLD;
+    result.gap = (_config$gap = config.gap) !== null && _config$gap !== void 0 ? _config$gap : DEFAULT_GAP;
+  }
+  return [!!config, result];
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useStack);
+
+/***/ }),
+
+/***/ "./node_modules/rc-notification/es/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/rc-notification/es/index.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Notice: () => (/* reexport safe */ _Notice__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   NotificationProvider: () => (/* reexport safe */ _NotificationProvider__WEBPACK_IMPORTED_MODULE_2__["default"]),
+/* harmony export */   useNotification: () => (/* reexport safe */ _hooks_useNotification__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _hooks_useNotification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hooks/useNotification */ "./node_modules/rc-notification/es/hooks/useNotification.js");
+/* harmony import */ var _Notice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Notice */ "./node_modules/rc-notification/es/Notice.js");
+/* harmony import */ var _NotificationProvider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NotificationProvider */ "./node_modules/rc-notification/es/NotificationProvider.js");
+
+
+
+
 
 /***/ }),
 
@@ -62296,6 +65824,55 @@ var index = (function () {
 })();
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (index);
+
+
+/***/ }),
+
+/***/ "./node_modules/toggle-selection/index.js":
+/*!************************************************!*\
+  !*** ./node_modules/toggle-selection/index.js ***!
+  \************************************************/
+/***/ ((module) => {
+
+
+module.exports = function () {
+  var selection = document.getSelection();
+  if (!selection.rangeCount) {
+    return function () {};
+  }
+  var active = document.activeElement;
+
+  var ranges = [];
+  for (var i = 0; i < selection.rangeCount; i++) {
+    ranges.push(selection.getRangeAt(i));
+  }
+
+  switch (active.tagName.toUpperCase()) { // .toUpperCase handles XHTML
+    case 'INPUT':
+    case 'TEXTAREA':
+      active.blur();
+      break;
+
+    default:
+      active = null;
+      break;
+  }
+
+  selection.removeAllRanges();
+  return function () {
+    selection.type === 'Caret' &&
+    selection.removeAllRanges();
+
+    if (!selection.rangeCount) {
+      ranges.forEach(function(range) {
+        selection.addRange(range);
+      });
+    }
+
+    active &&
+    active.focus();
+  };
+};
 
 
 /***/ }),

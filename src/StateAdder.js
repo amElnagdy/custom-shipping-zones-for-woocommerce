@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Form, Input } from "antd";
 
 export default function StateAdder({ selectedCountry, setAddedStates }) {
+  const strings = cszStrings;
   const [form] = Form.useForm();
 
   const generateStateCode = (stateName) => {
@@ -28,37 +29,43 @@ export default function StateAdder({ selectedCountry, setAddedStates }) {
   };
 
   return (
-    <Form form={form} layout="vertical" onFinish={onFinish} autoComplete="off">
+    <Form
+      form={form}
+      layout="horizontal"
+      onFinish={onFinish}
+      autoComplete="off"
+    >
       <Form.Item
         name="stateName"
-        rules={[{ required: true, message: "Please enter a state name" }]}
+        rules={[{ required: true, message: strings.please_enter_state_name }]}
+        style={{
+          display: "inline-block",
+          width: "calc(30% - 12px)",
+          marginTop: "20px",
+          marginRight: "20px",
+        }}
       >
         <Input
-          placeholder="State Name"
+          placeholder={strings.state_name}
           onChange={onStateNameChange}
           autoFocus
-          style={{
-            width: "30%",
-            marginTop: "20px",
-          }}
         />
       </Form.Item>
       <Form.Item
         name="stateCode"
-        rules={[{ required: true, message: "Please enter a state code" }]}
-        help="Automatically generated."
+        rules={[{ required: true, message: strings.please_enter_state_code }]}
+        help={strings.state_codes_are_auto_generated}
+        style={{
+          display: "inline-block",
+          width: "calc(30% - 12px)",
+          marginTop: "20px",
+        }}
       >
-        <Input
-          placeholder="State Code"
-          disabled
-          style={{
-            width: "30%",
-          }}
-        />
+        <Input placeholder={strings.state_code} disabled />
       </Form.Item>
       <Form.Item>
         <Button type="primary" htmlType="submit">
-          Add State
+          {strings.add_state}
         </Button>
       </Form.Item>
     </Form>

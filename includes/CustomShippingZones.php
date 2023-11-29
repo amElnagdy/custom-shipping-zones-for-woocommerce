@@ -14,6 +14,8 @@ class CustomShippingZones
         add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
         add_action('admin_menu', array($this, 'add_admin_menu'));
         add_action('wp_ajax_csz_save_states', array($this, 'save_states'));
+        add_action('wp_ajax_csz_delete_state', array($this, 'delete_state'));
+        add_filter('woocommerce_states', array($this, 'modify_woocommerce_states'));
     }
 
     public function init(): void
@@ -46,6 +48,8 @@ class CustomShippingZones
             'ajax_url' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('csz_nonce')
         ));
+
+        wp_localize_script('custom-shipping-zone-admin', 'cszStrings', $this->get_strings());
     }
 
     public function add_admin_menu(): void
@@ -108,9 +112,6 @@ class CustomShippingZones
         wp_send_json_success();
     }
 
-
-
-
     public function get_custom_shipping_zones()
     {
         $countries = WC()->countries->get_countries();
@@ -124,5 +125,48 @@ class CustomShippingZones
         }
 
         return $customShippingZones;
+    }
+
+    public function delete_state()
+    {
+        if (current_user_can('manage_woocommerce') === false) {
+            wp_send_json_error('Not allowed!');
+        }
+
+        if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'csz_nonce')) {
+            wp_send_json_error('Nonce verification failed');
+        }
+
+        $countryCode = isset($_POST['countryCode']) ? sanitize_text_field($_POST['countryCode']) : '';
+        $stateCode = isset($_POST['stateCode']) ? sanitize_text_field($_POST['stateCode']) : '';
+
+        $optionName = strtolower($countryCode) . '_custom_shipping_zones';
+        $existingStates = get_option($optionName) ?: array();
+
+        unset($existingStates[$stateCode]);
+
+        update_option($optionName, $existingStates);
+
+        wp_send_json_success();
+    }
+
+    public function modify_woocommerce_states($states)
+    {
+        $customShippingZones = $this->get_custom_shipping_zones();
+
+        foreach ($customShippingZones as $countryCode => $zones) {
+            if (!empty($zones)) {
+                foreach ($zones as $zoneCode => $zoneName) {
+                    $states[$countryCode][$zoneCode] = $zoneName;
+                }
+            }
+        }
+
+        return $states;
+    }
+
+    public function get_strings()
+    {
+        return Strings::strings();
     }
 }

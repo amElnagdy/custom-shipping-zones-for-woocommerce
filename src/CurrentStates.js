@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Divider, Table, Space, Button } from "antd";
+import { Divider, Table, Space, Button, message, Result } from "antd";
 
 export default function CurrentStates() {
   const current_states = cszData.current_custom_zones;
+  const [data, setData] = useState(current_states);
+
   const formattedData = [];
 
   Object.entries(current_states).forEach(([countryCode, states]) => {
@@ -15,6 +17,45 @@ export default function CurrentStates() {
       });
     });
   });
+
+  const handleDelete = (stateCode, countryCode) => {
+    const formData = new URLSearchParams();
+    formData.append("action", "csz_delete_state");
+    formData.append("nonce", cszAjax.nonce);
+    formData.append("countryCode", countryCode);
+    formData.append("stateCode", stateCode);
+
+    fetch(cszAjax.ajax_url, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        if (result.success) {
+          delete data[countryCode][stateCode];
+          setData({ ...data });
+          message.success({
+            content: "State deleted successfully",
+            duration: 1,
+            style: {
+              marginTop: "2vh",
+            },
+          });
+        } else {
+          message.error({
+            content: "Failed to delete state",
+            style: {
+              marginTop: "2vh",
+            },
+          });
+        }
+      })
+      .catch((error) => {
+        console.error("Error deleting state:", error);
+        message("An error occurred while deleting the state");
+      });
+  };
 
   const columns = [
     {
@@ -37,16 +78,13 @@ export default function CurrentStates() {
       key: "action",
       render: (_, record) => (
         <Space size="middle">
-          <Button onClick={() => handleDelete(record.key)}>Delete</Button>
+          <Button onClick={() => handleDelete(record.code, record.country)}>
+            Delete
+          </Button>
         </Space>
       ),
     },
   ];
-
-  const handleDelete = (code) => {
-    // Implement delete functionality here
-    console.log("Delete state with code:", code);
-  };
 
   return (
     <div>
