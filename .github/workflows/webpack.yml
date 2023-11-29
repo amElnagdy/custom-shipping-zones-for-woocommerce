@@ -31,12 +31,14 @@ jobs:
           cp -R ./includes/* ./dist/
           cp ./custom-shipping-zones.php ./dist/
 
-      - name: Checkout Release Branch
-        run: git checkout release || git checkout -b release
+      - name: Checkout or Create Release Branch
+        run: |
+          git fetch
+          git branch --list --remote | grep 'origin/release' && git checkout release || git checkout -b release
 
       - name: Replace Release Branch Contents
         run: |
-          git rm -r *
+          rm -rf * .[^.]*
           cp -R ./dist/* ./
           rm -rf dist
 
@@ -46,4 +48,4 @@ jobs:
           git config --global user.name "amElnagdy"
           git add .
           git commit -m "Deploying build to release branch"
-          git push origin release
+          git push --set-upstream origin release
