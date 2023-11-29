@@ -1,0 +1,44 @@
+name: Build and Deploy to Release Branch
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Checkout Release Branch
+        run: |
+          git checkout release || git checkout -b release
+          git reset --hard origin/master
+
+      - name: Copy Build to Release Branch
+        run: |
+          cp -R ./build/* ./
+          cp -R ./vendor ./
+          cp -R ./includes ./
+          cp ./custom-shipping-zones.php ./
+          git config --global user.email a.elnagdy87@gmail.com
+          git config --global user.name amElnagdy
+          
+      - name: Commit and Push to Release Branch
+        run: |
+          git add .
+          git commit -m "Deploying build to release branch"
+          git push origin release
