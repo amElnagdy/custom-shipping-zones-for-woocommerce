@@ -48,4 +48,4 @@ jobs:
           git config --global user.name "amElnagdy"
           git add .
           git commit -m "Deploying build to WPORG branch"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/amElnagdy/custom-shipping-zones.git wporg
+          git push --force https://${{ secrets.GITHUB_TOKEN }}@github.com/amElnagdy/custom-shipping-zones.git wporg
