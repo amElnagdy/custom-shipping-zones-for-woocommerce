@@ -10,8 +10,7 @@ class Strings
             'these_states_will_be_added' => __('These states will be added to ', 'custom-shipping-zones'),
             'delete' => __('Delete', 'custom-shipping-zones'),
             'states_saved_successfully' => __('States saved successfully', 'custom-shipping-zones'),
-            'your_changes_have_been_saved' => __('Your changes have been saved. The page will reload shortly.', 'custom-shipping-zones'),
-            'reload_page' => __('Reload page', 'custom-shipping-zones'),
+            'reload_page' => __('Reload page and add new zones', 'custom-shipping-zones'),
             'save_states' => __('Save states', 'custom-shipping-zones'),
             'select_country' => __('Select country', 'custom-shipping-zones'),
             'state_deleted' => __('State deleted successfully', 'custom-shipping-zones'),
@@ -28,6 +27,9 @@ class Strings
             'state_codes_are_auto_generated' => __('State codes are automatically generated.', 'custom-shipping-zones'),
             'state_code' => __('State code', 'custom-shipping-zones'),
             'add_state' => __('Add state', 'custom-shipping-zones'),
+            'navigate_to_woocommerce_settings' => __('Now you can go to WooCommerce → Settings → Shipping to use the newly added custom zones.', 'custom-shipping-zones'),
+
+
         ];
     }
 }

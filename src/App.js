@@ -28,16 +28,32 @@ const App = () => {
       .then(() => {
         setLoading(false);
         setSavedSuccessfully(true);
-        setTimeout(() => window.location.reload(), 2000);
       });
   };
+
+  const navigateToWooCommerceSettings = (
+    <span>
+      {strings.navigate_to_woocommerce_settings
+        .split("WooCommerce → Settings → Shipping")
+        .map((text, index) =>
+          index === 0
+            ? text
+            : [
+                <a key="link" href="admin.php?page=wc-settings&tab=shipping">
+                  WooCommerce → Settings → Shipping
+                </a>,
+                text,
+              ]
+        )}
+    </span>
+  );
 
   if (savedSuccessfully) {
     return (
       <Result
         status="success"
         title={strings.states_saved_successfully}
-        subTitle={strings.your_changes_have_been_saved}
+        subTitle={<>{navigateToWooCommerceSettings}</>}
         extra={[
           <Button
             type="primary"
@@ -55,12 +71,9 @@ const App = () => {
     <Spin spinning={loading}>
       <div
         style={{
-          maxWidth: "950px",
           margin: "0 auto",
           border: "1px solid #e6e6e6",
-          padding: "40px 25px",
-          marginTop: "50px",
-          backgroundColor: "#fff",
+          padding: "10px 15px",
         }}
       >
         <CountrySelector

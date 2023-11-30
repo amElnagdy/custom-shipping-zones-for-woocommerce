@@ -9,20 +9,15 @@ class CustomShippingZones
 
     public function __construct()
     {
-        add_action('before_woocommerce_init', array($this, 'init'));
         add_action('load-textdomain', array($this, 'load_textdomain'));
         add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
-        add_action('admin_menu', array($this, 'add_admin_menu'));
         add_action('wp_ajax_csz_save_states', array($this, 'save_states'));
         add_action('wp_ajax_csz_delete_state', array($this, 'delete_state'));
         add_filter('woocommerce_states', array($this, 'modify_woocommerce_states'));
-    }
 
-    public function init(): void
-    {
-        if (class_exists('\Automattic\WooCommerce\Utilities\FeaturesUtil')) {
-            FeaturesUtil::declare_compatibility('custom_order_tables', __FILE__, true);
-        }
+        // Add the settings tab
+        add_action('woocommerce_settings_tabs_array', array($this, 'add_settings_tab'), 50);
+        add_action('woocommerce_settings_tabs_custom_shipping_zones', array($this, 'settings_tab'));
     }
 
     public function load_textdomain(): void
@@ -33,10 +28,11 @@ class CustomShippingZones
     public function enqueue_scripts(): void
     {
         // Let's check if we are on the right page
-        $screen = get_current_screen();
-        if ($screen->id !== 'toplevel_page_custom-shipping-zones') {
+        if (!isset($_GET['page']) && $_GET['page'] == 'wc-settings' && isset($_GET['tab']) && $_GET['tab'] == 'custom_shipping_zones') {
             return;
         }
+        echo '<style>.woocommerce-save-button { display: none !important; }</style>';
+
         wp_enqueue_script('custom-shipping-zone-admin', CUSTOM_SHIPPING_ZONES_URL . '/build/index.js', array('wp-element'), CUSTOM_SHIPPING_ZONES_VERSION, true);
 
         wp_localize_script('custom-shipping-zone-admin', 'cszData', array(
@@ -50,24 +46,6 @@ class CustomShippingZones
         ));
 
         wp_localize_script('custom-shipping-zone-admin', 'cszStrings', $this->get_strings());
-    }
-
-    public function add_admin_menu(): void
-    {
-        add_menu_page(
-            __('Custom Shipping Zones', 'custom-shipping-zones'),
-            __('Custom Shipping Zones', 'custom-shipping-zones'),
-            'manage_options',
-            'custom-shipping-zones',
-            array($this, 'render_admin_page'),
-            'dashicons-location-alt',
-            99
-        );
-    }
-
-    public function render_admin_page(): void
-    {
-        require_once CUSTOM_SHIPPING_ZONES_PATH . 'includes/admin/admin.php';
     }
 
     public function get_countries()
@@ -168,5 +146,17 @@ class CustomShippingZones
     public function get_strings()
     {
         return Strings::strings();
+    }
+
+    public function add_settings_tab($settings_tabs)
+    {
+        $settings_tabs['custom_shipping_zones'] = __('Custom Shipping Zones', 'custom-shipping-zones');
+        return $settings_tabs;
+    }
+
+    public function settings_tab(): void
+    {
+
+        require_once CUSTOM_SHIPPING_ZONES_PATH . 'includes/admin/admin.php';
     }
 }

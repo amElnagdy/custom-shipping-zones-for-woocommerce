@@ -13,7 +13,7 @@ export default function AddedStates({
 
   return (
     <div>
-      <Divider>{`${strings.these_states_will_be_added} '${selectedCountry}`}</Divider>
+      <Divider>{`${strings.these_states_will_be_added} ${selectedCountry}`}</Divider>
       <List
         size="small"
         bordered

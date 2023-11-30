@@ -56,7 +56,6 @@ export default function StateAdder({
       </Form.Item>
       <Form.Item
         name="stateCode"
-        rules={[{ required: true, message: strings.please_enter_state_code }]}
         help={strings.state_codes_are_auto_generated}
         style={{
           display: "inline-block",
