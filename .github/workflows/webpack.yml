@@ -44,10 +44,10 @@ jobs:
           cp -R ${{ github.workspace }}/dist/* ./
           rm -rf dist
 
-      - name: Commit and Push to Release Branch
+      - name: Commit and Push to WPORG Branch
         run: |
           git config --global user.email "a.elnagdy87@gmail.com"
           git config --global user.name "amElnagdy"
           git add .
-          git commit -m "Deploying build to release branch"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/amElnagdy/custom-shipping-zones.git release
+          git commit -m "Deploying build to WPORG branch"
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/amElnagdy/custom-shipping-zones.git wporg
