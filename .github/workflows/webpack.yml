@@ -50,4 +50,4 @@ jobs:
           git config --global user.name "amElnagdy"
           git add .
           git commit -m "Deploying build to release branch"
-          git push --set-upstream origin release
+          git push --set-upstream origin release --token ${{ secrets.GITHUB_TOKEN }}
