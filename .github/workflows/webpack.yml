@@ -33,12 +33,12 @@ jobs:
           echo "Listing dist contents"
           ls -al dist
 
-      - name: Checkout or Create Release Branch
+      - name: Checkout or Create WPORG Branch
         run: |
           git fetch
-          git branch --list --remote | grep 'origin/release' && git checkout release || git checkout -b release
+          git branch --list --remote | grep 'origin/wporg' && git checkout wporg || git checkout -b wporg
 
-      - name: Replace Release Branch Contents
+      - name: Replace WPORG Branch Contents
         run: |
           git rm -r * || true
           cp -R ${{ github.workspace }}/dist/* ./
