@@ -28,8 +28,7 @@ class Strings
             'state_code' => __('State code', 'custom-shipping-zones'),
             'add_state' => __('Add state', 'custom-shipping-zones'),
             'navigate_to_woocommerce_settings' => __('Now you can go to WooCommerce → Settings → Shipping to use the newly added custom zones.', 'custom-shipping-zones'),
-
-
+            'state_is_in_use' => __('This state is currently being used in a shipping zone. Please remove it from the shipping zones before deleting.', 'custom-shipping-zones'),
         ];
     }
 }

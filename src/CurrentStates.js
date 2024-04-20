@@ -33,27 +33,40 @@ export default function CurrentStates({ strings }) {
       .then((response) => response.json())
       .then((result) => {
         if (result.success) {
-          delete data[countryCode][stateCode];
-          setData({ ...data });
-          message.success({
-            content: strings.state_deleted,
-            duration: 1,
-            style: {
-              marginTop: "2vh",
-            },
-          });
+          const newStateData = { ...data };
+          if (newStateData[countryCode]) {
+            delete newStateData[countryCode][stateCode];
+            setData(newStateData);
+            message.success({
+              content: strings.state_deleted,
+              duration: 2,
+              style: {
+                marginTop: "3vh",
+              },
+            });
+          }
         } else {
+          const errorMessage = result.data === 'state_is_in_use'
+            ? strings.state_is_in_use
+            : strings.failed_to_delete_state;
+      
           message.error({
-            content: strings.failed_to_delete_state,
+            content: errorMessage,
+            duration: 5,
             style: {
-              marginTop: "2vh",
+              marginTop: "5vh",
             },
           });
         }
       })
       .catch((error) => {
         console.error("Error deleting state:", error);
-        message(strings.an_error_occurred);
+        message.error({
+          content: strings.an_error_occurred,
+          style: {
+            marginTop: "2vh",
+          },
+        });
       });
   };
 

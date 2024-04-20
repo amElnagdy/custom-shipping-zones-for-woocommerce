@@ -13,11 +13,8 @@ Thumbs.db
 behat.yml
 bin
 circle.yml
-webpack.config.js
-composer.json
 composer.lock
 Gruntfile.js
-package.json
 package-lock.json
 phpunit.xml
 phpunit.xml.dist
@@ -27,7 +24,6 @@ phpcs.ruleset.xml
 README.md
 wp-cli.local.yml
 tests
-src
 node_modules
 *.sql
 *.tar.gz
