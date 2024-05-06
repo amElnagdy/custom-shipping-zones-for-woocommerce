@@ -1,9 +1,27 @@
-import React, { useState } from "react";
-import { Divider, Table, Space, Button, message } from "antd";
+import React, { useEffect, useState, useRef } from "react";
+import { Divider, Table, Space, Button, message, Input } from "antd";
+import ExportImport from "./ExportImport";
 
 export default function CurrentStates({ strings }) {
   const current_states = cszData.current_custom_zones;
   const [data, setData] = useState(current_states);
+  const [searchText, setSearchText] = useState("");
+  const [unsavedChanges, setUnsavedChanges] = useState(false);
+console.log(current_states);
+  // Trying to prevent the Unsaved Chanegs alert while searching
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      if (unsavedChanges) {
+        event.preventDefault();
+        event.returnValue = "";
+      }
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, [unsavedChanges]);
+  
 
   const formattedData = [];
 
@@ -18,6 +36,29 @@ export default function CurrentStates({ strings }) {
     });
   });
 
+  const filteredData = formattedData.filter(
+    (item) =>
+      item.country.toLowerCase().includes(searchText.toLowerCase()) ||
+      item.state.toLowerCase().includes(searchText.toLowerCase()) ||
+      item.code.toLowerCase().includes(searchText.toLowerCase())
+  );
+
+  const handleSearch = (e) => {
+    setSearchText(e.target.value);
+  };
+
+  /**
+   * As this is a WooCommerce settings page, hitting Enter should not submit the form.
+   */
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+    }
+  };
+
+  /**
+   * Handles the deletion of a state.
+   */
   const handleDelete = (stateCode, countryCode) => {
     const formData = new URLSearchParams();
     formData.append("action", "csz_delete_state");
@@ -46,10 +87,11 @@ export default function CurrentStates({ strings }) {
             });
           }
         } else {
-          const errorMessage = result.data === 'state_is_in_use'
-            ? strings.state_is_in_use
-            : strings.failed_to_delete_state;
-      
+          const errorMessage =
+            result.data === "state_is_in_use"
+              ? strings.state_is_in_use
+              : strings.failed_to_delete_state;
+
           message.error({
             content: errorMessage,
             duration: 5,
@@ -102,7 +144,16 @@ export default function CurrentStates({ strings }) {
   return (
     <div>
       <Divider>{strings.current_custom_shipping_zones}</Divider>
-      <Table columns={columns} dataSource={formattedData} />
+      <Input
+        placeholder={strings.search_text}
+        value={searchText}
+        onChange={handleSearch}
+        onKeyDown={handleKeyDown}
+        style={{ width: 300, marginBottom: 16 }}
+      />
+      <Table columns={columns} dataSource={filteredData} />
+
+      <ExportImport strings={strings} data={formattedData} />
     </div>
   );
 }

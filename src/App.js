@@ -113,6 +113,7 @@ const App = () => {
         >
           <CurrentStates strings={strings} />
         </div>
+        
       </div>
     </Spin>
   );

@@ -66,7 +66,7 @@ export default function StateAdder({
         <Input placeholder={strings.state_code} disabled />
       </Form.Item>
       <Form.Item>
-        <Button type="primary" htmlType="submit">
+        <Button type="dashed" htmlType="submit">
           {strings.add_state}
         </Button>
       </Form.Item>
