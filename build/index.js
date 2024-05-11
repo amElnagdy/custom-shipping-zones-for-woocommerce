@@ -12171,6 +12171,474 @@ function getStyle(prefixCls, token) {
 
 /***/ }),
 
+/***/ "./node_modules/antd/es/collapse/Collapse.js":
+/*!***************************************************!*\
+  !*** ./node_modules/antd/es/collapse/Collapse.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ant_design_icons_es_icons_RightOutlined__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ant-design/icons/es/icons/RightOutlined */ "./node_modules/@ant-design/icons/es/icons/RightOutlined.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var rc_collapse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rc-collapse */ "./node_modules/rc-collapse/es/index.js");
+/* harmony import */ var rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rc-util/es/Children/toArray */ "./node_modules/rc-util/es/Children/toArray.js");
+/* harmony import */ var rc_util_es_omit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rc-util/es/omit */ "./node_modules/rc-util/es/omit.js");
+/* harmony import */ var _util_motion__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../_util/motion */ "./node_modules/antd/es/_util/motion.js");
+/* harmony import */ var _util_reactNode__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../_util/reactNode */ "./node_modules/antd/es/_util/reactNode.js");
+/* harmony import */ var _util_warning__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../_util/warning */ "./node_modules/antd/es/_util/warning.js");
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config-provider */ "./node_modules/antd/es/config-provider/context.js");
+/* harmony import */ var _config_provider_hooks_useSize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../config-provider/hooks/useSize */ "./node_modules/antd/es/config-provider/hooks/useSize.js");
+/* harmony import */ var _CollapsePanel__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./CollapsePanel */ "./node_modules/antd/es/collapse/CollapsePanel.js");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./style */ "./node_modules/antd/es/collapse/style/index.js");
+"use client";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const Collapse = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((props, ref) => {
+  const {
+    getPrefixCls,
+    direction,
+    collapse
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_config_provider__WEBPACK_IMPORTED_MODULE_5__.ConfigContext);
+  const {
+    prefixCls: customizePrefixCls,
+    className,
+    rootClassName,
+    style,
+    bordered = true,
+    ghost,
+    size: customizeSize,
+    expandIconPosition = 'start',
+    children,
+    expandIcon
+  } = props;
+  const mergedSize = (0,_config_provider_hooks_useSize__WEBPACK_IMPORTED_MODULE_6__["default"])(ctx => {
+    var _a;
+    return (_a = customizeSize !== null && customizeSize !== void 0 ? customizeSize : ctx) !== null && _a !== void 0 ? _a : 'middle';
+  });
+  const prefixCls = getPrefixCls('collapse', customizePrefixCls);
+  const rootPrefixCls = getPrefixCls();
+  const [wrapSSR, hashId] = (0,_style__WEBPACK_IMPORTED_MODULE_7__["default"])(prefixCls);
+  if (true) {
+    const warning = (0,_util_warning__WEBPACK_IMPORTED_MODULE_8__.devUseWarning)('Collapse');
+    // Warning if use legacy type `expandIconPosition`
+     true ? warning(expandIconPosition !== 'left' && expandIconPosition !== 'right', 'deprecated', '`expandIconPosition` with `left` or `right` is deprecated. Please use `start` or `end` instead.') : 0;
+  }
+  // Align with logic position
+  const mergedExpandIconPosition = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    if (expandIconPosition === 'left') {
+      return 'start';
+    }
+    return expandIconPosition === 'right' ? 'end' : expandIconPosition;
+  }, [expandIconPosition]);
+  const renderExpandIcon = function () {
+    let panelProps = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    const icon = expandIcon ? expandIcon(panelProps) : ( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ant_design_icons_es_icons_RightOutlined__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      rotate: panelProps.isActive ? 90 : undefined
+    }));
+    return (0,_util_reactNode__WEBPACK_IMPORTED_MODULE_10__.cloneElement)(icon, () => ({
+      className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(icon.props.className, `${prefixCls}-arrow`)
+    }));
+  };
+  const collapseClassName = classnames__WEBPACK_IMPORTED_MODULE_1___default()(`${prefixCls}-icon-position-${mergedExpandIconPosition}`, {
+    [`${prefixCls}-borderless`]: !bordered,
+    [`${prefixCls}-rtl`]: direction === 'rtl',
+    [`${prefixCls}-ghost`]: !!ghost,
+    [`${prefixCls}-${mergedSize}`]: mergedSize !== 'middle'
+  }, collapse === null || collapse === void 0 ? void 0 : collapse.className, className, rootClassName, hashId);
+  const openMotion = Object.assign(Object.assign({}, (0,_util_motion__WEBPACK_IMPORTED_MODULE_11__["default"])(rootPrefixCls)), {
+    motionAppear: false,
+    leavedClassName: `${prefixCls}-content-hidden`
+  });
+  const items = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => children ? (0,rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_3__["default"])(children).map((child, index) => {
+    var _a, _b;
+    if ((_a = child.props) === null || _a === void 0 ? void 0 : _a.disabled) {
+      const key = (_b = child.key) !== null && _b !== void 0 ? _b : String(index);
+      const {
+        disabled,
+        collapsible
+      } = child.props;
+      const childProps = Object.assign(Object.assign({}, (0,rc_util_es_omit__WEBPACK_IMPORTED_MODULE_4__["default"])(child.props, ['disabled'])), {
+        key,
+        collapsible: collapsible !== null && collapsible !== void 0 ? collapsible : disabled ? 'disabled' : undefined
+      });
+      return (0,_util_reactNode__WEBPACK_IMPORTED_MODULE_10__.cloneElement)(child, childProps);
+    }
+    return child;
+  }) : null, [children]);
+  return wrapSSR( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(rc_collapse__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({
+    ref: ref,
+    openMotion: openMotion
+  }, (0,rc_util_es_omit__WEBPACK_IMPORTED_MODULE_4__["default"])(props, ['rootClassName']), {
+    expandIcon: renderExpandIcon,
+    prefixCls: prefixCls,
+    className: collapseClassName,
+    style: Object.assign(Object.assign({}, collapse === null || collapse === void 0 ? void 0 : collapse.style), style)
+  }), items));
+});
+if (true) {
+  Collapse.displayName = 'Collapse';
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Object.assign(Collapse, {
+  Panel: _CollapsePanel__WEBPACK_IMPORTED_MODULE_12__["default"]
+}));
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/collapse/CollapsePanel.js":
+/*!********************************************************!*\
+  !*** ./node_modules/antd/es/collapse/CollapsePanel.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var rc_collapse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rc-collapse */ "./node_modules/rc-collapse/es/index.js");
+/* harmony import */ var _util_warning__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../_util/warning */ "./node_modules/antd/es/_util/warning.js");
+/* harmony import */ var _config_provider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config-provider */ "./node_modules/antd/es/config-provider/context.js");
+"use client";
+
+
+
+
+
+
+const CollapsePanel = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef((props, ref) => {
+  if (true) {
+    const warning = (0,_util_warning__WEBPACK_IMPORTED_MODULE_3__.devUseWarning)('Collapse.Panel');
+    warning.deprecated(!('disabled' in props), 'disabled', 'collapsible="disabled"');
+  }
+  const {
+    getPrefixCls
+  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_config_provider__WEBPACK_IMPORTED_MODULE_4__.ConfigContext);
+  const {
+    prefixCls: customizePrefixCls,
+    className,
+    showArrow = true
+  } = props;
+  const prefixCls = getPrefixCls('collapse', customizePrefixCls);
+  const collapsePanelClassName = classnames__WEBPACK_IMPORTED_MODULE_1___default()({
+    [`${prefixCls}-no-arrow`]: !showArrow
+  }, className);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(rc_collapse__WEBPACK_IMPORTED_MODULE_2__["default"].Panel, Object.assign({
+    ref: ref
+  }, props, {
+    prefixCls: prefixCls,
+    className: collapsePanelClassName
+  }));
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CollapsePanel);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/collapse/index.js":
+/*!************************************************!*\
+  !*** ./node_modules/antd/es/collapse/index.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Collapse__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Collapse */ "./node_modules/antd/es/collapse/Collapse.js");
+"use client";
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Collapse__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./node_modules/antd/es/collapse/style/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/antd/es/collapse/style/index.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   genBaseStyle: () => (/* binding */ genBaseStyle)
+/* harmony export */ });
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../style */ "./node_modules/antd/es/style/index.js");
+/* harmony import */ var _style_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../style/motion */ "./node_modules/antd/es/style/motion/collapse.js");
+/* harmony import */ var _theme_internal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../theme/internal */ "./node_modules/antd/es/theme/util/genComponentStyleHook.js");
+/* harmony import */ var _theme_internal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../theme/internal */ "./node_modules/antd/es/theme/util/statistic.js");
+
+
+
+const genBaseStyle = token => {
+  const {
+    componentCls,
+    contentBg,
+    padding,
+    headerBg,
+    headerPadding,
+    collapseHeaderPaddingSM,
+    collapseHeaderPaddingLG,
+    collapsePanelBorderRadius,
+    lineWidth,
+    lineType,
+    colorBorder,
+    colorText,
+    colorTextHeading,
+    colorTextDisabled,
+    fontSize,
+    fontSizeLG,
+    lineHeight,
+    marginSM,
+    paddingSM,
+    paddingLG,
+    paddingXS,
+    motionDurationSlow,
+    fontSizeIcon,
+    contentPadding
+  } = token;
+  const borderBase = `${lineWidth}px ${lineType} ${colorBorder}`;
+  return {
+    [componentCls]: Object.assign(Object.assign({}, (0,_style__WEBPACK_IMPORTED_MODULE_0__.resetComponent)(token)), {
+      backgroundColor: headerBg,
+      border: borderBase,
+      borderBottom: 0,
+      borderRadius: `${collapsePanelBorderRadius}px`,
+      [`&-rtl`]: {
+        direction: 'rtl'
+      },
+      [`& > ${componentCls}-item`]: {
+        borderBottom: borderBase,
+        [`&:last-child`]: {
+          [`
+            &,
+            & > ${componentCls}-header`]: {
+            borderRadius: `0 0 ${collapsePanelBorderRadius}px ${collapsePanelBorderRadius}px`
+          }
+        },
+        [`> ${componentCls}-header`]: {
+          position: 'relative',
+          // Compatible with old version of antd, should remove in next version
+          display: 'flex',
+          flexWrap: 'nowrap',
+          alignItems: 'flex-start',
+          padding: headerPadding,
+          color: colorTextHeading,
+          lineHeight,
+          cursor: 'pointer',
+          transition: `all ${motionDurationSlow}, visibility 0s`,
+          [`> ${componentCls}-header-text`]: {
+            flex: 'auto'
+          },
+          '&:focus': {
+            outline: 'none'
+          },
+          // >>>>> Arrow
+          [`${componentCls}-expand-icon`]: {
+            height: fontSize * lineHeight,
+            display: 'flex',
+            alignItems: 'center',
+            paddingInlineEnd: marginSM
+          },
+          [`${componentCls}-arrow`]: Object.assign(Object.assign({}, (0,_style__WEBPACK_IMPORTED_MODULE_0__.resetIcon)()), {
+            fontSize: fontSizeIcon,
+            svg: {
+              transition: `transform ${motionDurationSlow}`
+            }
+          }),
+          // >>>>> Text
+          [`${componentCls}-header-text`]: {
+            marginInlineEnd: 'auto'
+          }
+        },
+        [`${componentCls}-icon-collapsible-only`]: {
+          cursor: 'unset',
+          [`${componentCls}-expand-icon`]: {
+            cursor: 'pointer'
+          }
+        }
+      },
+      [`${componentCls}-content`]: {
+        color: colorText,
+        backgroundColor: contentBg,
+        borderTop: borderBase,
+        [`& > ${componentCls}-content-box`]: {
+          padding: contentPadding
+        },
+        [`&-hidden`]: {
+          display: 'none'
+        }
+      },
+      [`&-small`]: {
+        [`> ${componentCls}-item`]: {
+          [`> ${componentCls}-header`]: {
+            padding: collapseHeaderPaddingSM,
+            paddingInlineStart: paddingXS,
+            [`> ${componentCls}-expand-icon`]: {
+              // Arrow offset
+              marginInlineStart: paddingSM - paddingXS
+            }
+          },
+          [`> ${componentCls}-content > ${componentCls}-content-box`]: {
+            padding: paddingSM
+          }
+        }
+      },
+      [`&-large`]: {
+        [`> ${componentCls}-item`]: {
+          fontSize: fontSizeLG,
+          [`> ${componentCls}-header`]: {
+            padding: collapseHeaderPaddingLG,
+            paddingInlineStart: padding,
+            [`> ${componentCls}-expand-icon`]: {
+              height: fontSizeLG * lineHeight,
+              // Arrow offset
+              marginInlineStart: paddingLG - padding
+            }
+          },
+          [`> ${componentCls}-content > ${componentCls}-content-box`]: {
+            padding: paddingLG
+          }
+        }
+      },
+      [`${componentCls}-item:last-child`]: {
+        [`> ${componentCls}-content`]: {
+          borderRadius: `0 0 ${collapsePanelBorderRadius}px ${collapsePanelBorderRadius}px`
+        }
+      },
+      [`& ${componentCls}-item-disabled > ${componentCls}-header`]: {
+        [`
+          &,
+          & > .arrow
+        `]: {
+          color: colorTextDisabled,
+          cursor: 'not-allowed'
+        }
+      },
+      // ========================== Icon Position ==========================
+      [`&${componentCls}-icon-position-end`]: {
+        [`& > ${componentCls}-item`]: {
+          [`> ${componentCls}-header`]: {
+            [`${componentCls}-expand-icon`]: {
+              order: 1,
+              paddingInlineEnd: 0,
+              paddingInlineStart: marginSM
+            }
+          }
+        }
+      }
+    })
+  };
+};
+const genArrowStyle = token => {
+  const {
+    componentCls
+  } = token;
+  const fixedSelector = `> ${componentCls}-item > ${componentCls}-header ${componentCls}-arrow svg`;
+  return {
+    [`${componentCls}-rtl`]: {
+      [fixedSelector]: {
+        transform: `rotate(180deg)`
+      }
+    }
+  };
+};
+const genBorderlessStyle = token => {
+  const {
+    componentCls,
+    headerBg,
+    paddingXXS,
+    colorBorder
+  } = token;
+  return {
+    [`${componentCls}-borderless`]: {
+      backgroundColor: headerBg,
+      border: 0,
+      [`> ${componentCls}-item`]: {
+        borderBottom: `1px solid ${colorBorder}`
+      },
+      [`
+        > ${componentCls}-item:last-child,
+        > ${componentCls}-item:last-child ${componentCls}-header
+      `]: {
+        borderRadius: 0
+      },
+      [`> ${componentCls}-item:last-child`]: {
+        borderBottom: 0
+      },
+      [`> ${componentCls}-item > ${componentCls}-content`]: {
+        backgroundColor: 'transparent',
+        borderTop: 0
+      },
+      [`> ${componentCls}-item > ${componentCls}-content > ${componentCls}-content-box`]: {
+        paddingTop: paddingXXS
+      }
+    }
+  };
+};
+const genGhostStyle = token => {
+  const {
+    componentCls,
+    paddingSM
+  } = token;
+  return {
+    [`${componentCls}-ghost`]: {
+      backgroundColor: 'transparent',
+      border: 0,
+      [`> ${componentCls}-item`]: {
+        borderBottom: 0,
+        [`> ${componentCls}-content`]: {
+          backgroundColor: 'transparent',
+          border: 0,
+          [`> ${componentCls}-content-box`]: {
+            paddingBlock: paddingSM
+          }
+        }
+      }
+    }
+  };
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_theme_internal__WEBPACK_IMPORTED_MODULE_1__["default"])('Collapse', token => {
+  const collapseToken = (0,_theme_internal__WEBPACK_IMPORTED_MODULE_2__.merge)(token, {
+    collapseHeaderPaddingSM: `${token.paddingXS}px ${token.paddingSM}px`,
+    collapseHeaderPaddingLG: `${token.padding}px ${token.paddingLG}px`,
+    collapsePanelBorderRadius: token.borderRadiusLG
+  });
+  return [genBaseStyle(collapseToken), genBorderlessStyle(collapseToken), genGhostStyle(collapseToken), genArrowStyle(collapseToken), (0,_style_motion__WEBPACK_IMPORTED_MODULE_3__["default"])(collapseToken)];
+}, token => ({
+  headerPadding: `${token.paddingSM}px ${token.padding}px`,
+  headerBg: token.colorFillAlter,
+  contentPadding: `${token.padding}px 16px`,
+  // Fixed Value
+  contentBg: token.colorBgContainer
+})));
+
+/***/ }),
+
 /***/ "./node_modules/antd/es/config-provider/DisabledContext.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/antd/es/config-provider/DisabledContext.js ***!
@@ -42952,13 +43420,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/result/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/spin/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/result/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/spin/index.js");
 /* harmony import */ var _CountrySelector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CountrySelector */ "./src/CountrySelector.js");
 /* harmony import */ var _StateAdder__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./StateAdder */ "./src/StateAdder.js");
 /* harmony import */ var _AddedStates__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AddedStates */ "./src/AddedStates.js");
 /* harmony import */ var _CurrentStates__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./CurrentStates */ "./src/CurrentStates.js");
+/* harmony import */ var _faq__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./faq */ "./src/faq.js");
+
 
 
 
@@ -42995,18 +43465,38 @@ const App = () => {
     href: "admin.php?page=wc-settings&tab=shipping"
   }, "WooCommerce \u2192 Settings \u2192 Shipping"), text]));
   if (savedSuccessfully) {
-    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
       status: "success",
       title: strings.states_saved_successfully,
       subTitle: (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, navigateToWooCommerceSettings),
-      extra: [(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      extra: [(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_7__["default"], {
         type: "primary",
         key: "console",
         onClick: () => window.location.reload()
       }, strings.reload_page)]
     });
   }
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  const faqs = [{
+    question: strings.faq_woocommerce_settings,
+    answer: strings.faq_woocommerce_settings_description
+  }, {
+    question: strings.faq_whats_code,
+    answer: strings.faq_code_description
+  }, {
+    question: strings.faq_cant_delete,
+    answer: strings.faq_cant_delete_description
+  }, {
+    question: strings.faq_export_import,
+    answer: strings.faq_export_import_description
+  }, {
+    question: strings.faq_rate_plugin,
+    answer: (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      dangerouslySetInnerHTML: {
+        __html: strings.faq_rate_plugin_description
+      }
+    })
+  }];
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_8__["default"], {
     spinning: loading
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     style: {
@@ -43027,7 +43517,7 @@ const App = () => {
     selectedCountry: selectedCountry,
     setAddedStates: setAddedStates,
     strings: strings
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_7__["default"], {
     style: {
       marginTop: "20px"
     },
@@ -43040,7 +43530,13 @@ const App = () => {
     }
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_CurrentStates__WEBPACK_IMPORTED_MODULE_4__["default"], {
     strings: strings
-  }))));
+  }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: {
+      margin: 20
+    }
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_faq__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    faqs: faqs
+  })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
@@ -43253,9 +43749,6 @@ function CurrentStates({
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_7__["default"], {
     columns: columns,
     dataSource: filteredData
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_ExportImport__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    strings: strings,
-    data: formattedData
   }));
 }
 
@@ -43498,6 +43991,40 @@ function StateAdder({
     htmlType: "submit"
   }, strings.add_state)));
 }
+
+/***/ }),
+
+/***/ "./src/faq.js":
+/*!********************!*\
+  !*** ./src/faq.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/collapse/index.js");
+
+
+
+const {
+  Panel
+} = antd__WEBPACK_IMPORTED_MODULE_1__["default"];
+const FAQ = ({
+  faqs
+}) => {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    accordion: true
+  }, faqs.map((faq, index) => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(Panel, {
+    header: faq.question,
+    key: index
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, faq.answer))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FAQ);
 
 /***/ }),
 
@@ -43801,6 +44328,584 @@ var Checkbox = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_7__.forwardRef)(fu
   }));
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Checkbox);
+
+/***/ }),
+
+/***/ "./node_modules/rc-collapse/es/Collapse.js":
+/*!*************************************************!*\
+  !*** ./node_modules/rc-collapse/es/Collapse.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var rc_util_es_hooks_useMergedState__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rc-util/es/hooks/useMergedState */ "./node_modules/rc-util/es/hooks/useMergedState.js");
+/* harmony import */ var rc_util_es_warning__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rc-util/es/warning */ "./node_modules/rc-util/es/warning.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _hooks_useItems__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./hooks/useItems */ "./node_modules/rc-collapse/es/hooks/useItems.js");
+/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Panel */ "./node_modules/rc-collapse/es/Panel.js");
+
+
+
+
+
+
+
+
+
+function getActiveKeysArray(activeKey) {
+  var currentActiveKey = activeKey;
+  if (!Array.isArray(currentActiveKey)) {
+    var activeKeyType = (0,_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__["default"])(currentActiveKey);
+    currentActiveKey =
+      activeKeyType === 'number' || activeKeyType === 'string' ? [currentActiveKey] : [];
+  }
+  return currentActiveKey.map(function (key) {
+    return String(key);
+  });
+}
+var Collapse = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().forwardRef(function (props, ref) {
+  var _props$prefixCls = props.prefixCls,
+    prefixCls = _props$prefixCls === void 0 ? 'rc-collapse' : _props$prefixCls,
+    _props$destroyInactiv = props.destroyInactivePanel,
+    destroyInactivePanel = _props$destroyInactiv === void 0 ? false : _props$destroyInactiv,
+    style = props.style,
+    accordion = props.accordion,
+    className = props.className,
+    children = props.children,
+    collapsible = props.collapsible,
+    openMotion = props.openMotion,
+    expandIcon = props.expandIcon,
+    rawActiveKey = props.activeKey,
+    defaultActiveKey = props.defaultActiveKey,
+    _onChange = props.onChange,
+    items = props.items;
+  var collapseClassName = classnames__WEBPACK_IMPORTED_MODULE_3___default()(prefixCls, className);
+  var _useMergedState = (0,rc_util_es_hooks_useMergedState__WEBPACK_IMPORTED_MODULE_4__["default"])([], {
+      value: rawActiveKey,
+      onChange: function onChange(v) {
+        return _onChange === null || _onChange === void 0 ? void 0 : _onChange(v);
+      },
+      defaultValue: defaultActiveKey,
+      postState: getActiveKeysArray,
+    }),
+    _useMergedState2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useMergedState, 2),
+    activeKey = _useMergedState2[0],
+    setActiveKey = _useMergedState2[1];
+  var onItemClick = function onItemClick(key) {
+    return setActiveKey(function () {
+      if (accordion) {
+        return activeKey[0] === key ? [] : [key];
+      }
+      var index = activeKey.indexOf(key);
+      var isActive = index > -1;
+      if (isActive) {
+        return activeKey.filter(function (item) {
+          return item !== key;
+        });
+      }
+      return [].concat((0,_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(activeKey), [key]);
+    });
+  };
+
+  // ======================== Children ========================
+  (0,rc_util_es_warning__WEBPACK_IMPORTED_MODULE_5__["default"])(
+    !children,
+    '`children` will be removed in next major version. Please use `items` instead.',
+  );
+  var mergedChildren = (0,_hooks_useItems__WEBPACK_IMPORTED_MODULE_7__["default"])(items, children, {
+    prefixCls: prefixCls,
+    accordion: accordion,
+    openMotion: openMotion,
+    expandIcon: expandIcon,
+    collapsible: collapsible,
+    destroyInactivePanel: destroyInactivePanel,
+    onItemClick: onItemClick,
+    activeKey: activeKey,
+  });
+
+  // ======================== Render ========================
+  return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().createElement(
+    'div',
+    {
+      ref: ref,
+      className: collapseClassName,
+      style: style,
+      role: accordion ? 'tablist' : undefined,
+    },
+    mergedChildren,
+  );
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Object.assign(Collapse, {
+  /**
+   * @deprecated use `items` instead, will be removed in `v4.0.0`
+   */
+  Panel: _Panel__WEBPACK_IMPORTED_MODULE_8__["default"],
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/rc-collapse/es/Panel.js":
+/*!**********************************************!*\
+  !*** ./node_modules/rc-collapse/es/Panel.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var rc_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rc-motion */ "./node_modules/rc-motion/es/index.js");
+/* harmony import */ var rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rc-util/es/KeyCode */ "./node_modules/rc-util/es/KeyCode.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _PanelContent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./PanelContent */ "./node_modules/rc-collapse/es/PanelContent.js");
+
+
+
+
+
+
+
+
+var _excluded = [
+  'showArrow',
+  'headerClass',
+  'isActive',
+  'onItemClick',
+  'forceRender',
+  'className',
+  'prefixCls',
+  'collapsible',
+  'accordion',
+  'panelKey',
+  'extra',
+  'header',
+  'expandIcon',
+  'openMotion',
+  'destroyInactivePanel',
+  'children',
+];
+var CollapsePanel = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().forwardRef(function (props, ref) {
+  var _classNames, _classNames2;
+  var _props$showArrow = props.showArrow,
+    showArrow = _props$showArrow === void 0 ? true : _props$showArrow,
+    headerClass = props.headerClass,
+    isActive = props.isActive,
+    onItemClick = props.onItemClick,
+    forceRender = props.forceRender,
+    className = props.className,
+    prefixCls = props.prefixCls,
+    collapsible = props.collapsible,
+    accordion = props.accordion,
+    panelKey = props.panelKey,
+    extra = props.extra,
+    header = props.header,
+    expandIcon = props.expandIcon,
+    openMotion = props.openMotion,
+    destroyInactivePanel = props.destroyInactivePanel,
+    children = props.children,
+    resetProps = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(props, _excluded);
+  var disabled = collapsible === 'disabled';
+  var collapsibleHeader = collapsible === 'header';
+  var collapsibleIcon = collapsible === 'icon';
+  var ifExtraExist = extra !== null && extra !== undefined && typeof extra !== 'boolean';
+  var handleItemClick = function handleItemClick() {
+    onItemClick === null || onItemClick === void 0 ? void 0 : onItemClick(panelKey);
+  };
+  var handleKeyDown = function handleKeyDown(e) {
+    if (e.key === 'Enter' || e.keyCode === rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_5__["default"].ENTER || e.which === rc_util_es_KeyCode__WEBPACK_IMPORTED_MODULE_5__["default"].ENTER) {
+      handleItemClick();
+    }
+  };
+
+  // ======================== Icon ========================
+  var iconNode =
+    typeof expandIcon === 'function'
+      ? expandIcon(props)
+      : /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().createElement('i', {
+          className: 'arrow',
+        });
+  if (iconNode) {
+    iconNode = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().createElement(
+      'div',
+      {
+        className: ''.concat(prefixCls, '-expand-icon'),
+        onClick: ['header', 'icon'].includes(collapsible) ? handleItemClick : undefined,
+      },
+      iconNode,
+    );
+  }
+  var collapsePanelClassNames = classnames__WEBPACK_IMPORTED_MODULE_3___default()(
+    ((_classNames = {}),
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames, ''.concat(prefixCls, '-item'), true),
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames, ''.concat(prefixCls, '-item-active'), isActive),
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames, ''.concat(prefixCls, '-item-disabled'), disabled),
+    _classNames),
+    className,
+  );
+  var headerClassName = classnames__WEBPACK_IMPORTED_MODULE_3___default()(
+    headerClass,
+    ((_classNames2 = {}),
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames2, ''.concat(prefixCls, '-header'), true),
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(
+      _classNames2,
+      ''.concat(prefixCls, '-header-collapsible-only'),
+      collapsibleHeader,
+    ),
+    (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classNames2, ''.concat(prefixCls, '-icon-collapsible-only'), collapsibleIcon),
+    _classNames2),
+  );
+
+  // ======================== HeaderProps ========================
+  var headerProps = {
+    className: headerClassName,
+    'aria-expanded': isActive,
+    'aria-disabled': disabled,
+    onKeyDown: handleKeyDown,
+  };
+  if (!collapsibleHeader && !collapsibleIcon) {
+    headerProps.onClick = handleItemClick;
+    headerProps.role = accordion ? 'tab' : 'button';
+    headerProps.tabIndex = disabled ? -1 : 0;
+  }
+
+  // ======================== Render ========================
+  return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().createElement(
+    'div',
+    (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, resetProps, {
+      ref: ref,
+      className: collapsePanelClassNames,
+    }),
+    /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().createElement(
+      'div',
+      headerProps,
+      showArrow && iconNode,
+      /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().createElement(
+        'span',
+        {
+          className: ''.concat(prefixCls, '-header-text'),
+          onClick: collapsible === 'header' ? handleItemClick : undefined,
+        },
+        header,
+      ),
+      ifExtraExist &&
+        /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().createElement(
+          'div',
+          {
+            className: ''.concat(prefixCls, '-extra'),
+          },
+          extra,
+        ),
+    ),
+    /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().createElement(
+      rc_motion__WEBPACK_IMPORTED_MODULE_4__["default"],
+      (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])(
+        {
+          visible: isActive,
+          leavedClassName: ''.concat(prefixCls, '-content-hidden'),
+        },
+        openMotion,
+        {
+          forceRender: forceRender,
+          removeOnLeave: destroyInactivePanel,
+        },
+      ),
+      function (_ref, motionRef) {
+        var motionClassName = _ref.className,
+          motionStyle = _ref.style;
+        return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_6___default().createElement(
+          _PanelContent__WEBPACK_IMPORTED_MODULE_7__["default"],
+          {
+            ref: motionRef,
+            prefixCls: prefixCls,
+            className: motionClassName,
+            style: motionStyle,
+            isActive: isActive,
+            forceRender: forceRender,
+            role: accordion ? 'tabpanel' : void 0,
+          },
+          children,
+        );
+      },
+    ),
+  );
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CollapsePanel);
+
+
+/***/ }),
+
+/***/ "./node_modules/rc-collapse/es/PanelContent.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/rc-collapse/es/PanelContent.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+var PanelContent = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_3___default().forwardRef(function (props, ref) {
+  var _classnames;
+  var prefixCls = props.prefixCls,
+    forceRender = props.forceRender,
+    className = props.className,
+    style = props.style,
+    children = props.children,
+    isActive = props.isActive,
+    role = props.role;
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_3___default().useState(isActive || forceRender),
+    _React$useState2 = (0,_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState, 2),
+    rendered = _React$useState2[0],
+    setRendered = _React$useState2[1];
+  react__WEBPACK_IMPORTED_MODULE_3___default().useEffect(
+    function () {
+      if (forceRender || isActive) {
+        setRendered(true);
+      }
+    },
+    [forceRender, isActive],
+  );
+  if (!rendered) {
+    return null;
+  }
+  return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_3___default().createElement(
+    'div',
+    {
+      ref: ref,
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(
+        ''.concat(prefixCls, '-content'),
+        ((_classnames = {}),
+        (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classnames, ''.concat(prefixCls, '-content-active'), isActive),
+        (0,_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(_classnames, ''.concat(prefixCls, '-content-inactive'), !isActive),
+        _classnames),
+        className,
+      ),
+      style: style,
+      role: role,
+    },
+    /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_3___default().createElement(
+      'div',
+      {
+        className: ''.concat(prefixCls, '-content-box'),
+      },
+      children,
+    ),
+  );
+});
+PanelContent.displayName = 'PanelContent';
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PanelContent);
+
+
+/***/ }),
+
+/***/ "./node_modules/rc-collapse/es/hooks/useItems.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/rc-collapse/es/hooks/useItems.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rc-util/es/Children/toArray */ "./node_modules/rc-util/es/Children/toArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Panel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Panel */ "./node_modules/rc-collapse/es/Panel.js");
+
+
+
+
+
+var _excluded = ['children', 'label', 'key', 'collapsible', 'onItemClick', 'destroyInactivePanel'];
+var convertItemsToNodes = function convertItemsToNodes(items, props) {
+  var prefixCls = props.prefixCls,
+    accordion = props.accordion,
+    collapsible = props.collapsible,
+    destroyInactivePanel = props.destroyInactivePanel,
+    onItemClick = props.onItemClick,
+    activeKey = props.activeKey,
+    openMotion = props.openMotion,
+    expandIcon = props.expandIcon;
+  return items.map(function (item, index) {
+    var children = item.children,
+      label = item.label,
+      rawKey = item.key,
+      rawCollapsible = item.collapsible,
+      rawOnItemClick = item.onItemClick,
+      rawDestroyInactivePanel = item.destroyInactivePanel,
+      restProps = (0,_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(item, _excluded);
+
+    // You may be puzzled why you want to convert them all into strings, me too.
+    // Maybe: https://github.com/react-component/collapse/blob/aac303a8b6ff30e35060b4f8fecde6f4556fcbe2/src/Collapse.tsx#L15
+    var key = String(rawKey !== null && rawKey !== void 0 ? rawKey : index);
+    var mergeCollapsible =
+      rawCollapsible !== null && rawCollapsible !== void 0 ? rawCollapsible : collapsible;
+    var mergeDestroyInactivePanel =
+      rawDestroyInactivePanel !== null && rawDestroyInactivePanel !== void 0
+        ? rawDestroyInactivePanel
+        : destroyInactivePanel;
+    var handleItemClick = function handleItemClick(value) {
+      if (mergeCollapsible === 'disabled') return;
+      onItemClick(value);
+      rawOnItemClick === null || rawOnItemClick === void 0 ? void 0 : rawOnItemClick(value);
+    };
+    var isActive = false;
+    if (accordion) {
+      isActive = activeKey[0] === key;
+    } else {
+      isActive = activeKey.indexOf(key) > -1;
+    }
+    return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_3___default().createElement(
+      _Panel__WEBPACK_IMPORTED_MODULE_4__["default"],
+      (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, restProps, {
+        prefixCls: prefixCls,
+        key: key,
+        panelKey: key,
+        isActive: isActive,
+        accordion: accordion,
+        openMotion: openMotion,
+        expandIcon: expandIcon,
+        header: label,
+        collapsible: mergeCollapsible,
+        onItemClick: handleItemClick,
+        destroyInactivePanel: mergeDestroyInactivePanel,
+      }),
+      children,
+    );
+  });
+};
+
+/**
+ * @deprecated The next major version will be removed
+ */
+var getNewChild = function getNewChild(child, index, props) {
+  if (!child) return null;
+  var prefixCls = props.prefixCls,
+    accordion = props.accordion,
+    collapsible = props.collapsible,
+    destroyInactivePanel = props.destroyInactivePanel,
+    onItemClick = props.onItemClick,
+    activeKey = props.activeKey,
+    openMotion = props.openMotion,
+    expandIcon = props.expandIcon;
+  var key = child.key || String(index);
+  var _child$props = child.props,
+    header = _child$props.header,
+    headerClass = _child$props.headerClass,
+    childDestroyInactivePanel = _child$props.destroyInactivePanel,
+    childCollapsible = _child$props.collapsible,
+    childOnItemClick = _child$props.onItemClick;
+  var isActive = false;
+  if (accordion) {
+    isActive = activeKey[0] === key;
+  } else {
+    isActive = activeKey.indexOf(key) > -1;
+  }
+  var mergeCollapsible =
+    childCollapsible !== null && childCollapsible !== void 0 ? childCollapsible : collapsible;
+  var handleItemClick = function handleItemClick(value) {
+    if (mergeCollapsible === 'disabled') return;
+    onItemClick(value);
+    childOnItemClick === null || childOnItemClick === void 0 ? void 0 : childOnItemClick(value);
+  };
+  var childProps = {
+    key: key,
+    panelKey: key,
+    header: header,
+    headerClass: headerClass,
+    isActive: isActive,
+    prefixCls: prefixCls,
+    destroyInactivePanel:
+      childDestroyInactivePanel !== null && childDestroyInactivePanel !== void 0
+        ? childDestroyInactivePanel
+        : destroyInactivePanel,
+    openMotion: openMotion,
+    accordion: accordion,
+    children: child.props.children,
+    onItemClick: handleItemClick,
+    expandIcon: expandIcon,
+    collapsible: mergeCollapsible,
+  };
+
+  // https://github.com/ant-design/ant-design/issues/20479
+  if (typeof child.type === 'string') {
+    return child;
+  }
+  Object.keys(childProps).forEach(function (propName) {
+    if (typeof childProps[propName] === 'undefined') {
+      delete childProps[propName];
+    }
+  });
+  return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_3___default().cloneElement(child, childProps);
+};
+function useItems(items, rawChildren, props) {
+  if (Array.isArray(items)) {
+    return convertItemsToNodes(items, props);
+  }
+  return (0,rc_util_es_Children_toArray__WEBPACK_IMPORTED_MODULE_2__["default"])(rawChildren).map(function (child, index) {
+    return getNewChild(child, index, props);
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useItems);
+
+
+/***/ }),
+
+/***/ "./node_modules/rc-collapse/es/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/rc-collapse/es/index.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Panel: () => (/* binding */ Panel),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Collapse__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Collapse */ "./node_modules/rc-collapse/es/Collapse.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Collapse__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/**
+ * @deprecated use `items` instead, will be removed in `v4.0.0`
+ */
+var Panel = _Collapse__WEBPACK_IMPORTED_MODULE_0__["default"].Panel;
+
+
 
 /***/ }),
 

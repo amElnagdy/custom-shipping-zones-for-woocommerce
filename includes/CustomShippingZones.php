@@ -18,7 +18,6 @@ class CustomShippingZones
         if (is_admin() && defined('DOING_AJAX') && DOING_AJAX) {
             add_action('wp_ajax_csz_save_states', array($this, 'save_states'));
             add_action('wp_ajax_csz_delete_state', array($this, 'delete_state'));
-            add_action('wp_ajax_csz_import_states', array($this, 'import_states'));
         }
 
         add_filter('woocommerce_states', array($this, 'modify_woocommerce_states'));
@@ -205,34 +204,6 @@ class CustomShippingZones
         }
 
         return false;
-    }
-
-    public function import_states(): void {
-        if (current_user_can('manage_woocommerce') === false) {
-            wp_send_json_error('Not allowed!');
-        }
-    
-        if (!isset($_POST['nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'csz_nonce')) {
-            wp_send_json_error('Nonce verification failed');
-        }
-    
-        $jsonData = isset($_POST['jsonData']) ? stripslashes($_POST['jsonData']) : '{}';
-        $importData = json_decode($jsonData, true);
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            wp_send_json_error('Invalid JSON data.');
-        }
-    
-        foreach ($importData as $countryCode => $states) {
-            $optionName = strtolower($countryCode) . '_custom_shipping_zones';
-            $statesFormatted = array();
-            foreach ($states as $stateCode => $stateName) {
-                $statesFormatted[$stateCode] = __($stateName, 'woocommerce');
-            }
-    
-            update_option($optionName, $statesFormatted);
-        }
-    
-        wp_send_json_success();
     }
 
     public function settings_link($links)

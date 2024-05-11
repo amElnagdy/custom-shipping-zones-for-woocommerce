@@ -41,6 +41,16 @@ class Strings
             'import_custom_zones' => __('Import custom zones', 'custom-shipping-zones'),
             'import_description' => __('Import your custom shipping zones from a file that was exported from a different website.', 'custom-shipping-zones'),
             'import_warning' => __('Warning: Importing will overwrite all existing custom shipping zones.', 'custom-shipping-zones'),
+            'faq_whats_code' => __('What is the code?', 'custom-shipping-zones'),
+            'faq_code_description' => __('The code is a unique identifier for the state. It is automatically generated when you add a new state.', 'custom-shipping-zones'),
+            'faq_cant_delete' => __('Why can\'t I delete a custom shipping zone?', 'custom-shipping-zones'),
+            'faq_cant_delete_description' => __('You cannot delete a custom shipping zone if it is being used in a shipping zone. Remove it from the shipping zone first.', 'custom-shipping-zones'),
+            'faq_export_import' => __('How do I export / import custom shipping zones?', 'custom-shipping-zones'),
+            'faq_export_import_description' => __('Export/import functionality will be supported in a future update, allowing you to easily transfer settings between stores. For the time being, you\'ll need to create them on the other website.', 'custom-shipping-zones'),
+            'faq_woocommerce_settings' => __('How do I use the custom shipping zones in WooCommerce?', 'custom-shipping-zones'),
+            'faq_woocommerce_settings_description' => __('After adding custom shipping zones, go to WooCommerce → Settings → Shipping to use the newly added zones.', 'custom-shipping-zones'),
+            'faq_rate_plugin' => __('How do I rate this plugin?', 'custom-shipping-zones'),
+            'faq_rate_plugin_description' => sprintf(__('If you like this plugin, please <a href="%s" target="_blank">leave a 5-star review on WordPress.org</a>. It helps us a lot!', 'custom-shipping-zones'), 'https://wordpress.org/support/plugin/custom-shipping-zones/reviews/#new-post'),
         ];
     }
 }

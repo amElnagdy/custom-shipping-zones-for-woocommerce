@@ -152,8 +152,8 @@ console.log(current_states);
         style={{ width: 300, marginBottom: 16 }}
       />
       <Table columns={columns} dataSource={filteredData} />
-
-      <ExportImport strings={strings} data={formattedData} />
+      {/* In a future update :) */}
+      {/* <ExportImport strings={strings} data={formattedData} /> */}
     </div>
   );
 }

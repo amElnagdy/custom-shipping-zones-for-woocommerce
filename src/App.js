@@ -4,6 +4,7 @@ import CountrySelector from "./CountrySelector";
 import StateAdder from "./StateAdder";
 import AddedStates from "./AddedStates";
 import CurrentStates from "./CurrentStates";
+import FAQ from "./faq";
 
 const App = () => {
   const strings = cszStrings;
@@ -67,6 +68,30 @@ const App = () => {
     );
   }
 
+  const faqs = [
+    {
+      question: strings.faq_woocommerce_settings,
+      answer: strings.faq_woocommerce_settings_description,
+    },
+    {
+      question: strings.faq_whats_code,
+      answer: strings.faq_code_description,
+    },
+    {
+      question: strings.faq_cant_delete,
+      answer: strings.faq_cant_delete_description,
+    },
+    {
+      question: strings.faq_export_import,
+      answer: strings.faq_export_import_description,
+    },
+    {
+      question: strings.faq_rate_plugin,
+      answer: <div dangerouslySetInnerHTML={{ __html: strings.faq_rate_plugin_description }} />,
+    }
+  ];
+
+
   return (
     <Spin spinning={loading}>
       <div
@@ -113,9 +138,12 @@ const App = () => {
         >
           <CurrentStates strings={strings} />
         </div>
-        
       </div>
+      <div style={{margin: 20}}>
+      <FAQ faqs={faqs} />
+    </div>
     </Spin>
+    
   );
 };
 
