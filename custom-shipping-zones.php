@@ -2,8 +2,7 @@
 
 /**
  * Plugin Name: Custom Shipping Zones for WooCommerce
- * Plugin URI: https://nagdy.me
- * Description: A plugin to add custom shipping zones to WooCommerce
+ * Description: Lightweight, yet powerful WooCommerce extension that allows you to add custom shipping zones to WooCommerce
  * Version: 1.0.0
  * Author: Nagdy
  * Author URI: https://nagdy.me
