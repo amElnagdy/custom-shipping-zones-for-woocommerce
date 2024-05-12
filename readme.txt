@@ -48,7 +48,6 @@ Go to WooCommerce → Settings → Custom Shipping Zones and define your zones w
 == Screenshots ==
 1. Interface for adding a new custom shipping zone.
 2. Managing existing custom zones.
-3. Detailed view of zone configurations.
 
 == Changelog ==
 
