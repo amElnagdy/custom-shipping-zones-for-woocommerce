@@ -50,6 +50,7 @@ class Strings
             'faq_woocommerce_settings' => __('How do I use the custom shipping zones in WooCommerce?', 'custom-shipping-zones'),
             'faq_woocommerce_settings_description' => __('After adding custom shipping zones, go to WooCommerce → Settings → Shipping to use the newly added zones.', 'custom-shipping-zones'),
             'faq_rate_plugin' => __('How do I rate this plugin?', 'custom-shipping-zones'),
+            /* translators: %s: A link to the plugin review page */
             'faq_rate_plugin_description' => sprintf(__('If you like this plugin, please <a href="%s" target="_blank">leave a 5-star review on WordPress.org</a>. It helps us a lot!', 'custom-shipping-zones'), 'https://wordpress.org/support/plugin/custom-shipping-zones/reviews/#new-post'),
         ];
     }

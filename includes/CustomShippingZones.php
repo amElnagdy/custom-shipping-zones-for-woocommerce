@@ -1,7 +1,5 @@
 <?php
-
 namespace CustomShippingZones;
-
 
 class CustomShippingZones
 {
@@ -14,7 +12,7 @@ class CustomShippingZones
         // Enqueue scripts
         add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
 
-         // AJAX actions. Check if admin and doing ajax
+        // AJAX actions. Check if admin and doing ajax
         if (is_admin() && defined('DOING_AJAX') && DOING_AJAX) {
             add_action('wp_ajax_csz_save_states', array($this, 'save_states'));
             add_action('wp_ajax_csz_delete_state', array($this, 'delete_state'));
@@ -27,7 +25,6 @@ class CustomShippingZones
         // Add the settings tab
         add_action('woocommerce_settings_tabs_array', array($this, 'add_settings_tab'), 50);
         add_action('woocommerce_settings_tabs_custom_shipping_zones', array($this, 'settings_tab'));
-
     }
 
     public function load_textdomain(): void
@@ -212,6 +209,4 @@ class CustomShippingZones
         array_unshift($links, $settings_link);
         return $links;
     }
-
-
 }
