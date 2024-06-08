@@ -1,6 +1,6 @@
 <?php
 
-namespace CustomShippingZones;
+namespace ANCSZ\CustomShippingZones;
 
 class Strings
 {

@@ -13,17 +13,17 @@
  * WC tested up to: 8.3
  */
 
-use CustomShippingZones\CustomShippingZones;
+use ANCSZ\CustomShippingZones\CustomShippingZones;
 
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
 // Define plugin constants.
-const CUSTOM_SHIPPING_ZONES_VERSION = '1.0.0';
-define('CUSTOM_SHIPPING_ZONES_PATH', plugin_dir_path(__FILE__));
-define('CUSTOM_SHIPPING_ZONES_URL', plugin_dir_url(__FILE__));
-define('CUSTOM_SHIPPING_ZONES_BASENAME', plugin_basename(__FILE__));
+const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.0';
+define('ANCSZ_CUSTOM_SHIPPING_ZONES_PATH', plugin_dir_path(__FILE__));
+define('ANCSZ_CUSTOM_SHIPPING_ZONES_URL', plugin_dir_url(__FILE__));
+define('ANCSZ_CUSTOM_SHIPPING_ZONES_BASENAME', plugin_basename(__FILE__));
 
 require_once 'vendor/autoload.php';
 

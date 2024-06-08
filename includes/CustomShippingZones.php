@@ -1,5 +1,5 @@
 <?php
-namespace CustomShippingZones;
+namespace ANCSZ\CustomShippingZones;
 
 class CustomShippingZones
 {
@@ -20,7 +20,7 @@ class CustomShippingZones
 
         add_filter('woocommerce_states', array($this, 'modify_woocommerce_states'));
 
-        add_filter('plugin_action_links_' . CUSTOM_SHIPPING_ZONES_BASENAME, array($this, 'settings_link'));
+        add_filter('plugin_action_links_' . ANCSZ_CUSTOM_SHIPPING_ZONES_BASENAME, array($this, 'settings_link'));
 
         // Add the settings tab
         add_action('woocommerce_settings_tabs_array', array($this, 'add_settings_tab'), 50);
@@ -29,7 +29,7 @@ class CustomShippingZones
 
     public function load_textdomain(): void
     {
-        load_plugin_textdomain('custom-shipping-zones', false, CUSTOM_SHIPPING_ZONES_BASENAME . '/languages');
+        load_plugin_textdomain('custom-shipping-zones', false, ANCSZ_CUSTOM_SHIPPING_ZONES_BASENAME . '/languages');
     }
 
     public function enqueue_scripts(): void
@@ -39,11 +39,8 @@ class CustomShippingZones
             return;
         }
 
-        // Hide the WooCommerce save button on this tab
-        echo '<style>.woocommerce-save-button { display: none !important; }</style>';
-
         // Enqueue custom admin script for handling shipping zones
-        wp_enqueue_script('custom-shipping-zone-admin', CUSTOM_SHIPPING_ZONES_URL . '/build/index.js', array('wp-element'), CUSTOM_SHIPPING_ZONES_VERSION, true);
+        wp_enqueue_script('custom-shipping-zone-admin', ANCSZ_CUSTOM_SHIPPING_ZONES_URL . '/build/index.js', array('wp-element'), ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION, true);
 
         // Localize script for dynamic data about countries and zones
         wp_localize_script('custom-shipping-zone-admin', 'cszData', array(
@@ -59,6 +56,11 @@ class CustomShippingZones
 
         // Localize script for strings used in JavaScript
         wp_localize_script('custom-shipping-zone-admin', 'cszStrings', $this->get_strings());
+
+        // Hide the WooCommerce save button
+        wp_register_style('custom-shipping-zone-style', false, [], ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION);
+        wp_enqueue_style('custom-shipping-zone-style');
+        wp_add_inline_style('custom-shipping-zone-style', '.woocommerce-save-button { display: none !important; }');
     }
 
     public function get_countries()
@@ -79,8 +81,8 @@ class CustomShippingZones
             wp_send_json_error('Nonce verification failed');
         }
 
-        $states = isset($_POST['states']) ? stripslashes($_POST['states']) : array();
-        $states = json_decode($states, true);
+        $states_json = isset($_POST['states']) ? sanitize_text_field(stripslashes($_POST['states'])) : '[]';
+        $states = json_decode($states_json, true);
         $countryCode = isset($_POST['countryCode']) ? sanitize_text_field($_POST['countryCode']) : '';
 
         $statesFormatted = array();
@@ -88,7 +90,7 @@ class CustomShippingZones
         foreach ($states as $state) {
             $stateCode = $state['code'];
             $stateName = $state['name'];
-            $statesFormatted[$stateCode] = __($stateName, 'woocommerce');
+            $statesFormatted[$stateCode] = $stateName;
         }
 
         $optionName = strtolower($countryCode) . '_custom_shipping_zones';
@@ -180,7 +182,7 @@ class CustomShippingZones
 
     public function settings_tab(): void
     {
-        require_once CUSTOM_SHIPPING_ZONES_PATH . 'includes/admin/admin.php';
+        require_once ANCSZ_CUSTOM_SHIPPING_ZONES_PATH . 'includes/admin/admin.php';
     }
 
     private function is_state_in_use($countryCode, $stateCode)

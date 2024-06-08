@@ -3,7 +3,7 @@
     "type": "wordpress-plugin",
     "autoload": {
         "psr-4": {
-            "CustomShippingZones\\": "includes/"
+            "ANCSZ\\CustomShippingZones\\": "includes/"
         }
     },
     "require": {}

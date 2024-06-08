@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'CustomShippingZones\\' => array($baseDir . '/includes'),
+    'ANCSZ\\CustomShippingZones\\' => array($baseDir . '/includes'),
 );
