@@ -1,0 +1,240 @@
+# Copyright (C) 2025 Nagdy
+# This file is distributed under the GPL3.
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Shipping Zones for WooCommerce 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-shipping-zones-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-02-23T14:02:43+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: custom-shipping-zones\n"
+
+#. Plugin Name of the plugin
+#: custom-shipping-zones.php
+msgid "Custom Shipping Zones for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+#: custom-shipping-zones.php
+msgid "Lightweight, yet powerful WooCommerce extension that allows you to add custom shipping zones to WooCommerce"
+msgstr ""
+
+#. Author of the plugin
+#: custom-shipping-zones.php
+msgid "Nagdy"
+msgstr ""
+
+#. Author URI of the plugin
+#: custom-shipping-zones.php
+msgid "https://nagdy.me"
+msgstr ""
+
+#: includes/CustomShippingZones.php:179
+msgid "Custom Shipping Zones"
+msgstr ""
+
+#: includes/CustomShippingZones.php:210
+msgid "Donate"
+msgstr ""
+
+#: includes/CustomShippingZones.php:211
+msgid "Settings"
+msgstr ""
+
+#: includes/Strings.php:10
+msgid "These states will be added to "
+msgstr ""
+
+#: includes/Strings.php:11
+msgid "Delete"
+msgstr ""
+
+#: includes/Strings.php:12
+msgid "States saved successfully"
+msgstr ""
+
+#: includes/Strings.php:13
+msgid "Reload page and add new zones"
+msgstr ""
+
+#: includes/Strings.php:14
+msgid "Save states"
+msgstr ""
+
+#: includes/Strings.php:15
+msgid "Select country"
+msgstr ""
+
+#: includes/Strings.php:16
+msgid "State deleted successfully"
+msgstr ""
+
+#: includes/Strings.php:17
+msgid "Failed to delete state"
+msgstr ""
+
+#: includes/Strings.php:18
+msgid "An error occurred while deleting the state"
+msgstr ""
+
+#: includes/Strings.php:19
+msgid "Country"
+msgstr ""
+
+#: includes/Strings.php:20
+msgid "State"
+msgstr ""
+
+#: includes/Strings.php:21
+msgid "Code"
+msgstr ""
+
+#: includes/Strings.php:22
+msgid "Action"
+msgstr ""
+
+#: includes/Strings.php:23
+msgid "Your Existing Custom Shipping Zones"
+msgstr ""
+
+#: includes/Strings.php:24
+msgid "Please enter a state name"
+msgstr ""
+
+#: includes/Strings.php:25
+msgid "State name"
+msgstr ""
+
+#: includes/Strings.php:26
+msgid "Please enter a state code"
+msgstr ""
+
+#: includes/Strings.php:27
+msgid "State codes are automatically generated."
+msgstr ""
+
+#: includes/Strings.php:28
+msgid "State code"
+msgstr ""
+
+#: includes/Strings.php:29
+msgid "Add state"
+msgstr ""
+
+#: includes/Strings.php:30
+msgid "Now you can go to WooCommerce → Settings → Shipping to use the newly added custom zones."
+msgstr ""
+
+#: includes/Strings.php:31
+msgid "This state is currently being used in a shipping zone. Please remove it from the shipping zones before deleting."
+msgstr ""
+
+#: includes/Strings.php:32
+msgid "There are no custom zones to export."
+msgstr ""
+
+#: includes/Strings.php:33
+msgid "Custom zones exported successfully."
+msgstr ""
+
+#: includes/Strings.php:34
+msgid "Export custom zones"
+msgstr ""
+
+#: includes/Strings.php:35
+msgid "Export / Import"
+msgstr ""
+
+#: includes/Strings.php:36
+msgid "Search by country, state or code"
+msgstr ""
+
+#: includes/Strings.php:37
+msgid "Export your custom shipping zones to a file that can be exported on a different website."
+msgstr ""
+
+#: includes/Strings.php:38
+msgid "Custom zones imported successfully."
+msgstr ""
+
+#: includes/Strings.php:39
+msgid "Failed to import custom zones."
+msgstr ""
+
+#: includes/Strings.php:40
+msgid "or"
+msgstr ""
+
+#: includes/Strings.php:41
+msgid "Import custom zones"
+msgstr ""
+
+#: includes/Strings.php:42
+msgid "Import your custom shipping zones from a file that was exported from a different website."
+msgstr ""
+
+#: includes/Strings.php:43
+msgid "Warning: Importing will overwrite all existing custom shipping zones."
+msgstr ""
+
+#: includes/Strings.php:44
+msgid "What is the code?"
+msgstr ""
+
+#: includes/Strings.php:45
+msgid "The code is a unique identifier for the state. It is automatically generated when you add a new state."
+msgstr ""
+
+#: includes/Strings.php:46
+msgid "Why can't I delete a custom shipping zone?"
+msgstr ""
+
+#: includes/Strings.php:47
+msgid "You cannot delete a custom shipping zone if it is being used in a shipping zone. Remove it from the shipping zone first."
+msgstr ""
+
+#: includes/Strings.php:48
+msgid "How do I export / import custom shipping zones?"
+msgstr ""
+
+#: includes/Strings.php:49
+msgid "Export/import functionality will be supported in a future update, allowing you to easily transfer settings between stores. For the time being, you'll need to create them on the other website."
+msgstr ""
+
+#: includes/Strings.php:50
+msgid "How do I use the custom shipping zones in WooCommerce?"
+msgstr ""
+
+#: includes/Strings.php:51
+msgid "After adding custom shipping zones, go to WooCommerce → Settings → Shipping to use the newly added zones."
+msgstr ""
+
+#: includes/Strings.php:52
+msgid "How do I rate this plugin?"
+msgstr ""
+
+#. translators: %s: A link to the plugin review page
+#: includes/Strings.php:54
+msgid "If you like this plugin, please <a href=\"%s\" target=\"_blank\">leave a 5-star review on WordPress.org</a>. It helps us a lot!"
+msgstr ""
+
+#: includes/Strings.php:55
+msgid "How do I buy the developer a coffee?"
+msgstr ""
+
+#: includes/Strings.php:56
+msgid "If you like this plugin, please <a href=\"https://ko-fi.com/nagdy\" target=\"_blank no-referrer no-opener\" style=\"color: green;\">buy me a coffee</a>. It helps me a lot!"
+msgstr ""
+
+#: includes/Strings.php:57
+msgid "Do you have other plugins?"
+msgstr ""
+
+#: includes/Strings.php:58
+msgid "Yes, I have other plugins. You can find them <a href=\"https://profiles.wordpress.org/nagdy/#content-plugins\" target=\"_blank no-referrer no-opener\" style=\"color: green;\">here</a>."
+msgstr ""
