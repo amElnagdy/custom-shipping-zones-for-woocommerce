@@ -1,6 +1,6 @@
 {
   "name": "custom-shipping-zones",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight, yet powerful WooCommerce extension that allows you to add custom shipping zones to WooCommerce",
   "main": "index.js",
   "scripts": {

@@ -86,12 +86,18 @@ const App = () => {
       answer: strings.faq_export_import_description,
     },
     {
-      question: strings.faq_rate_plugin,
-      answer: <div dangerouslySetInnerHTML={{ __html: strings.faq_rate_plugin_description }} />,
-    }
+      question: strings.faq_donate,
+      answer: <div dangerouslySetInnerHTML={{ __html: strings.faq_donate_description }} />,
+    },
+    {
+      question: strings.do_you_have_other_plugins,
+      answer: <div dangerouslySetInnerHTML={{ __html: strings.do_you_have_other_plugins_description }} />,
+    },
+	{
+		question: strings.faq_rate_plugin,
+		answer: <div dangerouslySetInnerHTML={{ __html: strings.faq_rate_plugin_description }} />,
+	  }
   ];
-
-
   return (
     <Spin spinning={loading}>
       <div

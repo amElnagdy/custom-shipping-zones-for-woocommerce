@@ -207,8 +207,9 @@ class CustomShippingZones
 
     public function settings_link($links)
     {
+        $donate_link = '<a href="https://ko-fi.com/nagdy" target="_blank no-referrer no-opener" style="color: green;">' . __('Donate', 'custom-shipping-zones') . '</a>';
         $settings_link = '<a href="' . esc_url(admin_url('admin.php?page=wc-settings&tab=custom_shipping_zones')) . '">' . __('Settings', 'custom-shipping-zones') . '</a>';
-        array_unshift($links, $settings_link);
+        array_unshift($links, $settings_link, $donate_link);
         return $links;
     }
 }
