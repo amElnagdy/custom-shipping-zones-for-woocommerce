@@ -51,7 +51,7 @@ class Strings
             'faq_woocommerce_settings_description' => __('After adding custom shipping zones, go to WooCommerce → Settings → Shipping to use the newly added zones.', 'custom-shipping-zones'),
             'faq_rate_plugin' => __('How do I rate this plugin?', 'custom-shipping-zones'),
             /* translators: %s: A link to the plugin review page */
-            'faq_rate_plugin_description' => sprintf(__('If you like this plugin, please <a href="%s" target="_blank">leave a 5-star review on WordPress.org</a>. It helps us a lot!', 'custom-shipping-zones'), 'https://wordpress.org/support/plugin/custom-shipping-zones/reviews/#new-post'),
+            'faq_rate_plugin_description' => sprintf(__('If you like this plugin, please <a href="%s" target="_blank">leave a 5-star review on WordPress.org</a>. It helps us a lot!', 'custom-shipping-zones'), 'https://wordpress.org/support/plugin/custom-shipping-zones-for-woocommerce/reviews/#new-post'),
             'faq_donate' => __('How do I buy the developer a coffee?', 'custom-shipping-zones'),
             'faq_donate_description' => __('If you like this plugin, please <a href="https://ko-fi.com/nagdy" target="_blank no-referrer no-opener" style="color: green;">buy me a coffee</a>. It helps me a lot!', 'custom-shipping-zones'),
             'do_you_have_other_plugins' => __('Do you have other plugins?', 'custom-shipping-zones'),
