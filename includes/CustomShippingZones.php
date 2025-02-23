@@ -7,7 +7,7 @@ class CustomShippingZones
     public function __construct()
     {
         // Load the text domain
-        add_action('load-textdomain', array($this, 'load_textdomain'));
+        add_action('init', array($this, 'load_textdomain'));
 
         // Enqueue scripts
         add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
