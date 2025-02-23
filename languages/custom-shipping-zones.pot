@@ -1,41 +1,48 @@
-# Copyright (C) 2024 Nagdy
+# Copyright (C) 2025 Nagdy
 # This file is distributed under the GPL3.
 msgid ""
 msgstr ""
-"Project-Id-Version: Custom Shipping Zones for WooCommerce 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-shipping-zones\n"
+"Project-Id-Version: Custom Shipping Zones for WooCommerce 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-shipping-zones-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-05-12T08:44:29+00:00\n"
+"POT-Creation-Date: 2025-02-23T14:02:43+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: custom-shipping-zones\n"
 
 #. Plugin Name of the plugin
+#: custom-shipping-zones.php
 msgid "Custom Shipping Zones for WooCommerce"
 msgstr ""
 
-#. Plugin URI of the plugin
-#. Author URI of the plugin
-msgid "https://nagdy.me"
-msgstr ""
-
 #. Description of the plugin
-msgid "A plugin to add custom shipping zones to WooCommerce"
+#: custom-shipping-zones.php
+msgid "Lightweight, yet powerful WooCommerce extension that allows you to add custom shipping zones to WooCommerce"
 msgstr ""
 
 #. Author of the plugin
+#: custom-shipping-zones.php
 msgid "Nagdy"
 msgstr ""
 
-#: includes/CustomShippingZones.php:177
+#. Author URI of the plugin
+#: custom-shipping-zones.php
+msgid "https://nagdy.me"
+msgstr ""
+
+#: includes/CustomShippingZones.php:179
 msgid "Custom Shipping Zones"
 msgstr ""
 
-#: includes/CustomShippingZones.php:208
+#: includes/CustomShippingZones.php:210
+msgid "Donate"
+msgstr ""
+
+#: includes/CustomShippingZones.php:211
 msgid "Settings"
 msgstr ""
 
@@ -214,4 +221,20 @@ msgstr ""
 #. translators: %s: A link to the plugin review page
 #: includes/Strings.php:54
 msgid "If you like this plugin, please <a href=\"%s\" target=\"_blank\">leave a 5-star review on WordPress.org</a>. It helps us a lot!"
+msgstr ""
+
+#: includes/Strings.php:55
+msgid "How do I buy the developer a coffee?"
+msgstr ""
+
+#: includes/Strings.php:56
+msgid "If you like this plugin, please <a href=\"https://ko-fi.com/nagdy\" target=\"_blank no-referrer no-opener\" style=\"color: green;\">buy me a coffee</a>. It helps me a lot!"
+msgstr ""
+
+#: includes/Strings.php:57
+msgid "Do you have other plugins?"
+msgstr ""
+
+#: includes/Strings.php:58
+msgid "Yes, I have other plugins. You can find them <a href=\"https://profiles.wordpress.org/nagdy/#content-plugins\" target=\"_blank no-referrer no-opener\" style=\"color: green;\">here</a>."
 msgstr ""
