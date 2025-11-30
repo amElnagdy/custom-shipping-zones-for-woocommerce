@@ -3,14 +3,14 @@
 /**
  * Plugin Name: Custom Shipping Zones for WooCommerce
  * Description: Lightweight, yet powerful WooCommerce extension that allows you to add custom shipping zones to WooCommerce
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Nagdy
  * Author URI: https://nagdy.me
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: custom-shipping-zones
  * Domain Path: /languages
- * WC tested up to: 8.3
+ * WC tested up to: 9.7
  */
 
 use ANCSZ\CustomShippingZones\CustomShippingZones;
@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants.
-const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.1';
+const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.2';
 define('ANCSZ_CUSTOM_SHIPPING_ZONES_PATH', plugin_dir_path(__FILE__));
 define('ANCSZ_CUSTOM_SHIPPING_ZONES_URL', plugin_dir_url(__FILE__));
 define('ANCSZ_CUSTOM_SHIPPING_ZONES_BASENAME', plugin_basename(__FILE__));
