@@ -7,7 +7,6 @@ export default function CurrentStates({ strings }) {
   const [data, setData] = useState(current_states);
   const [searchText, setSearchText] = useState("");
   const [unsavedChanges, setUnsavedChanges] = useState(false);
-console.log(current_states);
   // Trying to prevent the Unsaved Chanegs alert while searching
   useEffect(() => {
     const handleBeforeUnload = (event) => {

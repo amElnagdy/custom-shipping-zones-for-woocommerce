@@ -6,7 +6,7 @@ Requires at least: 6.0
 WC requires at least: 9.0
 WC tested up to: 9.7
 Tested up to: 7.0
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,6 +52,12 @@ Go to WooCommerce → Settings → Custom Shipping Zones and define your zones w
 2. Managing existing custom zones.
 
 == Changelog ==
+
+= 1.0.4 =
+* Security: enforce nonce-before-capability ordering on admin AJAX handlers.
+* Validation: reject unknown country codes and malformed state codes server-side.
+* Fixed: the save screen no longer reports success when the server rejects a save.
+* Removed stray debug console output on the settings screen.
 
 = 1.0.3 =
 * Declared WooCommerce as a required plugin dependency.

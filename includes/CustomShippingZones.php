@@ -73,23 +73,37 @@ class CustomShippingZones
 
     public function save_states()
     {
-        if (current_user_can('manage_woocommerce') === false) {
-            wp_send_json_error('Not allowed!');
-        }
-
         if (!isset($_POST['nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'csz_nonce')) {
             wp_send_json_error('Nonce verification failed');
+        }
+
+        if (current_user_can('manage_woocommerce') === false) {
+            wp_send_json_error('Not allowed!');
         }
 
         $states_json = isset($_POST['states']) ? sanitize_text_field(stripslashes($_POST['states'])) : '[]';
         $states = json_decode($states_json, true);
         $countryCode = isset($_POST['countryCode']) ? sanitize_text_field($_POST['countryCode']) : '';
 
+        $valid_countries = WC()->countries->get_countries();
+        if ($countryCode === '' || ! array_key_exists($countryCode, $valid_countries)) {
+            wp_send_json_error('invalid_country');
+        }
+
         $statesFormatted = array();
 
+        if (! is_array($states)) {
+            wp_send_json_error('invalid_state_code');
+        }
+
         foreach ($states as $state) {
-            $stateCode = $state['code'];
-            $stateName = $state['name'];
+            $stateCode = isset($state['code']) ? sanitize_text_field($state['code']) : '';
+            $stateName = isset($state['name']) ? sanitize_text_field($state['name']) : '';
+
+            if ($stateName === '' || ! preg_match('/^[A-Za-z0-9-]{1,10}$/', $stateCode)) {
+                wp_send_json_error('invalid_state_code');
+            }
+
             $statesFormatted[$stateCode] = $stateName;
         }
 
@@ -122,12 +136,12 @@ class CustomShippingZones
 
     public function delete_state()
     {
-        if (current_user_can('manage_woocommerce') === false) {
-            wp_send_json_error('Not allowed!');
-        }
-
         if (!isset($_POST['nonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['nonce'])), 'csz_nonce')) {
             wp_send_json_error('Nonce verification failed');
+        }
+
+        if (current_user_can('manage_woocommerce') === false) {
+            wp_send_json_error('Not allowed!');
         }
 
         $countryCode = isset($_POST['countryCode']) ? sanitize_text_field(wp_unslash($_POST['countryCode'])) : '';

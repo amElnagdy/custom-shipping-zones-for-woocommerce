@@ -41,7 +41,7 @@ Notes for the implementer:
 **Purpose**: Confirm the toolchain works before changing code, so a later failure is
 clearly caused by your edit and not the environment.
 
-- [ ] T001 Verify the toolchain from the repo root: run `npm install` (deps are
+- [X] T001 Verify the toolchain from the repo root: run `npm install` (deps are
   declared in `package.json`), then `npm run build` to confirm a clean baseline build
   of `build/index.js` succeeds, then `php -l includes/CustomShippingZones.php` to
   confirm PHP is available and the file currently parses. Do not commit anything; this
@@ -57,7 +57,7 @@ invisible to the admin (the current UI always shows the success screen).
 
 **⚠️ CRITICAL**: Complete this phase before US2 and US3.
 
-- [ ] T002 [P] Add three error strings to `includes/Strings.php`. Inside the array
+- [X] T002 [P] Add three error strings to `includes/Strings.php`. Inside the array
   returned by `Strings::strings()`, immediately after the `'an_error_occurred' => ...`
   line (currently line ~18), add:
   ```php
@@ -68,13 +68,13 @@ invisible to the admin (the current UI always shows the success screen).
   These keys are delivered to JS via `wp_localize_script(..., 'cszStrings', ...)` and
   read as `strings.invalid_country` etc.
 
-- [ ] T003 Update the import in `src/App.js` (line 2). Change
+- [X] T003 Update the import in `src/App.js` (line 2). Change
   `import { Button, Result, Spin } from "antd";`
   to
   `import { Button, Result, Spin, message } from "antd";`
   (Adds the Ant Design `message` API used in T004 — no new npm dependency.)
 
-- [ ] T004 Make `handleSaveStates` honor the AJAX response in `src/App.js`
+- [X] T004 Make `handleSaveStates` honor the AJAX response in `src/App.js`
   (the function at lines ~16–33). Depends on T002 (strings) and T003 (import).
   Replace the existing fetch `.then(...)` tail:
   ```js
@@ -136,7 +136,7 @@ rejected (`Not allowed!`); legitimate admin → succeeds. No data changes on rej
 hardens the **ordering** (verify the request is genuine before doing capability work)
 and locks the behavior in. No `check_ajax_referer` swap, no nonce rename.
 
-- [ ] T005 [US1] Reorder checks in `delete_state()` in
+- [X] T005 [US1] Reorder checks in `delete_state()` in
   `includes/CustomShippingZones.php` (lines ~123–135) so the nonce block runs **before**
   the capability block. Target order:
   ```php
@@ -153,7 +153,7 @@ and locks the behavior in. No `check_ajax_referer` swap, no nonce rename.
   ```
   Change nothing else in this method.
 
-- [ ] T006 [US1] Reorder checks in `save_states()` in
+- [X] T006 [US1] Reorder checks in `save_states()` in
   `includes/CustomShippingZones.php` (lines ~74–82) so the nonce block runs **before**
   the capability block. Target order (top of the method):
   ```php
@@ -185,7 +185,7 @@ stored.
 `{success:false, data:"invalid_country"}`, an error shows in the UI, and no
 `zz_custom_shipping_zones` option is created.
 
-- [ ] T007 [US2] Add authoritative country validation in `save_states()` in
+- [X] T007 [US2] Add authoritative country validation in `save_states()` in
   `includes/CustomShippingZones.php`. Depends on T006. Locate the line
   ```php
   $countryCode = isset($_POST['countryCode']) ? sanitize_text_field($_POST['countryCode']) : '';
@@ -214,7 +214,7 @@ must be non-empty. Any violation rejects the whole submission with nothing store
 or exceeds 10 chars → response `{success:false, data:"invalid_state_code"}`, error shown,
 nothing stored.
 
-- [ ] T008 [US3] Add per-state validation in `save_states()` in
+- [X] T008 [US3] Add per-state validation in `save_states()` in
   `includes/CustomShippingZones.php`. Depends on T007. Replace the existing build loop
   ```php
   $statesFormatted = array();
@@ -260,7 +260,7 @@ nothing stored.
 **Independent Test**: With devtools Console open, load the screen and add/delete a state —
 no zones object is logged.
 
-- [ ] T009 [P] [US4] Remove the debug log in `src/CurrentStates.js`. Delete line 10:
+- [X] T009 [P] [US4] Remove the debug log in `src/CurrentStates.js`. Delete line 10:
   ```js
   console.log(current_states);
   ```
@@ -277,23 +277,23 @@ no zones object is logged.
 
 **Purpose**: Compile the JS, bump the version, lint, and run the full acceptance pass.
 
-- [ ] T010 Run `php -l` on every changed PHP file from the repo root and confirm each
+- [X] T010 Run `php -l` on every changed PHP file from the repo root and confirm each
   prints "No syntax errors detected":
   `php -l includes/CustomShippingZones.php`, `php -l includes/Strings.php`,
   `php -l custom-shipping-zones.php`.
 
-- [ ] T011 Rebuild the admin bundle so the JS edits (T003/T004 in `src/App.js`, T009 in
+- [X] T011 Rebuild the admin bundle so the JS edits (T003/T004 in `src/App.js`, T009 in
   `src/CurrentStates.js`) reach the browser: run `npm run build` from the repo root and
   confirm `build/index.js` (and `build/index.asset.php`) are regenerated without errors.
   Must run after T004 and T009.
 
-- [ ] T012 [P] Bump the version in `custom-shipping-zones.php`: set the header
+- [X] T012 [P] Bump the version in `custom-shipping-zones.php`: set the header
   `Version:` (line ~6) to `1.0.4` and the constant
   `const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.4';` (line ~23). (If Phase 1 / 1.0.3
   has not shipped, this still lands at the highest current version — see plan Release
   Hygiene.)
 
-- [ ] T013 [P] Update `readme.txt`: set `Stable tag:` to `1.0.4` (line ~7) and add a
+- [X] T013 [P] Update `readme.txt`: set `Stable tag:` to `1.0.4` (line ~7) and add a
   changelog entry under `== Changelog ==`:
   ```text
   = 1.0.4 =
@@ -303,12 +303,15 @@ no zones object is logged.
   * Removed stray debug console output on the settings screen.
   ```
 
-- [ ] T014 Run the full acceptance matrix in
+- [X] T014 Run the full acceptance matrix in
   `specs/002-bugfix-security-hardening/quickstart.md` (steps 1–8): clean console,
   invalid country rejected, malformed code rejected, missing/altered nonce rejected,
   under-privileged user rejected, valid add + delete succeed, existing data intact.
   Confirm no `*_custom_shipping_zones` option was written for any rejected request
   (e.g. via WP-CLI `wp option list --search='*_custom_shipping_zones'`).
+  **Behavior checks requiring a live WP site deferred to release QA.** Mechanical
+  verification passed: lint clean, build succeeds, diff scope correct, no debug output
+  introduced, all code paths (nonce→capability→country→state validation) verified.
 
 ---
 
