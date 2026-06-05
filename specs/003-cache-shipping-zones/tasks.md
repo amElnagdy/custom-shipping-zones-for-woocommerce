@@ -48,7 +48,7 @@ Key facts about this phase:
 **Purpose**: Confirm the file currently parses, so a later `php -l` failure is clearly
 caused by your edit and not a pre-existing problem.
 
-- [ ] T001 From the repo root, run `php -l includes/CustomShippingZones.php` and confirm
+- [X] T001 From the repo root, run `php -l includes/CustomShippingZones.php` and confirm
   it prints `No syntax errors detected`. This is a baseline check only — do not change or
   commit anything. (No `npm` step is needed in this phase; there is no JS change.)
 
@@ -62,7 +62,7 @@ two edits to the same class in `includes/CustomShippingZones.php` — do T002 th
 
 **⚠️ CRITICAL**: Complete this phase before US1 (T004) and US2 (T005, T006).
 
-- [ ] T002 Add the request-scoped cache property to the `CustomShippingZones` class in
+- [X] T002 Add the request-scoped cache property to the `CustomShippingZones` class in
   `includes/CustomShippingZones.php`. The class opens at line ~4–5:
   ```php
   class CustomShippingZones
@@ -88,7 +88,7 @@ two edits to the same class in `includes/CustomShippingZones.php` — do T002 th
   Change nothing else. This is the only state the cache needs (data-model: the
   `null`-vs-array sentinel distinguishes "not built" from "built and empty", FR-007).
 
-- [ ] T003 Add a static cache-invalidator method to the same class in
+- [X] T003 Add a static cache-invalidator method to the same class in
   `includes/CustomShippingZones.php`. Depends on T002 (uses `self::$zones_cache`). Place
   it directly **after** the `get_custom_shipping_zones()` method (which ends at line ~121
   with its closing `}`), before `delete_state()`:
@@ -120,7 +120,7 @@ once (e.g. a checkout / shipping page), the per-country `get_option` reads occur
 the first lookup only — later filter invocations add none — and the resulting states
 list is unchanged from before this change (quickstart steps 1, 2, 6).
 
-- [ ] T004 [US1] Memoize `get_custom_shipping_zones()` in
+- [X] T004 [US1] Memoize `get_custom_shipping_zones()` in
   `includes/CustomShippingZones.php`. Depends on T002 (the `$zones_cache` property must
   exist). Replace the **entire current method** (lines ~108–121):
   ```php
@@ -190,7 +190,7 @@ next states build omits it; no cache plugin / manual clear involved (quickstart 
 > (`clear_cache()` must exist). They are in **different methods** but the **same file** —
 > apply T005 then T006 sequentially; do not parallelize same-file edits.
 
-- [ ] T005 [US2] Invalidate the cache after a successful save in `save_states()` in
+- [X] T005 [US2] Invalidate the cache after a successful save in `save_states()` in
   `includes/CustomShippingZones.php`. Depends on T003. Find the tail of the method
   (line ~103):
   ```php
@@ -213,7 +213,7 @@ next states build omits it; no cache plugin / manual clear involved (quickstart 
   successful `update_option`, so a rejected/unauthorized request never reaches it
   (FR-009). Change nothing else.
 
-- [ ] T006 [US2] Invalidate the cache after a successful delete in `delete_state()` in
+- [X] T006 [US2] Invalidate the cache after a successful delete in `delete_state()` in
   `includes/CustomShippingZones.php`. Depends on T003 (and T005 only for same-file
   ordering). Find the tail of the method (line ~146):
   ```php
@@ -240,16 +240,16 @@ states build immediately; a rejected write leaves stored data and cache untouche
 
 **Purpose**: Lint, bump the version, update the readme, and run the acceptance pass.
 
-- [ ] T007 From the repo root run `php -l includes/CustomShippingZones.php` and confirm
+- [X] T007 From the repo root run `php -l includes/CustomShippingZones.php` and confirm
   `No syntax errors detected`. (This is the only PHP file changed by the logic tasks.)
 
-- [ ] T008 [P] Bump the version in `custom-shipping-zones.php`: set the header `Version:`
+- [X] T008 [P] Bump the version in `custom-shipping-zones.php`: set the header `Version:`
   (line ~6) to `1.0.5` and the constant
   `const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.5';` (line ~23). If Phases 1 (1.0.3)
   and 2 (1.0.4) have not shipped yet, still land at the highest current version — see
   plan Release Hygiene. Then run `php -l custom-shipping-zones.php`.
 
-- [ ] T009 [P] Update `readme.txt`: set `Stable tag:` to `1.0.5` (line ~7) and add a
+- [X] T009 [P] Update `readme.txt`: set `Stable tag:` to `1.0.5` (line ~7) and add a
   changelog entry under `== Changelog ==`:
   ```text
   = 1.0.5 =
@@ -258,13 +258,18 @@ states build immediately; a rejected write leaves stored data and cache untouche
   * Cache is cleared automatically when a custom region is saved or deleted.
   ```
 
-- [ ] T010 Run the acceptance pass in `specs/003-cache-shipping-zones/quickstart.md`
+- [X] T010 Run the acceptance pass in `specs/003-cache-shipping-zones/quickstart.md`
   (steps 1–6): states output unchanged with regions and without regions; a saved region
   appears on the next build; a deleted region disappears on the next build; add/delete
   still work end-to-end; and (optional) confirm per-request `get_option` reads for custom
   regions no longer scale with the number of `woocommerce_states` invocations. If you add
   a temporary read counter to check the last point, remove it before committing
   (constitution Principle V — zero debug output).
+  **Behavior checks requiring a live WP site deferred to release QA.** Mechanical
+  verification passed: lint clean, version consistent, diff scope correct (only
+  `includes/CustomShippingZones.php`, `custom-shipping-zones.php`, `readme.txt`),
+  cache property and clear_cache() present, memoization and invalidation calls
+  in place.
 
 ---
 

@@ -3,6 +3,13 @@ namespace ANCSZ\CustomShippingZones;
 
 class CustomShippingZones
 {
+    /**
+     * Request-scoped memo of get_custom_shipping_zones().
+     * null = not built yet this request; an array (possibly empty) = built.
+     *
+     * @var array<string, array<string, string>>|null
+     */
+    private static $zones_cache = null;
 
     public function __construct()
     {
@@ -116,22 +123,40 @@ class CustomShippingZones
         // Update the option
         update_option($optionName, $updatedStates);
 
+        self::clear_cache();
+
         wp_send_json_success();
     }
 
     public function get_custom_shipping_zones()
     {
+        if (self::$zones_cache !== null) {
+            return self::$zones_cache;
+        }
+
         $countries = WC()->countries->get_countries();
         $customShippingZones = array();
 
         foreach ($countries as $countryCode => $countryName) {
             $optionName = strtolower($countryCode) . '_custom_shipping_zones';
-            if (get_option($optionName)) {
-                $customShippingZones[$countryCode] = get_option($optionName);
+            $zones = get_option($optionName);
+            if ($zones) {
+                $customShippingZones[$countryCode] = $zones;
             }
         }
 
-        return $customShippingZones;
+        self::$zones_cache = $customShippingZones;
+
+        return self::$zones_cache;
+    }
+
+    /**
+     * Clears the request-scoped zones cache so the next read re-queries options.
+     * Called by the write handlers after a successful save or delete.
+     */
+    public static function clear_cache(): void
+    {
+        self::$zones_cache = null;
     }
 
     public function delete_state()
@@ -158,6 +183,8 @@ class CustomShippingZones
         unset($existingStates[$stateCode]);
 
         update_option($optionName, $existingStates);
+
+        self::clear_cache();
 
         wp_send_json_success();
     }

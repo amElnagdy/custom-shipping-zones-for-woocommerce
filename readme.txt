@@ -6,7 +6,7 @@ Requires at least: 6.0
 WC requires at least: 9.0
 WC tested up to: 9.7
 Tested up to: 7.0
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,6 +52,11 @@ Go to WooCommerce → Settings → Custom Shipping Zones and define your zones w
 2. Managing existing custom zones.
 
 == Changelog ==
+
+= 1.0.5 =
+* Performance: cache custom region lookups for the duration of a request so the
+  woocommerce_states filter no longer re-queries the database on every invocation.
+* Cache is cleared automatically when a custom region is saved or deleted.
 
 = 1.0.4 =
 * Security: enforce nonce-before-capability ordering on admin AJAX handlers.
