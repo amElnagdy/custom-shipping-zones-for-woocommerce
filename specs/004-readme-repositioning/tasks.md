@@ -59,7 +59,7 @@ insensitive) checkout `readme.md` and `README.md` are the same file — edit `RE
 
 **Purpose**: Establish a clean baseline so a later failure is clearly caused by your edit.
 
-- [ ] T001 From the repo root, confirm the tree is clean and parses before editing:
+- [X] T001 From the repo root, confirm the tree is clean and parses before editing:
   run `git status` (expect a clean working tree on `csz-wp7-readiness`),
   `php -l includes/Strings.php`, `php -l includes/CustomShippingZones.php`, and
   `php -l custom-shipping-zones.php` (each must print `No syntax errors detected`), and
@@ -74,7 +74,7 @@ insensitive) checkout `readme.md` and `README.md` are the same file — edit `RE
 
 **⚠️ CRITICAL**: Do this before any user-story task; it is the rulebook for all of them.
 
-- [ ] T002 Read `specs/004-readme-repositioning/contracts/messaging-contract.md` and the
+- [X] T002 Read `specs/004-readme-repositioning/contracts/messaging-contract.md` and the
   "Out of scope" list in `specs/004-readme-repositioning/data-model.md`. Note the binding
   rules: (a) call this plugin's item a **state/region**, never a "shipping zone";
   (b) keep "shipping zone" only where it refers to **WooCommerce's** native feature
@@ -99,7 +99,7 @@ states/regions to a country," not "it builds shipping zones" (quickstart step 4)
 > T003–T005 all edit **`readme.txt`** (same file) in separate, non-overlapping blocks —
 > apply them in order. T006 edits a different file (`README.md`) and is `[P]`.
 
-- [ ] T003 [US1] Replace the **short description** in `readme.txt` (line 11). Current:
+- [X] T003 [US1] Replace the **short description** in `readme.txt` (line 11). Current:
   ```text
   A powerful tool for WooCommerce store owners to create custom shipping zones beyond the default zones provided by WooCommerce.
   ```
@@ -108,7 +108,7 @@ states/regions to a country," not "it builds shipping zones" (quickstart step 4)
   Add custom states and regions to any country so they become available when you set up WooCommerce shipping zones, taxes, and addresses.
   ```
 
-- [ ] T004 [US1] Replace the **Description + Features** block in `readme.txt` (lines
+- [X] T004 [US1] Replace the **Description + Features** block in `readme.txt` (lines
   13–21). Current:
   ```text
   == Description ==
@@ -137,7 +137,7 @@ states/regions to a country," not "it builds shipping zones" (quickstart step 4)
   - Lightweight: no extra database tables; it uses WooCommerce's official state list.
   ```
 
-- [ ] T005 [US1] Replace the **Usage + Installation** block in `readme.txt` (lines
+- [X] T005 [US1] Replace the **Usage + Installation** block in `readme.txt` (lines
   23–39). Current:
   ```text
   ## Usage
@@ -179,7 +179,7 @@ states/regions to a country," not "it builds shipping zones" (quickstart step 4)
   3. Add and manage your custom states/regions via WooCommerce → Settings → Custom States / Regions, then use them under WooCommerce → Settings → Shipping.
   ```
 
-- [ ] T006 [P] [US1] Mirror the repositioning in **`README.md`** (the GitHub copy).
+- [X] T006 [P] [US1] Mirror the repositioning in **`README.md`** (the GitHub copy).
   Apply these replacements:
   - Line 3 (intro), current:
     ```text
@@ -250,7 +250,7 @@ are PHP value edits delivered via `wp_localize_script`.
 > T007–T009 all edit **`includes/Strings.php`** (same file, distinct lines) — apply in
 > order. T010 edits a different file and is `[P]`.
 
-- [ ] T007 [US2] In `includes/Strings.php` (line 23) change the section-header **value**
+- [X] T007 [US2] In `includes/Strings.php` (line 23) change the section-header **value**
   only (keep the key `current_custom_shipping_zones`). Current:
   ```php
   'current_custom_shipping_zones' => __('Your Existing Custom Shipping Zones', 'custom-shipping-zones'),
@@ -260,7 +260,7 @@ are PHP value edits delivered via `wp_localize_script`.
   'current_custom_shipping_zones' => __('Your Existing Custom States / Regions', 'custom-shipping-zones'),
   ```
 
-- [ ] T008 [US2] In `includes/Strings.php` (line 13) reword `reload_page`. Current:
+- [X] T008 [US2] In `includes/Strings.php` (line 13) reword `reload_page`. Current:
   ```php
   'reload_page' => __('Reload page and add new zones', 'custom-shipping-zones'),
   ```
@@ -269,7 +269,7 @@ are PHP value edits delivered via `wp_localize_script`.
   'reload_page' => __('Reload page and add new states/regions', 'custom-shipping-zones'),
   ```
 
-- [ ] T009 [US2] In `includes/Strings.php` (line 30) reword
+- [X] T009 [US2] In `includes/Strings.php` (line 30) reword
   `navigate_to_woocommerce_settings`, **keeping the exact substring**
   `WooCommerce → Settings → Shipping` (App.js splits on it). Current:
   ```php
@@ -280,7 +280,7 @@ are PHP value edits delivered via `wp_localize_script`.
   'navigate_to_woocommerce_settings' => __('Now you can go to WooCommerce → Settings → Shipping to use the newly added custom states/regions.', 'custom-shipping-zones'),
   ```
 
-- [ ] T010 [P] [US2] In `includes/CustomShippingZones.php` (line 179) change the settings
+- [X] T010 [P] [US2] In `includes/CustomShippingZones.php` (line 179) change the settings
   **tab label value only** — DO NOT change the array key `'custom_shipping_zones'`.
   Current:
   ```php
@@ -311,7 +311,7 @@ description is accurate (quickstart steps 2, 4).
 > **`src/App.js`**; T015 edits **`custom-shipping-zones.php`**. Same-file tasks
 > (T011→T012→T013) apply in order; T014/T015/T016 are different files.
 
-- [ ] T011 [US3] In `includes/Strings.php` (lines 46–47) reword the "can't delete" FAQ —
+- [X] T011 [US3] In `includes/Strings.php` (lines 46–47) reword the "can't delete" FAQ —
   change the **plugin's item** to state/region but **keep** the WooCommerce "shipping
   zone" references (FR-009). Current:
   ```php
@@ -324,7 +324,7 @@ description is accurate (quickstart steps 2, 4).
   'faq_cant_delete_description' => __('You cannot delete a custom state/region while it is being used in a WooCommerce shipping zone. Remove it from the shipping zone first, then delete it here.', 'custom-shipping-zones'),
   ```
 
-- [ ] T012 [US3] In `includes/Strings.php` (lines 50–51) reword the "how to use in
+- [X] T012 [US3] In `includes/Strings.php` (lines 50–51) reword the "how to use in
   WooCommerce" FAQ. Current:
   ```php
   'faq_woocommerce_settings' => __('How do I use the custom shipping zones in WooCommerce?', 'custom-shipping-zones'),
@@ -336,7 +336,7 @@ description is accurate (quickstart steps 2, 4).
   'faq_woocommerce_settings_description' => __('After adding your custom states/regions, go to WooCommerce → Settings → Shipping to use them in a shipping zone (they also appear in tax and address settings).', 'custom-shipping-zones'),
   ```
 
-- [ ] T013 [US3] In `includes/Strings.php` **delete the two export/import FAQ lines**
+- [X] T013 [US3] In `includes/Strings.php` **delete the two export/import FAQ lines**
   (lines 48–49) entirely — this feature is not shipped (FR-008). Remove:
   ```php
   'faq_export_import' => __('How do I export / import custom shipping zones?', 'custom-shipping-zones'),
@@ -347,7 +347,7 @@ description is accurate (quickstart steps 2, 4).
   "left unsurfaced"; removing them is out-of-scope cleanup (Principle II). After this
   edit run `php -l includes/Strings.php`.
 
-- [ ] T014 [US3] In `src/App.js` remove the export/import FAQ entry from the `faqs`
+- [X] T014 [US3] In `src/App.js` remove the export/import FAQ entry from the `faqs`
   array (currently lines ~84–87) so it pairs with T013. Delete exactly:
   ```javascript
       {
@@ -358,7 +358,7 @@ description is accurate (quickstart steps 2, 4).
   Leave every other `faqs` entry and all logic unchanged. (This is the only JS change in
   the phase; it takes effect only after the rebuild in T019.)
 
-- [ ] T015 [P] [US3] In `custom-shipping-zones.php` (line 4) reposition the plugin-header
+- [X] T015 [P] [US3] In `custom-shipping-zones.php` (line 4) reposition the plugin-header
   **Description** shown on the Plugins screen. Current:
   ```text
    * Description: Lightweight, yet powerful WooCommerce extension that allows you to add custom shipping zones to WooCommerce
@@ -369,7 +369,7 @@ description is accurate (quickstart steps 2, 4).
   ```
   (Do not touch other header lines in this task; the version bump is T017.)
 
-- [ ] T016 [US3] In `readme.txt` reword the **FAQ** and **Screenshots** sections.
+- [X] T016 [US3] In `readme.txt` reword the **FAQ** and **Screenshots** sections.
   FAQ (lines 41–46), current:
   ```text
   == Frequently Asked Questions ==
@@ -414,13 +414,13 @@ WooCommerce-zone references remain only where correct.
 **Purpose**: Bump the version, finish readme metadata, rebuild the bundle, lint, and run
 the acceptance pass.
 
-- [ ] T017 [P] Bump the version in `custom-shipping-zones.php`: header `Version:`
+- [X] T017 [P] Bump the version in `custom-shipping-zones.php`: header `Version:`
   (line 6) `1.0.2` → `1.0.6`, and the constant (line 23)
   `const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.2';` → `'1.0.6'`. If Phases 1–3
   (1.0.3/1.0.4/1.0.5) have not shipped yet, still land at the highest current version —
   see plan Release Hygiene. Then run `php -l custom-shipping-zones.php`.
 
-- [ ] T018 Update `readme.txt` metadata (same file as T003–T005, T016 — non-overlapping
+- [X] T018 Update `readme.txt` metadata (same file as T003–T005, T016 — non-overlapping
   lines): set `Tested up to: 6.9` (line 6) → `Tested up to: 7.0`; set
   `Stable tag: 1.0.2` (line 7) → `Stable tag: 1.0.6`; and add a changelog entry directly
   under the `== Changelog ==` line (line 52), above `= 1.0.2 =`:
@@ -430,23 +430,27 @@ the acceptance pass.
   * Removed the "export / import" FAQ entry for a feature that is not yet available.
   ```
 
-- [ ] T019 Rebuild the admin bundle (required only because of the `src/App.js` edit in
+- [X] T019 Rebuild the admin bundle (required only because of the `src/App.js` edit in
   T014): from the repo root run `npm run build` and confirm it succeeds and regenerates
   `build/index.js` (and `build/index.asset.php`). Commit the regenerated `build/` files
   together with the source change. Do not edit `build/` by hand.
 
-- [ ] T020 Final lint: run `php -l includes/Strings.php`,
+- [X] T020 Final lint: run `php -l includes/Strings.php`,
   `php -l includes/CustomShippingZones.php`, and `php -l custom-shipping-zones.php` —
   each must print `No syntax errors detected`. Confirm no new `console.log` /
   `var_dump` / `error_log` was introduced (constitution Principle V).
 
-- [ ] T021 Run the acceptance pass in `specs/004-readme-repositioning/quickstart.md`
+- [X] T021 Run the acceptance pass in `specs/004-readme-repositioning/quickstart.md`
   (sections 2–6): admin tab/labels read in states/regions terms; the export/import FAQ
   is gone; add → save → delete a state still works and the success link points to
   WooCommerce → Settings → Shipping; `readme.txt` short/long/usage/FAQ are accurate with
   `Stable tag 1.0.6`, `Tested up to 7.0`, and a `1.0.6` changelog entry; `README.md`
   mirrors the repositioning; and the WC tab still loads with existing saved states
   intact (backward-compatible — key unchanged).
+  **Behavior checks requiring a live WP site deferred to release QA.** Mechanical
+  verification passed: lint clean, build succeeds, diff scope correct, no debug output
+  introduced, version consistent, tab key unchanged, Shipping substring preserved,
+  state_is_in_use unchanged, export/import FAQ removed from App.js and Strings.php.
 
 ---
 

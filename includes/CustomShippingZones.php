@@ -217,7 +217,7 @@ class CustomShippingZones
 
     public function add_settings_tab($settings_tabs)
     {
-        $settings_tabs['custom_shipping_zones'] = __('Custom Shipping Zones', 'custom-shipping-zones');
+        $settings_tabs['custom_shipping_zones'] = __('Custom States / Regions', 'custom-shipping-zones');
         return $settings_tabs;
     }
 
