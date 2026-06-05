@@ -37,8 +37,8 @@ in Phase 6.
 
 **Purpose**: Confirm environment and starting point before editing.
 
-- [ ] T001 Confirm the working branch is `csz-wp7-readiness` by running `git rev-parse --abbrev-ref HEAD`; if it is not, stop and switch to it. Do not create a new branch.
-- [ ] T002 Confirm the PHP CLI is available for linting by running `php -v`; note the version (must be 7.4+). If `php` is unavailable, flag it — task T020 (lint) cannot be completed without it.
+- [X] T001 Confirm the working branch is `csz-wp7-readiness` by running `git rev-parse --abbrev-ref HEAD`; if it is not, stop and switch to it. Do not create a new branch.
+- [X] T002 Confirm the PHP CLI is available for linting by running `php -v`; note the version (must be 7.4+). If `php` is unavailable, flag it — task T020 (lint) cannot be completed without it.
 
 **Checkpoint**: On `csz-wp7-readiness`, PHP CLI available.
 
@@ -48,8 +48,8 @@ in Phase 6.
 
 **Purpose**: Capture the exact current state so edits are precise and the final scope check is meaningful.
 
-- [ ] T003 Open `custom-shipping-zones.php` and confirm the header block (lines ~3–14) currently contains `* Version: 1.0.2`, `* Domain Path: /languages`, and `* WC tested up to: 9.7`, and that the constant `const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.2';` exists (line ~23). These are the anchors used by later tasks.
-- [ ] T004 Open `readme.txt` and confirm the header (lines 1–9) currently contains `Tested up to: 6.9`, `Stable tag: 1.0.2`, `Requires PHP: 7.4`, and `Requires at least: 6.0`, and that the changelog (line ~52) starts with `= 1.0.2 =`. These are the anchors used by later tasks.
+- [X] T003 Open `custom-shipping-zones.php` and confirm the header block (lines ~3–14) currently contains `* Version: 1.0.2`, `* Domain Path: /languages`, and `* WC tested up to: 9.7`, and that the constant `const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.2';` exists (line ~23). These are the anchors used by later tasks.
+- [X] T004 Open `readme.txt` and confirm the header (lines 1–9) currently contains `Tested up to: 6.9`, `Stable tag: 1.0.2`, `Requires PHP: 7.4`, and `Requires at least: 6.0`, and that the changelog (line ~52) starts with `= 1.0.2 =`. These are the anchors used by later tasks.
 
 **Checkpoint**: Current values verified — proceed to user stories.
 
@@ -63,7 +63,7 @@ in Phase 6.
 
 ### Implementation for User Story 1
 
-- [ ] T005 [US1] In `custom-shipping-zones.php`, add the WooCommerce dependency header line. Insert a new line `* Requires Plugins: woocommerce` immediately after the existing line `* Domain Path: /languages` and before `* WC tested up to: 9.7`. Keep the ` * ` comment prefix and existing indentation.
+- [X] T005 [US1] In `custom-shipping-zones.php`, add the WooCommerce dependency header line. Insert a new line `* Requires Plugins: woocommerce` immediately after the existing line `* Domain Path: /languages` and before `* WC tested up to: 9.7`. Keep the ` * ` comment prefix and existing indentation.
 
 **Checkpoint**: With WooCommerce deactivated, the Plugins screen shows the WooCommerce dependency notice (verified behaviorally in T023).
 
@@ -77,9 +77,9 @@ in Phase 6.
 
 ### Implementation for User Story 2
 
-- [ ] T006 [US2] In `custom-shipping-zones.php`, add the line `* Requires PHP: 7.4` in the header block. Insert it immediately after `* Domain Path: /languages` (it may sit just above or below the `Requires Plugins` line added in T005 — order among header fields does not matter). Keep the ` * ` prefix.
-- [ ] T007 [US2] In `custom-shipping-zones.php`, add the line `* Requires at least: 6.0` in the header block, alongside the other `Requires` lines (after `* Domain Path: /languages`). Keep the ` * ` prefix.
-- [ ] T008 [US2] In `readme.txt`, confirm `Requires PHP: 7.4` is present and unchanged (line ~4). It already exists — this task only verifies the header value added in T006 matches the readme value (`7.4`). Make no edit if it already reads `Requires PHP: 7.4`.
+- [X] T006 [US2] In `custom-shipping-zones.php`, add the line `* Requires PHP: 7.4` in the header block. Insert it immediately after `* Domain Path: /languages` (it may sit just above or below the `Requires Plugins` line added in T005 — order among header fields does not matter). Keep the ` * ` prefix.
+- [X] T007 [US2] In `custom-shipping-zones.php`, add the line `* Requires at least: 6.0` in the header block, alongside the other `Requires` lines (after `* Domain Path: /languages`). Keep the ` * ` prefix.
+- [X] T008 [US2] In `readme.txt`, confirm `Requires PHP: 7.4` is present and unchanged (line ~4). It already exists — this task only verifies the header value added in T006 matches the readme value (`7.4`). Make no edit if it already reads `Requires PHP: 7.4`.
 
 **Checkpoint**: Plugin header and readme both declare `Requires PHP: 7.4`; header also declares `Requires at least: 6.0`.
 
@@ -93,13 +93,13 @@ in Phase 6.
 
 ### Implementation for User Story 3
 
-- [ ] T009 [US3] In `custom-shipping-zones.php`, change the header line `* Version: 1.0.2` to `* Version: 1.0.3`.
-- [ ] T010 [US3] In `custom-shipping-zones.php`, change the constant `const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.2';` to `const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.3';` (line ~23).
-- [ ] T011 [US3] In `custom-shipping-zones.php`, add the line `* WC requires at least: 9.0` in the header block, immediately before the existing `* WC tested up to: 9.7` line. Leave `* WC tested up to: 9.7` unchanged. Keep the ` * ` prefix.
-- [ ] T012 [P] [US3] In `readme.txt`, change `Tested up to: 6.9` to `Tested up to: 7.0` (line ~6).
-- [ ] T013 [P] [US3] In `readme.txt`, change `Stable tag: 1.0.2` to `Stable tag: 1.0.3` (line ~7).
-- [ ] T014 [P] [US3] In `readme.txt`, add a line `WC requires at least: 9.0` and a line `WC tested up to: 9.7` into the header block (immediately after the `Requires at least: 6.0` line, line ~5). These two `WC ...` values MUST match the plugin-header values from T011 and the existing header.
-- [ ] T015 [US3] In `readme.txt`, add a new changelog entry directly under the `== Changelog ==` heading and above the `= 1.0.2 =` entry (line ~53):
+- [X] T009 [US3] In `custom-shipping-zones.php`, change the header line `* Version: 1.0.2` to `* Version: 1.0.3`.
+- [X] T010 [US3] In `custom-shipping-zones.php`, change the constant `const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.2';` to `const ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.3';` (line ~23).
+- [X] T011 [US3] In `custom-shipping-zones.php`, add the line `* WC requires at least: 9.0` in the header block, immediately before the existing `* WC tested up to: 9.7` line. Leave `* WC tested up to: 9.7` unchanged. Keep the ` * ` prefix.
+- [X] T012 [P] [US3] In `readme.txt`, change `Tested up to: 6.9` to `Tested up to: 7.0` (line ~6).
+- [X] T013 [P] [US3] In `readme.txt`, change `Stable tag: 1.0.2` to `Stable tag: 1.0.3` (line ~7).
+- [X] T014 [P] [US3] In `readme.txt`, add a line `WC requires at least: 9.0` and a line `WC tested up to: 9.7` into the header block (immediately after the `Requires at least: 6.0` line, line ~5). These two `WC ...` values MUST match the plugin-header values from T011 and the existing header.
+- [X] T015 [US3] In `readme.txt`, add a new changelog entry directly under the `== Changelog ==` heading and above the `= 1.0.2 =` entry (line ~53):
   ```
   = 1.0.3 =
   * Declared WooCommerce as a required plugin dependency.
@@ -115,15 +115,15 @@ in Phase 6.
 
 **Purpose**: Prove the contract holds and the scope stayed minimal. These tasks make no source edits except to fix a failure they uncover.
 
-- [ ] T016 Verify the final plugin header block in `custom-shipping-zones.php` contains all of: `Version: 1.0.3`, `Requires at least: 6.0`, `Requires PHP: 7.4`, `Requires Plugins: woocommerce`, `WC requires at least: 9.0`, `WC tested up to: 9.7`. (Contract C1–C5.)
-- [ ] T017 Verify version consistency: `Version: 1.0.3` (header), `ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.3'` (constant), and `Stable tag: 1.0.3` (readme) all agree. (Contract C5 / SC-004.) Run: `Select-String -Path custom-shipping-zones.php,readme.txt -Pattern '1\.0\.3'`.
-- [ ] T018 Verify PHP/WP/WC value agreement between header and readme: `Requires PHP` = `7.4` in both; `WC requires at least` = `9.0` in both; `WC tested up to` = `9.7` in both. (Contracts C2, C4.)
-- [ ] T019 Verify `readme.txt` reads `Tested up to: 7.0` and `Requires at least: 6.0`, and that `6.0` ≤ `7.0`. (Contract C3.)
-- [ ] T020 Run `php -l custom-shipping-zones.php` and confirm output is `No syntax errors detected`. (Contract C6 / FR-008.)
-- [ ] T021 Run `git diff --name-only` and confirm the ONLY plugin files changed are `custom-shipping-zones.php` and `readme.txt` (the `specs/` planning docs may also appear and are acceptable; no file under `includes/`, `src/`, `build/`, or `vendor/` may appear). (Contract C6 / FR-009 / SC-006.)
-- [ ] T022 Confirm no `console.log`, `error_log`, or `var_dump` was introduced by this phase (the diff should contain none). (Constitution Principle V.)
-- [ ] T023 Behavior check (manual, if a WP 7.0 + WC 9.x test site is available): deactivate WooCommerce → the Plugins screen shows the "requires WooCommerce" notice and guards activation; reactivate WooCommerce → notice clears and the plugin activates cleanly. (Contract C1 / SC-001.) If no test site is available, mark this task as "deferred to release QA" rather than failing it.
-- [ ] T024 Behavior check (manual, if a test site is available): with the plugin active, add a custom state/region (it saves) and delete it (it is removed) — confirming no functional regression. (Contract C6 / SC-005.) If no test site is available, mark as "deferred to release QA".
+- [X] T016 Verify the final plugin header block in `custom-shipping-zones.php` contains all of: `Version: 1.0.3`, `Requires at least: 6.0`, `Requires PHP: 7.4`, `Requires Plugins: woocommerce`, `WC requires at least: 9.0`, `WC tested up to: 9.7`. (Contract C1–C5.)
+- [X] T017 Verify version consistency: `Version: 1.0.3` (header), `ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION = '1.0.3'` (constant), and `Stable tag: 1.0.3` (readme) all agree. (Contract C5 / SC-004.) Run: `Select-String -Path custom-shipping-zones.php,readme.txt -Pattern '1\.0\.3'`.
+- [X] T018 Verify PHP/WP/WC value agreement between header and readme: `Requires PHP` = `7.4` in both; `WC requires at least` = `9.0` in both; `WC tested up to` = `9.7` in both. (Contracts C2, C4.)
+- [X] T019 Verify `readme.txt` reads `Tested up to: 7.0` and `Requires at least: 6.0`, and that `6.0` ≤ `7.0`. (Contract C3.)
+- [X] T020 Run `php -l custom-shipping-zones.php` and confirm output is `No syntax errors detected`. (Contract C6 / FR-008.)
+- [X] T021 Run `git diff --name-only` and confirm the ONLY plugin files changed are `custom-shipping-zones.php` and `readme.txt` (the `specs/` planning docs may also appear and are acceptable; no file under `includes/`, `src/`, `build/`, or `vendor/` may appear). (Contract C6 / FR-009 / SC-006.)
+- [X] T022 Confirm no `console.log`, `error_log`, or `var_dump` was introduced by this phase (the diff should contain none). (Constitution Principle V.)
+- [X] T023 Behavior check (manual, if a WP 7.0 + WC 9.x test site is available): deactivate WooCommerce → the Plugins screen shows the "requires WooCommerce" notice and guards activation; reactivate WooCommerce → notice clears and the plugin activates cleanly. (Contract C1 / SC-001.) **Deferred to release QA** — no local test site available.
+- [X] T024 Behavior check (manual, if a test site is available): with the plugin active, add a custom state/region (it saves) and delete it (it is removed) — confirming no functional regression. (Contract C6 / SC-005.) **Deferred to release QA** — no local test site available.
 
 ---
 

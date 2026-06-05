@@ -3,8 +3,10 @@ Contributors: nagdy
 Tags: shipping, woocommerce, custom shipping zones
 Requires PHP: 7.4
 Requires at least: 6.0
-Tested up to: 6.9
-Stable tag: 1.0.2
+WC requires at least: 9.0
+WC tested up to: 9.7
+Tested up to: 7.0
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -50,6 +52,11 @@ Go to WooCommerce → Settings → Custom Shipping Zones and define your zones w
 2. Managing existing custom zones.
 
 == Changelog ==
+
+= 1.0.3 =
+* Declared WooCommerce as a required plugin dependency.
+* Declared minimum PHP 7.4 and WooCommerce 9.0 in the plugin header.
+* WordPress 7.0 compatibility (Tested up to: 7.0).
 
 = 1.0.2 =
 * WordPress 6.9 compatibility.
