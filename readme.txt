@@ -6,7 +6,7 @@ Requires at least: 6.0
 WC requires at least: 9.0
 WC tested up to: 9.7
 Tested up to: 7.0
-Stable tag: 1.0.6
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -59,7 +59,7 @@ No. It does not manage shipping zones for you. It only adds the states/regions t
 
 == Changelog ==
 
-= 1.0.6 =
+= 1.0.3 =
 * Repositioned the plugin description and admin labels to accurately reflect what it does: adding custom states/regions to a country for use in WooCommerce shipping zones, taxes, and addresses. No functional change.
 * Removed the "export / import" FAQ entry for a feature that is not yet available.
 
