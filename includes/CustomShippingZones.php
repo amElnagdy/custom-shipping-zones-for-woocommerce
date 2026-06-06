@@ -64,6 +64,14 @@ class CustomShippingZones
         // Localize script for strings used in JavaScript
         wp_localize_script('custom-shipping-zone-admin', 'cszStrings', $this->get_strings());
 
+        // Enqueue Ant Design select focus fix
+        wp_enqueue_style(
+            'plugin-ant-select-fix',
+            ANCSZ_CUSTOM_SHIPPING_ZONES_URL . 'css/admin-fixes.css',
+            [],
+            ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION
+        );
+
         // Hide the WooCommerce save button
         wp_register_style('custom-shipping-zone-style', false, [], ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION);
         wp_enqueue_style('custom-shipping-zone-style');
