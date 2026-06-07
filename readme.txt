@@ -60,24 +60,18 @@ No. It does not manage shipping zones for you. It only adds the states/regions t
 == Changelog ==
 
 = 1.0.3 =
-* Repositioned the plugin description and admin labels to accurately reflect what it does: adding custom states/regions to a country for use in WooCommerce shipping zones, taxes, and addresses. No functional change.
-* Removed the "export / import" FAQ entry for a feature that is not yet available.
-
-= 1.0.5 =
-* Performance: cache custom region lookups for the duration of a request so the
-  woocommerce_states filter no longer re-queries the database on every invocation.
-* Cache is cleared automatically when a custom region is saved or deleted.
-
-= 1.0.4 =
+* Declared WooCommerce as a required plugin dependency.
+* Declared minimum PHP 7.4 and WooCommerce 9.0 in the plugin header.
+* WordPress 7.0 compatibility (Tested up to: 7.0).
 * Security: enforce nonce-before-capability ordering on admin AJAX handlers.
 * Validation: reject unknown country codes and malformed state codes server-side.
 * Fixed: the save screen no longer reports success when the server rejects a save.
 * Removed stray debug console output on the settings screen.
-
-= 1.0.3 =
-* Declared WooCommerce as a required plugin dependency.
-* Declared minimum PHP 7.4 and WooCommerce 9.0 in the plugin header.
-* WordPress 7.0 compatibility (Tested up to: 7.0).
+* Performance: cache custom region lookups for the duration of a request so the
+  woocommerce_states filter no longer re-queries the database on every invocation.
+  Cache is cleared automatically when a custom region is saved or deleted.
+* Repositioned the plugin description and admin labels to accurately reflect what it does: adding custom states/regions to a country for use in WooCommerce shipping zones, taxes, and addresses.
+* Removed the "export / import" FAQ entry for a feature that is not yet available.
 
 = 1.0.2 =
 * WordPress 6.9 compatibility.
