@@ -66,7 +66,7 @@ class CustomShippingZones
 
         // Enqueue Ant Design select focus fix
         wp_enqueue_style(
-            'plugin-ant-select-fix',
+            'custom-shipping-zone-ant-select-fix',
             ANCSZ_CUSTOM_SHIPPING_ZONES_URL . 'css/admin-fixes.css',
             [],
             ANCSZ_CUSTOM_SHIPPING_ZONES_VERSION

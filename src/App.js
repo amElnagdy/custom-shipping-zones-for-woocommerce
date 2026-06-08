@@ -103,7 +103,6 @@ const App = () => {
       question: strings.faq_cant_delete,
       answer: strings.faq_cant_delete_description,
     },
-
     {
       question: strings.faq_donate,
       answer: <div dangerouslySetInnerHTML={{ __html: strings.faq_donate_description }} />,
