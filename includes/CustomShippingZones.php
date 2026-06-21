@@ -13,9 +13,6 @@ class CustomShippingZones
 
     public function __construct()
     {
-        // Load the text domain
-        add_action('init', array($this, 'load_textdomain'));
-
         // Enqueue scripts
         add_action('admin_enqueue_scripts', array($this, 'enqueue_scripts'));
 
@@ -32,11 +29,6 @@ class CustomShippingZones
         // Add the settings tab
         add_action('woocommerce_settings_tabs_array', array($this, 'add_settings_tab'), 50);
         add_action('woocommerce_settings_tabs_custom_shipping_zones', array($this, 'settings_tab'));
-    }
-
-    public function load_textdomain(): void
-    {
-        load_plugin_textdomain('custom-shipping-zones', false, ANCSZ_CUSTOM_SHIPPING_ZONES_BASENAME . '/languages');
     }
 
     public function enqueue_scripts(): void
@@ -96,9 +88,9 @@ class CustomShippingZones
             wp_send_json_error('Not allowed!');
         }
 
-        $states_json = isset($_POST['states']) ? sanitize_text_field(stripslashes($_POST['states'])) : '[]';
+        $states_json = isset($_POST['states']) ? wp_unslash($_POST['states']) : '[]'; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- JSON decoded; each field is sanitized in the loop below.
         $states = json_decode($states_json, true);
-        $countryCode = isset($_POST['countryCode']) ? sanitize_text_field($_POST['countryCode']) : '';
+        $countryCode = isset($_POST['countryCode']) ? sanitize_text_field(wp_unslash($_POST['countryCode'])) : '';
 
         $valid_countries = WC()->countries->get_countries();
         if ($countryCode === '' || ! array_key_exists($countryCode, $valid_countries)) {
@@ -225,7 +217,7 @@ class CustomShippingZones
 
     public function add_settings_tab($settings_tabs)
     {
-        $settings_tabs['custom_shipping_zones'] = __('Custom States / Regions', 'custom-shipping-zones');
+        $settings_tabs['custom_shipping_zones'] = __('Custom States / Regions', 'custom-shipping-zones-for-woocommerce');
         return $settings_tabs;
     }
 
@@ -256,8 +248,8 @@ class CustomShippingZones
 
     public function settings_link($links)
     {
-        $donate_link = '<a href="https://ko-fi.com/nagdy" target="_blank no-referrer no-opener" style="color: green;">' . __('Donate', 'custom-shipping-zones') . '</a>';
-        $settings_link = '<a href="' . esc_url(admin_url('admin.php?page=wc-settings&tab=custom_shipping_zones')) . '">' . __('Settings', 'custom-shipping-zones') . '</a>';
+        $donate_link = '<a href="https://ko-fi.com/nagdy" target="_blank no-referrer no-opener" style="color: green;">' . __('Donate', 'custom-shipping-zones-for-woocommerce') . '</a>';
+        $settings_link = '<a href="' . esc_url(admin_url('admin.php?page=wc-settings&tab=custom_shipping_zones')) . '">' . __('Settings', 'custom-shipping-zones-for-woocommerce') . '</a>';
         array_unshift($links, $settings_link, $donate_link);
         return $links;
     }

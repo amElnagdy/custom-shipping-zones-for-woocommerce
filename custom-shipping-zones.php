@@ -8,7 +8,7 @@
  * Author URI: https://nagdy.me
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: custom-shipping-zones
+ * Text Domain: custom-shipping-zones-for-woocommerce
  * Domain Path: /languages
  * Requires PHP: 7.4
  * Requires at least: 6.0
