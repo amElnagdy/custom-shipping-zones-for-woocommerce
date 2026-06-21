@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Result, Spin } from "antd";
+import { Button, Result, Spin, message } from "antd";
 import CountrySelector from "./CountrySelector";
 import StateAdder from "./StateAdder";
 import AddedStates from "./AddedStates";
@@ -26,9 +26,31 @@ const App = () => {
       body: formData,
     })
       .then((response) => response.json())
-      .then(() => {
+      .then((result) => {
         setLoading(false);
-        setSavedSuccessfully(true);
+        if (result.success) {
+          setSavedSuccessfully(true);
+        } else {
+          const errorMessage =
+            result.data === "invalid_country"
+              ? strings.invalid_country
+              : result.data === "invalid_state_code"
+              ? strings.invalid_state_code
+              : strings.failed_to_save_states;
+          message.error({
+            content: errorMessage,
+            duration: 5,
+            style: { marginTop: "5vh" },
+          });
+        }
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.error("Error saving states:", error);
+        message.error({
+          content: strings.failed_to_save_states,
+          style: { marginTop: "2vh" },
+        });
       });
   };
 
@@ -80,10 +102,6 @@ const App = () => {
     {
       question: strings.faq_cant_delete,
       answer: strings.faq_cant_delete_description,
-    },
-    {
-      question: strings.faq_export_import,
-      answer: strings.faq_export_import_description,
     },
     {
       question: strings.faq_donate,

@@ -1,0 +1,16 @@
+/* Fix: Ant Design Select focus border in WordPress Admin */
+
+/* Remove broken focus style from the raw hidden input */
+.ant-select-selection-search-input:focus {
+    border-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Apply correct WP admin focus style to the visible container */
+.ant-select-focused .ant-select-selector,
+.ant-select-open .ant-select-selector {
+    border-color: var(--wp-admin-theme-color) !important;
+    box-shadow: 0 0 0 var(--wp-admin-border-width-focus, 1.5px) var(--wp-admin-theme-color) !important;
+    outline: none !important;
+}

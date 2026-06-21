@@ -8,6 +8,11 @@
 .idea
 .gitlab-ci.yml
 .travis.yml
+.github
+.claude
+.opencode
+.specify
+specs
 .DS_Store
 Thumbs.db
 behat.yml
@@ -25,6 +30,7 @@ README.md
 wp-cli.local.yml
 tests
 node_modules
+*.md
 *.sql
 *.tar.gz
 *.zip

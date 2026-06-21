@@ -1,1 +1,15 @@
 /node_modules/
+
+# Speckit / project tooling (not plugin files)
+.claude/
+.opencode/
+.specify/
+specs/
+AGENTS.md
+CLAUDE.md
+
+# Design docs & planning files (not plugin files)
+ant-select-focus-fix.md
+csz-wp7-speckit-plan.md
+plugin-files.txt
+wp7-readiness-changelog.html
